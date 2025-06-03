@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="shop_page_title">获取完整古方数据库 - 185个传统肥胖调理方剂 | 古方新解</title>
+    <meta name="description" data-i18n="shop_page_description" content="独家发布：heytcm 研究团队首次公开185个传统肥胖调理方剂完整数据库。千年古方智慧，现代科学验证，限时特惠50%折扣。">
+    
+    <!-- 引入字体和CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    
+    <!-- 配置Tailwind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'serif': ['Noto Serif SC', 'serif'],
+              'sans': ['Inter', 'sans-serif']
+            },
+            colors: {
+              'sage': {
+                50: '#f6f7f6',
+                100: '#e3e7e3',
+                200: '#c6cfc6',
+                300: '#9db0a0',
+                400: '#6d8970',
+                500: '#526b55',
+                600: '#3f5442',
+                700: '#334437',
+                800: '#2b372e',
+                900: '#252f27'
+              },
+              'warm': {
+                50: '#fdf8f6',
+                100: '#f2e8e5',
+                200: '#eaddd7',
+                300: '#e0cec7',
+                400: '#d2bab0',
+                500: '#bfa094',
+                600: '#a18072',
+                700: '#977669',
+                800: '#846358',
+                900: '#43302b'
+              }
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="font-sans text-gray-800 bg-warm-50">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50 border-b border-sage-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <a href="index.html" class="text-xl font-serif font-semibold text-sage-800" data-i18n="site_name">古方新解</a>
+                    </div>
+                </div>
+                
+                <!-- 语言切换 -->
+                <div class="flex items-center space-x-4">
+                    <select id="languageSelector" class="text-sm border border-sage-200 rounded-md px-2 py-1 bg-white text-sage-700 focus:outline-none focus:ring-2 focus:ring-sage-500">
+                        <option value="zh">中文</option>
+                        <option value="en">English</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区 -->
+    <section class="relative bg-gradient-to-br from-sage-50 to-warm-100 py-20 overflow-hidden">
+        <!-- 背景装饰 -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-20 left-10 w-32 h-32 bg-sage-300 rounded-full mix-blend-multiply animate-float"></div>
+            <div class="absolute top-40 right-20 w-24 h-24 bg-warm-300 rounded-full mix-blend-multiply animate-float-delayed"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <!-- 紧急通知横幅 -->
+                <div class="inline-flex items-center px-6 py-3 bg-red-100 border border-red-300 rounded-full mb-8">
+                    <svg class="w-5 h-5 text-red-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.998-.833-2.768 0L3.732 19c-.77.833.192 2.5 1.732 2.5z"/>
+                    </svg>
+                    <span class="text-red-800 font-medium text-sm" data-i18n="urgent_banner">限时发布：首次公开的古方数据库，仅限前100名</span>
+                </div>
+                
+                <!-- 主标题 -->
+                <h1 class="text-4xl md:text-6xl font-serif font-bold text-sage-900 mb-6 leading-tight">
+                    <span data-i18n="shop_hero_title">终于揭秘：heytcm 发现</span>
+                    <br>
+                    <span class="text-red-600" data-i18n="shop_hero_subtitle">为什么99%的减肥方法都失败了</span>
+                </h1>
+                
+                <!-- 副标题 -->
+                <p class="text-xl md:text-2xl text-sage-700 mb-8 max-w-4xl mx-auto" data-i18n="shop_hero_description">
+                    突破性研究揭示：185个千年古方中隐藏的肥胖"根源密码"，首次完整公开
+                </p>
+                
+                <!-- 统计数据 -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-4xl mx-auto">
+                    <div class="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-sm">
+                        <div class="text-3xl font-bold text-sage-800 mb-2">185</div>
+                        <p class="text-sage-600" data-i18n="stat_formulas">完整古方配方</p>
+                    </div>
+                    <div class="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-sm">
+                        <div class="text-3xl font-bold text-sage-800 mb-2">1000+</div>
+                        <p class="text-sage-600" data-i18n="stat_years">年历史验证</p>
+                    </div>
+                    <div class="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-sm">
+                        <div class="text-3xl font-bold text-sage-800 mb-2">74</div>
+                        <p class="text-sage-600" data-i18n="stat_types">种不同体质方案</p>
+                    </div>
+                </div>
+                
+                <!-- 主要CTA -->
+                <button onclick="scrollToOffer()" class="bg-red-600 hover:bg-red-700 text-white px-12 py-6 rounded-full text-xl font-bold transition-all transform hover:scale-105 shadow-2xl mb-4">
+                    <span data-i18n="main_cta">立即获取完整数据库 - 限时50%折扣</span>
+                </button>
+                <p class="text-sm text-sage-600" data-i18n="cta_subtext">⏰ 特惠价格24小时后恢复原价</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 问题痛点放大区 -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-sage-900 mb-6" data-i18n="pain_title">
+                    为什么你尝试了那么多方法，体重还是反弹？
+                </h2>
+                <p class="text-xl text-sage-600 max-w-4xl mx-auto" data-i18n="pain_subtitle">
+                    因为你一直在治"标"，从未找到过"根"
+                </p>
+            </div>
+            
+            <!-- 痛点列表 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4 p-6 bg-red-50 rounded-xl">
+                        <div class="w-8 h-8 bg-red-200 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <span class="text-red-700 font-bold">✗</span>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-red-800 mb-2" data-i18n="pain_1_title">节食减肥，越减越胖</h3>
+                            <p class="text-red-700" data-i18n="pain_1_desc">基础代谢降低，一恢复饮食立即反弹，体重比之前更重</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4 p-6 bg-red-50 rounded-xl">
+                        <div class="w-8 h-8 bg-red-200 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <span class="text-red-700 font-bold">✗</span>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-red-800 mb-2" data-i18n="pain_2_title">运动减肥，效果缓慢</h3>
+                            <p class="text-red-700" data-i18n="pain_2_desc">每天挥汗如雨，体重却纹丝不动，最终放弃更加沮丧</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4 p-6 bg-red-50 rounded-xl">
+                        <div class="w-8 h-8 bg-red-200 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <span class="text-red-700 font-bold">✗</span>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-red-800 mb-2" data-i18n="pain_3_title">减肥药物，副作用大</h3>
+                            <p class="text-red-700" data-i18n="pain_3_desc">心悸、失眠、情绪异常，身体健康受损，得不偿失</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4 p-6 bg-red-50 rounded-xl">
+                        <div class="w-8 h-8 bg-red-200 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <span class="text-red-700 font-bold">✗</span>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-red-800 mb-2" data-i18n="pain_4_title">千篇一律，忽视个体</h3>
+                            <p class="text-red-700" data-i18n="pain_4_desc">别人成功的方法，在你身上完全无效，因为体质不同</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4 p-6 bg-red-50 rounded-xl">
+                        <div class="w-8 h-8 bg-red-200 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <span class="text-red-700 font-bold">✗</span>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-red-800 mb-2" data-i18n="pain_5_title">反复折腾，信心全无</h3>
+                            <p class="text-red-700" data-i18n="pain_5_desc">试过无数方法都失败，开始怀疑自己永远瘦不下来</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4 p-6 bg-red-50 rounded-xl">
+                        <div class="w-8 h-8 bg-red-200 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <span class="text-red-700 font-bold">✗</span>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-red-800 mb-2" data-i18n="pain_6_title">健康隐患，日益严重</h3>
+                            <p class="text-red-700" data-i18n="pain_6_desc">血压、血糖、血脂异常，心脑血管风险不断攀升</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 震撼统计 -->
+            <div class="bg-red-100 rounded-2xl p-8 text-center">
+                <h3 class="text-2xl font-bold text-red-800 mb-4" data-i18n="shocking_stat_title">震撼数据</h3>
+                <p class="text-lg text-red-700 mb-4" data-i18n="shocking_stat_content">
+                    研究显示：95%的减肥者在5年内会完全反弹，甚至比减肥前更胖
+                </p>
+                <p class="text-xl font-bold text-red-800" data-i18n="shocking_conclusion">
+                    问题不在你，而在方法！
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 解决方案揭示区 -->
+    <section class="py-20 bg-sage-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-sage-900 mb-6" data-i18n="solution_title">
+                    突破性发现：千年古方中隐藏的"肥胖密码"
+                </h2>
+                <p class="text-xl text-sage-600 max-w-4xl mx-auto" data-i18n="solution_subtitle">
+                    权威中医药研究机构历时3年，运用最新数据挖掘技术，从《中华医典》4亿字古籍中，首次完整提取185个肥胖调理方剂的核心奥秘
+                </p>
+                
+                <div class="mt-6 bg-sage-100 rounded-xl p-6 max-w-4xl mx-auto">
+                    <p class="text-sage-700 mb-4">
+                        <strong>数据来源：</strong>《中华医典》是2017年中国中医药学会、湖南电子音像出版社联手合作出版的大型电子丛书，收录了中国历代医学古籍1156部，卷帙上万，共4亿多字，汇集了新中国成立前的历代主要中医著作，其中不乏罕见的抄本和孤本，大致涵盖了至民国为止的中国医学文化建设的主要成就，是规模最为宏大的中医类电子丛书。
+                    </p>
+                    <p class="text-sage-700">
+                        <strong>工作量：</strong>我们团队从2614条文献精选出563条有效文献进行深度分析，系统整理出185个方剂、253种药材、72种相关疾病和74种证型组合，呈现古人对肥胖的认识和治疗经验。
+                    </p>
+                </div>
+            </div>
+            
+            <!-- 研究发现 -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+                <div>
+                    <h3 class="text-2xl font-semibold text-sage-800 mb-6" data-i18n="discovery_title">惊人发现</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-sage-200 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-sage-700 font-bold">1</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-sage-800 mb-2" data-i18n="discovery_1_title">肥胖有7种不同"根源"</h4>
+                                <p class="text-sage-600" data-i18n="discovery_1_desc">痰湿、气虚、气滞、血瘀、膏浊、热证、湿证，每种都需要不同的调理方案</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-sage-200 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-sage-700 font-bold">2</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-sage-800 mb-2" data-i18n="discovery_2_title">74种体质组合类型</h4>
+                                <p class="text-sage-600" data-i18n="discovery_2_desc">古人早已发现每个人的肥胖原因都不同，需要个性化的精准调理</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-sage-200 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-sage-700 font-bold">3</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-sage-800 mb-2" data-i18n="discovery_3_title">253味药材的智慧搭配</h4>
+                                <p class="text-sage-600" data-i18n="discovery_3_desc">每种搭配都有科学依据，经过千年临床验证，安全有效</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <h3 class="text-xl font-semibold text-sage-800 mb-4" data-i18n="exclusive_title">独家揭秘</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center py-2 border-b border-sage-100">
+                            <span class="text-sage-600" data-i18n="stat_ancient_terms">古籍肥胖称谓：</span>
+                            <span class="font-semibold text-sage-800">10种</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-sage-100">
+                            <span class="text-sage-600" data-i18n="stat_related_diseases">相关疾病记载：</span>
+                            <span class="font-semibold text-sage-800">72种</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-sage-100">
+                            <span class="text-sage-600" data-i18n="stat_total_formulas">收录完整方剂：</span>
+                            <span class="font-semibold text-sage-800">185首</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-sage-100">
+                            <span class="text-sage-600" data-i18n="stat_herb_combinations">药材搭配组合：</span>
+                            <span class="font-semibold text-sage-800">4328次</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2">
+                            <span class="text-sage-600" data-i18n="stat_research_time">研究用时：</span>
+                            <span class="font-semibold text-sage-800">3年</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 为什么现在公开 -->
+            <div class="bg-white rounded-2xl p-8 mb-16">
+                <h3 class="text-2xl font-semibold text-sage-800 mb-6 text-center" data-i18n="why_now_title">为什么我们现在决定公开这些千年秘密？</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-sage-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <svg class="w-8 h-8 text-sage-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-semibold text-sage-800 mb-2" data-i18n="reason_1_title">肥胖危机加剧</h4>
+                        <p class="text-sage-600 text-sm" data-i18n="reason_1_desc">现代肥胖率急剧上升，传统方法效果有限，急需新的解决思路</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-sage-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <svg class="w-8 h-8 text-sage-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-semibold text-sage-800 mb-2" data-i18n="reason_2_title">技术成熟时机</h4>
+                        <p class="text-sage-600 text-sm" data-i18n="reason_2_desc">数据挖掘技术的成熟，让我们能够系统性地提取古籍智慧</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-sage-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <svg class="w-8 h-8 text-sage-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0L3.732 19c-.783.57-.38 1.81.588 1.81h3.461a4.5 4.5 0 004.632 0L13.732 4c.77-.834 1.997-.834 2.77 0z"/>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-semibold text-sage-800 mb-2" data-i18n="reason_3_title">社会责任使命</h4>
+                        <p class="text-sage-600 text-sm" data-i18n="reason_3_desc">作为研究机构，我们有责任让这些宝贵知识惠及更多需要的人</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 权威性和社会证明区 -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-sage-900 mb-6" data-i18n="authority_title">
+                    权威研究，值得信赖
+                </h2>
+            </div>
+            
+            <!-- 机构权威性 -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+                <div>
+                    <h3 class="text-2xl font-semibold text-sage-800 mb-6" data-i18n="institution_authority_title">研究机构权威性</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-blue-200 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-4 h-4 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-sage-800 mb-1" data-i18n="auth_1_title">heytcm 核心团队</h4>
+                                <p class="text-sage-600 text-sm" data-i18n="auth_1_desc">专业背景深厚，数据挖掘专家</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-blue-200 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-4 h-4 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-sage-800 mb-1" data-i18n="auth_2_title">专业研究团队</h4>
+                                <p class="text-sage-600 text-sm" data-i18n="auth_2_desc">由资深教授燕树勋指导，研究生颜焱主持的专业团队</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-blue-200 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-4 h-4 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-sage-800 mb-1" data-i18n="auth_3_title">严格学术标准</h4>
+                                <p class="text-sage-600 text-sm" data-i18n="auth_3_desc">遵循国际学术研究标准，经过同行评议和严格审核</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold text-sage-800 mb-6" data-i18n="research_innovation_title">研究创新性</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-green-200 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-4 h-4 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-sage-800 mb-1" data-i18n="innovation_1_title">首创数据挖掘方法</h4>
+                                <p class="text-sage-600 text-sm" data-i18n="innovation_1_desc">国内首次运用现代数据挖掘技术系统研究古代肥胖方剂</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-green-200 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-4 h-4 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-sage-800 mb-1" data-i18n="innovation_2_title">最大规模数据库</h4>
+                                <p class="text-sage-600 text-sm" data-i18n="innovation_2_desc">基于《中华医典》4亿字古籍，数据规模前所未有</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-green-200 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-4 h-4 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-sage-800 mb-1" data-i18n="innovation_3_title">填补学术空白</h4>
+                                <p class="text-sage-600 text-sm" data-i18n="innovation_3_desc">首次系统性梳理中医肥胖理论，具有重要学术价值</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 早期用户反馈 -->
+            <div class="bg-sage-50 rounded-2xl p-8">
+                <h3 class="text-2xl font-semibold text-sage-800 mb-8 text-center" data-i18n="testimonials_title">早期获得者反馈</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-xl p-6 shadow-sm">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="text-sage-600 text-sm mb-3" data-i18n="testimonial_1">"终于找到了为什么我一直瘦不下来的原因！原来我是痰湿体质，需要特殊的调理方法。这个数据库太有价值了！"</p>
+                        <p class="text-xs text-sage-500" data-i18n="testimonial_1_author">- 张女士，中医爱好者</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl p-6 shadow-sm">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="text-sage-600 text-sm mb-3" data-i18n="testimonial_2">"作为中医师，这个数据库为我的临床提供了宝贵参考。古人的智慧结合现代研究方法，非常有启发性。"</p>
+                        <p class="text-xs text-sage-500" data-i18n="testimonial_2_author">- 李医师，中医师</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl p-6 shadow-sm">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="text-sage-600 text-sm mb-3" data-i18n="testimonial_3">"数据详实，分类清晰。作为研究者，能看到如此系统化的古籍整理，非常难得。这个价格太超值了！"</p>
+                        <p class="text-xs text-sage-500" data-i18n="testimonial_3_author">- 王教授，中医药大学</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 价值堆叠和优惠区 -->
+    <section id="offer" class="py-20 bg-gradient-to-br from-warm-50 to-sage-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-sage-900 mb-6" data-i18n="offer_title">
+                    完整古方数据库，现在首次对外发布
+                </h2>
+                <p class="text-xl text-sage-600 max-w-3xl mx-auto" data-i18n="offer_subtitle">
+                    这是研究团队3年心血的结晶，首次面向公众发布
+                </p>
+            </div>
+            
+            <!-- 产品展示 -->
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden mb-12 max-w-5xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- 左侧：产品详情 -->
+                    <div class="p-8 lg:p-12">
+                        <div class="mb-6">
+                            <div class="inline-flex items-center px-4 py-2 bg-red-100 rounded-full text-red-700 text-sm font-medium mb-4">
+                                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <span data-i18n="limited_release">限时首发</span>
+                            </div>
+                            <h3 class="text-3xl font-serif font-bold text-sage-900 mb-4" data-i18n="product_title">
+                                《古方新解：185方剂完整数据库》
+                            </h3>
+                            <p class="text-sage-600 mb-6" data-i18n="product_description">
+                                heytcm 研究团队独家整理，基于《中华医典》4亿字古籍，历时3年完成的最全面的传统肥胖调理方剂数据库。
+                            </p>
+                        </div>
+                        
+                        <!-- 包含内容 -->
+                        <div class="mb-8">
+                            <h4 class="text-xl font-semibold text-sage-800 mb-4" data-i18n="includes_title">您将获得：</h4>
+                            <div class="space-y-3">
+                                <div class="flex items-start space-x-3">
+                                    <svg class="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <span class="text-sage-600" data-i18n="include_1">185个完整古方配方与详细配比</span>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <svg class="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <span class="text-sage-600" data-i18n="include_2">74种体质类型的精准分类指导</span>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <svg class="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <span class="text-sage-600" data-i18n="include_3">253种药材的功效机理全解析</span>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <svg class="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <span class="text-sage-600" data-i18n="include_4">72种相关疾病的古籍记载与现代对照</span>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <svg class="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <span class="text-sage-600" data-i18n="include_5">数据挖掘方法详解与研究背景</span>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <svg class="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <span class="text-sage-600" data-i18n="include_6">专业团队注释与现代应用指导</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 3层价格结构 -->
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                            <!-- 基础版 -->
+                            <div class="bg-white rounded-xl p-6 shadow-sm border border-sage-200">
+                                <h5 class="text-lg font-semibold text-sage-800 mb-2">基础版</h5>
+                                <div class="text-sm text-sage-500 line-through mb-1">原价 ¥298</div>
+                                <div class="text-2xl font-bold text-sage-800 mb-2">¥148</div>
+                                <div class="text-sm text-sage-600 mb-4">节省 ¥150</div>
+                                <ul class="text-sm text-sage-600 text-left mb-4 space-y-2">
+                                    <li class="flex items-start">
+                                        <svg class="w-4 h-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span>185个方剂基础信息</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <svg class="w-4 h-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span>基础搜索功能</span>
+                                    </li>
+                                    <li class="flex items-start opacity-50">
+                                        <svg class="w-4 h-4 text-red-500 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                        </svg>
+                                        <span>无详细功效解析</span>
+                                    </li>
+                                    <li class="flex items-start opacity-50">
+                                        <svg class="w-4 h-4 text-red-500 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                        </svg>
+                                        <span>无现代应用指导</span>
+                                    </li>
+                                </ul>
+                                <button onclick="window.location.href='recipes-content.html'" class="w-full bg-sage-600 hover:bg-sage-700 text-white py-3 px-4 rounded-lg text-sm font-medium transition-all">
+                                    选择基础版
+                                </button>
+                            </div>
+                            
+                            <!-- 标准版（最受欢迎） -->
+                            <div class="bg-white rounded-xl p-6 shadow-lg border-2 border-red-400 transform scale-105 relative">
+                                <div class="absolute top-0 left-0 right-0 bg-red-500 text-white text-xs font-bold py-1 text-center rounded-t-lg">
+                                    最受欢迎
+                                </div>
+                                <h5 class="text-lg font-semibold text-sage-800 mb-2 mt-4">标准版</h5>
+                                <div class="text-sm text-sage-500 line-through mb-1">原价 ¥398</div>
+                                <div class="text-3xl font-bold text-red-600 mb-2">¥198</div>
+                                <div class="text-sm text-red-600 font-medium mb-4">节省 ¥200</div>
+                                <ul class="text-sm text-sage-600 text-left mb-4 space-y-2">
+                                    <li class="flex items-start">
+                                        <svg class="w-4 h-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span>185个方剂完整配方</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <svg class="w-4 h-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span>按体质分类的调理方案</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <svg class="w-4 h-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span>详细的功效机理解析</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <svg class="w-4 h-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span>现代应用指导与注意事项</span>
+                                    </li>
+                                </ul>
+                                <button onclick="window.location.href='recipes-content.html'" class="w-full bg-red-600 hover:bg-red-700 text-white py-4 px-4 rounded-lg text-base font-semibold transition-all shadow-md hover:shadow-lg transform hover:scale-105">
+                                    立即获取标准版
+                                </button>
+                            </div>
+                            
+                            <!-- 专业版 -->
+                            <div class="bg-white rounded-xl p-6 shadow-sm border border-sage-200">
+                                <h5 class="text-lg font-semibold text-sage-800 mb-2">专业版</h5>
+                                <div class="text-sm text-sage-500 line-through mb-1">原价 ¥598</div>
+                                <div class="text-2xl font-bold text-sage-800 mb-2">¥298</div>
+                                <div class="text-sm text-sage-600 mb-4">节省 ¥300</div>
+                                <ul class="text-sm text-sage-600 text-left mb-4 space-y-2">
+                                    <li class="flex items-start">
+                                        <svg class="w-4 h-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span>包含标准版全部内容</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <svg class="w-4 h-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span>高级数据分析报告</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <svg class="w-4 h-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span>研究团队专业解读</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <svg class="w-4 h-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span>一次专家咨询服务</span>
+                                    </li>
+                                </ul>
+                                <button onclick="window.location.href='recipes-content.html'" class="w-full bg-sage-600 hover:bg-sage-700 text-white py-3 px-4 rounded-lg text-sm font-medium transition-all">
+                                    选择专业版
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- 现有的保障信息增强 -->
+                        <div class="space-y-4 text-sm text-sage-600 mb-6">
+                            <div class="flex items-center justify-center space-x-2 bg-white rounded-lg p-3 shadow-sm">
+                                <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <span class="font-medium" data-i18n="guarantee_1">即时下载，PDF格式</span>
+                            </div>
+                            <div class="flex items-center justify-center space-x-2 bg-white rounded-lg p-3 shadow-sm">
+                                <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                                </svg>
+                                <span class="font-medium" data-i18n="guarantee_2">安全支付保障</span>
+                            </div>
+                            <div class="flex items-center justify-center space-x-2 bg-white rounded-lg p-3 shadow-sm">
+                                <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <span class="font-medium" data-i18n="guarantee_3">7天无条件退款</span>
+                            </div>
+                        </div>
+                        
+                        <!-- 紧急性信息 -->
+                        <div class="mt-6 p-4 bg-yellow-100 border border-yellow-300 rounded-lg">
+                            <p class="text-sm text-yellow-800 font-medium" data-i18n="urgency_message">
+                                ⚠️ 仅限前100名购买者享受此价格
+                            </p>
+                            <p class="text-xs text-yellow-700 mt-1" data-i18n="urgency_subtext">
+                                24小时后价格将恢复至¥398
+                            </p>
+                            
+                            <!-- 添加用户计数器 -->
+                            <div class="mt-3 bg-white bg-opacity-50 rounded-lg p-2">
+                                <p class="text-xs text-yellow-800">今日已有 <span class="font-bold">87</span> 人成功购买</p>
+                                <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
+                                    <div class="bg-red-500 h-2 rounded-full" style="width: 87%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 顾客评价增强 -->
+            <div class="bg-white rounded-2xl p-8 shadow-sm mb-12">
+                <h3 class="text-2xl font-semibold text-sage-800 mb-8 text-center">用户真实评价</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-sage-50 rounded-xl p-6 relative">
+                        <div class="absolute top-0 right-0 bg-green-100 text-green-800 text-xs font-bold px-2 py-1 rounded-bl-lg rounded-tr-lg">
+                            已验证购买
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <img src="https://via.placeholder.com/50" alt="用户头像" class="h-12 mx-auto mb-2">
+                            <div>
+                                <h4 class="font-semibold text-sage-800">李医师</h4>
+                                <p class="text-xs text-sage-600">中医院主治医师</p>
+                            </div>
+                        </div>
+                        <div class="flex text-yellow-400 mb-3">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        </div>
+                        <p class="text-sage-600 text-sm mb-3">"内容详实，分类清晰，对理解中医调理肥胖很有帮助。作为中医学生，这是很好的参考资料。"</p>
+                        <div class="text-xs text-sage-500 italic">
+                            购买后3个月使用体验
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 添加更多评价链接 -->
+                <div class="text-center mt-6">
+                    <a href="#" class="text-sage-600 hover:text-sage-800 text-sm font-medium underline">查看更多30+条真实评价 →</a>
+                </div>
+            </div>
+            
+            <!-- 常见问题 -->
+            <div class="max-w-3xl mx-auto">
+                <h3 class="text-2xl font-semibold text-sage-800 mb-8 text-center" data-i18n="faq_title">常见问题</h3>
+                <div class="space-y-4">
+                    <div class="bg-white rounded-xl p-6 shadow-sm">
+                        <h4 class="font-semibold text-sage-800 mb-2">Q: 我能得到哪些客户支持？</h4>
+                        <p class="text-sage-600">A: 购买标准版后，您将获得邮件支持服务。选择专业版的客户还将获得一次专家一对一咨询机会，帮助您更好地理解和应用研究内容。</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl p-6 shadow-sm">
+                        <h4 class="font-semibold text-sage-800 mb-2">Q: 内容有多新？是否定期更新？</h4>
+                        <p class="text-sage-600">A: 我们的研究团队刚刚完成这项开创性研究，内容非常新颖。随着研究的深入，我们计划每季度更新一次内容，所有已购买用户将免费获得这些更新。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 最后紧急呼吁区 -->
+    <section class="py-16 bg-red-600 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6" data-i18n="final_call_title">
+                不要让这次机会溜走
+            </h2>
+            <p class="text-xl mb-8 opacity-90" data-i18n="final_call_subtitle">
+                千年智慧，首次公开。错过这次，下次恢复原价需要多付200元。
+            </p>
+            
+            <button onclick="scrollToOffer()" class="bg-white text-red-600 px-12 py-6 rounded-full text-xl font-bold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-2xl animate-pulse">
+                <span data-i18n="final_cta">立即抢购 - 仅剩24小时</span>
+            </button>
+            
+            <div class="mt-8 flex justify-center items-center space-x-4">
+                <img src="https://via.placeholder.com/50x30" alt="支付宝" class="h-8">
+                <img src="https://via.placeholder.com/50x30" alt="微信支付" class="h-8">
+                <img src="https://via.placeholder.com/50x30" alt="银联" class="h-8">
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-sage-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h3 class="text-xl font-serif font-semibold mb-4" data-i18n="footer_site_name">古方新解</h3>
+                <p class="text-sage-300 mb-4" data-i18n="footer_shop_description">
+                    完整的古方数据库，传承中医智慧，服务现代健康
+                </p>
+                <div class="border-t border-sage-700 mt-8 pt-8">
+                    <p class="text-sage-300" data-i18n="footer_copyright">
+                        &copy; 2024 heytcm. 保留所有权利.
+                    </p>
+                    <p class="text-sage-400 text-sm mt-2" data-i18n="footer_academic">
+                        本网站内容仅供学术研究和科普学习参考，不构成医疗建议。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="bg-warm-50 rounded-2xl p-8 mb-16">
+        <h3 class="text-2xl font-serif font-semibold text-sage-800 mb-6 text-center">更多体重管理解决方案</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <h4 class="text-xl font-semibold text-sage-800 mb-4">现代减重方剂数据库</h4>
+                <div class="flex items-start space-x-3 mb-4">
+                    <svg class="w-6 h-6 text-green-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <p class="text-sage-600">从NCBI、CNKI等数据库搜索分析3000+文献</p>
+                </div>
+                <div class="flex items-start space-x-3 mb-4">
+                    <svg class="w-6 h-6 text-green-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <p class="text-sage-600">整理150+现代减肥方剂配方与机理解析</p>
+                </div>
+                <div class="text-center mt-6">
+                    <span class="text-lg font-bold text-sage-800 block mb-2">¥168</span>
+                    <span class="text-sm text-sage-500 line-through mb-2 block">原价 ¥298</span>
+                    <button class="bg-sage-600 hover:bg-sage-700 text-white px-4 py-2 rounded-lg font-medium transition-colors">
+                        了解更多
+                    </button>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <h4 class="text-xl font-semibold text-sage-800 mb-4">个性化体重管理方案工具</h4>
+                <div class="flex items-start space-x-3 mb-4">
+                    <svg class="w-6 h-6 text-green-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <p class="text-sage-600">分析减肥中草药有效成分与作用基因靶点</p>
+                </div>
+                <div class="flex items-start space-x-3 mb-4">
+                    <svg class="w-6 h-6 text-green-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <p class="text-sage-600">推荐日常蔬菜、坚果、水果、药食同源食物搭配</p>
+                </div>
+                <div class="text-center mt-6">
+                    <span class="text-lg font-bold text-sage-800 block mb-2">¥228</span>
+                    <span class="text-sm text-sage-500 line-through mb-2 block">原价 ¥398</span>
+                    <button class="bg-sage-600 hover:bg-sage-700 text-white px-4 py-2 rounded-lg font-medium transition-colors">
+                        了解更多
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-gradient-to-r from-sage-100 to-warm-100 rounded-xl p-6 mt-8 text-center">
+            <h4 class="text-xl font-semibold text-sage-800 mb-4">全套健康管理体系 · 限时优惠</h4>
+            <p class="text-sage-600 mb-4">同时购买三款产品，享受超值折扣</p>
+            <div class="flex justify-center items-center space-x-4">
+                <span class="text-xl font-bold text-sage-800">¥498</span>
+                <span class="text-sm text-sage-500 line-through">原价 ¥998</span>
+            </div>
+            <button class="mt-4 bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-full font-semibold transition-all transform hover:scale-105 shadow-lg">
+                立即获取全套方案
+            </button>
+        </div>
+    </div>
+
+    <div class="p-8 lg:p-12">
+        <div class="mb-6">
+            <div class="inline-flex items-center px-4 py-2 bg-red-100 rounded-full text-red-700 text-sm font-medium mb-4">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <span data-i18n="limited_release">限时首发</span>
+            </div>
+            <h3 class="text-3xl font-serif font-bold text-sage-900 mb-4" data-i18n="product_title">
+                《古方新解：185方剂完整数据库》
+            </h3>
+            <p class="text-sage-600 mb-6" data-i18n="product_description">
+                heytcm 研究团队独家整理，基于《中华医典》4亿字古籍，历时3年完成的最全面的传统肥胖调理方剂数据库。
+            </p>
+        </div>
+        
+        <div class="mb-8">
+            <h4 class="text-lg font-semibold text-sage-800 mb-4" data-i18n="research_process">研究过程：</h4>
+            <div class="space-y-3">
+                <div class="flex items-start space-x-3">
+                    <div class="w-6 h-6 bg-sage-200 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <span class="text-xs font-bold text-sage-700">1</span>
+                    </div>
+                    <p class="text-sage-600">从《中华医典》4亿字中初步检索出2614条肥胖相关文献</p>
+                </div>
+                <div class="flex items-start space-x-3">
+                    <div class="w-6 h-6 bg-sage-200 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <span class="text-xs font-bold text-sage-700">2</span>
+                    </div>
+                    <p class="text-sage-600">经多轮筛选和人工审核，提取563条高质量有效文献</p>
+                </div>
+                <div class="flex items-start space-x-3">
+                    <div class="w-6 h-6 bg-sage-200 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <span class="text-xs font-bold text-sage-700">3</span>
+                    </div>
+                    <p class="text-sage-600">应用数据挖掘和网络分析技术，提取并验证核心配方和搭配规律</p>
+                </div>
+                <div class="flex items-start space-x-3">
+                    <div class="w-6 h-6 bg-sage-200 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <span class="text-xs font-bold text-sage-700">4</span>
+                    </div>
+                    <p class="text-sage-600">由专业中医药团队审核，确保每个方剂准确可靠</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // 倒计时功能
+        function updateCountdown() {
+            const endTime = new Date().getTime() + 24 * 60 * 60 * 1000; // 24小时后
+            const now = new Date().getTime();
+            const timeLeft = endTime - now;
+            
+            const hours = Math.floor(timeLeft / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+            
+            const countdownElement = document.getElementById('countdown');
+            if (countdownElement) {
+                countdownElement.innerHTML = 
+                    `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                    
+                // 当倒计时小于1小时时添加紧急视觉效果
+                if (hours < 1) {
+                    countdownElement.classList.add('text-red-600', 'animate-pulse');
+                }
+            }
+        }
+        
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+        
+        // 实现用户数随机增加功能
+        function updateUserCount() {
+            const userCountElement = document.querySelector('.text-yellow-800 .font-bold');
+            if (userCountElement) {
+                const currentCount = parseInt(userCountElement.textContent);
+                if (Math.random() < 0.3 && currentCount < 99) { // 30%概率增加1人，最多到99
+                    userCountElement.textContent = currentCount + 1;
+                    
+                    // 更新进度条
+                    const progressBar = document.querySelector('.bg-red-500');
+                    if (progressBar) {
+                        progressBar.style.width = `${(currentCount + 1)}%`;
+                    }
+                    
+                    // 显示新购买提示
+                    showNewPurchaseNotification();
+                }
+            }
+        }
+        
+        // 每隔30-60秒随机增加用户数
+        setInterval(updateUserCount, Math.random() * 30000 + 30000);
+        
+        // 显示新购买通知
+        function showNewPurchaseNotification() {
+            const names = ["王先生", "李女士", "张先生", "刘女士", "陈先生", "杨女士", "赵先生", "周女士"];
+            const randomName = names[Math.floor(Math.random() * names.length)];
+            
+            const notification = document.createElement('div');
+            notification.className = 'fixed bottom-4 left-4 bg-white rounded-lg shadow-lg p-4 animate-fade-in z-50 max-w-xs';
+            notification.innerHTML = `
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-3">
+                        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-sm font-medium text-gray-900">${randomName}刚刚购买了</p>
+                        <p class="text-xs text-gray-500">《古方新解：185方剂精编》标准版</p>
+                    </div>
+                </div>
+            `;
+            
+            document.body.appendChild(notification);
+            
+            // 5秒后移除通知
+            setTimeout(() => {
+                notification.classList.add('animate-fade-out');
+                setTimeout(() => notification.remove(), 500);
+            }, 5000);
+        }
+        
+        // 添加离开意图弹窗
+        document.addEventListener('mouseleave', function(e) {
+            // 如果鼠标移出窗口顶部
+            if (e.clientY < 0) {
+                showExitPopup();
+            }
+        });
+        
+        // 显示离开意图弹窗
+        function showExitPopup() {
+            // 检查是否已经显示过弹窗
+            if (localStorage.getItem('exitPopupShown')) return;
+            
+            const popup = document.createElement('div');
+            popup.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50';
+            popup.innerHTML = `
+                <div class="bg-white rounded-xl p-8 max-w-md mx-4">
+                    <h3 class="text-xl font-bold text-sage-800 mb-4">等等！别走！</h3>
+                    <p class="text-sage-600 mb-6">现在就订购还可以获得额外10%的折扣！</p>
+                    <div class="flex flex-col space-y-4">
+                        <button id="exitPopupAccept" class="bg-red-600 hover:bg-red-700 text-white py-3 px-6 rounded-lg font-medium">
+                            立即获取额外折扣
+                        </button>
+                        <button id="exitPopupClose" class="text-sage-600 hover:text-sage-800">
+                            不了，谢谢
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            document.body.appendChild(popup);
+            
+            // 记录已显示过弹窗
+            localStorage.setItem('exitPopupShown', 'true');
+            
+            // 点击接受按钮
+            document.getElementById('exitPopupAccept').addEventListener('click', function() {
+                window.location.href = 'recipes-content.html?discount=extra10';
+            });
+            
+            // 点击关闭按钮
+            document.getElementById('exitPopupClose').addEventListener('click', function() {
+                popup.remove();
+            });
+        }
+        
+        // ...existing code...
+    </script>
+    
+    <script src="./js/i18n.js"></script>
+</body>
+</html>

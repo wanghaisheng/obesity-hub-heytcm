@@ -1,12 +1,20 @@
 {
   "defaultLang": "en",
   "langs": [
-    ""
+    "",
+    "en",
+    "zh"
   ],
   "urls": [
-    "https://websimstarter.borninsea.com/privacy",
-    "https://websimstarter.borninsea.com/terms",
-    "https://websimstarter.borninsea.com/",
-    "https://websimstarter.borninsea.com/index.html"
+    "https://weightloss.heytcm.com/privacy",
+    "https://weightloss.heytcm.com/recipes-content",
+    "https://weightloss.heytcm.com/terms",
+    "https://weightloss.heytcm.com/zh/privacy",
+    "https://weightloss.heytcm.com/zh/recipes-content",
+    "https://weightloss.heytcm.com/zh/terms",
+    "https://weightloss.heytcm.com/",
+    "https://weightloss.heytcm.com/zh",
+    "https://weightloss.heytcm.com/index.html",
+    "https://weightloss.heytcm.com/zh/index.html"
   ]
 }

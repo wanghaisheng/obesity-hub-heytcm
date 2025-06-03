@@ -1,9 +1,17 @@
 {
   "defaultLang": "en",
-  "langs": [],
+  "langs": [
+    "en",
+    "zh"
+  ],
   "urls": [
     "/privacy",
+    "/recipes-content",
     "/terms",
-    "/"
+    "/zh/privacy",
+    "/zh/recipes-content",
+    "/zh/terms",
+    "/",
+    "/zh"
   ]
 }

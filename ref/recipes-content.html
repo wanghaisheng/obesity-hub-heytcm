@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="recipes_page_title">完整古方宝典：185方剂精编 | 古方新解</title>
+    <meta name="description" data-i18n="recipes_page_description" content="基于《中华医典》数据挖掘研究的完整185个传统肥胖调理方剂数据库，包含详细的药材配比、功效解析、现代应用指导。">
+    
+    <!-- 引入字体和CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    
+    <!-- 配置Tailwind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'serif': ['Noto Serif SC', 'serif'],
+              'sans': ['Inter', 'sans-serif']
+            },
+            colors: {
+              'sage': {
+                50: '#f6f7f6',
+                100: '#e3e7e3',
+                200: '#c6cfc6',
+                300: '#9db0a0',
+                400: '#6d8970',
+                500: '#526b55',
+                600: '#3f5442',
+                700: '#334437',
+                800: '#2b372e',
+                900: '#252f27'
+              },
+              'warm': {
+                50: '#fdf8f6',
+                100: '#f2e8e5',
+                200: '#eaddd7',
+                300: '#e0cec7',
+                400: '#d2bab0',
+                500: '#bfa094',
+                600: '#a18072',
+                700: '#977669',
+                800: '#846358',
+                900: '#43302b'
+              }
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="font-sans text-gray-800 bg-warm-50 overflow-x-hidden">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50 border-b border-sage-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <a href="index.html" class="text-xl font-serif font-semibold text-sage-800" data-i18n="site_name">古方新解</a>
+                    </div>
+                </div>
+                
+                <!-- 桌面导航 -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="nav-link text-sage-700 hover:text-sage-900 px-3 py-2 text-sm font-medium transition-colors" data-i18n="nav_home">首页</a>
+                        <a href="index.html#ancient-wisdom" class="nav-link text-sage-700 hover:text-sage-900 px-3 py-2 text-sm font-medium transition-colors" data-i18n="nav_ancient">古人说"胖"</a>
+                        <a href="index.html#body-signals" class="nav-link text-sage-700 hover:text-sage-900 px-3 py-2 text-sm font-medium transition-colors" data-i18n="nav_signals">身体的信号</a>
+                        <a href="index.html#tcm-solutions" class="nav-link text-sage-700 hover:text-sage-900 px-3 py-2 text-sm font-medium transition-colors" data-i18n="nav_solutions">中医好方</a>
+                        <span class="text-sage-900 px-3 py-2 text-sm font-medium bg-sage-100 rounded-md" data-i18n="nav_recipes">完整方剂</span>
+                        <a href="index.html#expert-insights" class="nav-link text-sage-700 hover:text-sage-900 px-3 py-2 text-sm font-medium transition-colors" data-i18n="nav_expert">专家解读</a>
+                        <a href="index.html#about" class="nav-link text-sage-700 hover:text-sage-900 px-3 py-2 text-sm font-medium transition-colors" data-i18n="nav_about">关于我们</a>
+                    </div>
+                </div>
+                
+                <!-- 语言切换 -->
+                <div class="flex items-center space-x-4">
+                    <select id="languageSelector" class="text-sm border border-sage-200 rounded-md px-2 py-1 bg-white text-sage-700 focus:outline-none focus:ring-2 focus:ring-sage-500">
+                        <option value="zh">中文</option>
+                        <option value="en">English</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- 页面标题 -->
+            <div class="text-center mb-16">
+                <h1 class="text-3xl md:text-4xl font-serif font-bold text-sage-900 mb-4" data-i18n="recipes_content_title">
+                    完整古方宝典：185方剂精编
+                </h1>
+                <p class="text-lg text-sage-600 max-w-3xl mx-auto" data-i18n="recipes_content_subtitle">
+                    基于《中华医典》数据挖掘研究的完整数据库
+                </p>
+                <div class="mt-6">
+                    <span class="inline-flex items-center px-4 py-2 bg-sage-100 rounded-full text-sage-800 text-sm font-medium">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <span data-i18n="recipes_verified">权威中医药研究机构验证</span>
+                    </span>
+                </div>
+            </div>
+
+            <!-- 搜索和筛选 -->
+            <div class="mb-12 bg-white rounded-2xl p-6 shadow-sm">
+                <h2 class="text-xl font-semibold text-sage-800 mb-4" data-i18n="search_filter_title">搜索与筛选</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-sage-700 mb-2" data-i18n="search_keyword">关键词搜索</label>
+                        <input type="text" id="searchInput" placeholder="搜索方剂、药材、病症..." class="w-full px-3 py-2 border border-sage-200 rounded-md focus:outline-none focus:ring-2 focus:ring-sage-500">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-sage-700 mb-2" data-i18n="filter_category">分类筛选</label>
+                        <select id="categoryFilter" class="w-full px-3 py-2 border border-sage-200 rounded-md focus:outline-none focus:ring-2 focus:ring-sage-500">
+                            <option value="all" data-i18n="filter_all">全部内容</option>
+                            <option value="diseases" data-i18n="filter_diseases">相关疾病</option>
+                            <option value="syndromes" data-i18n="filter_syndromes">证型分类</option>
+                            <option value="prescriptions" data-i18n="filter_prescriptions">经典方剂</option>
+                            <option value="herbs" data-i18n="filter_herbs">药材大全</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-sage-700 mb-2" data-i18n="sort_by">排序方式</label>
+                        <select id="sortBy" class="w-full px-3 py-2 border border-sage-200 rounded-md focus:outline-none focus:ring-2 focus:ring-sage-500">
+                            <option value="frequency" data-i18n="sort_frequency">使用频率</option>
+                            <option value="alphabetical" data-i18n="sort_alphabetical">字母顺序</option>
+                            <option value="category" data-i18n="sort_category">分类排序</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 内容区块 -->
+            <div class="space-y-12">
+                <!-- 相关疾病 -->
+                <section id="diseases-section" class="bg-white rounded-2xl p-8 shadow-sm">
+                    <h2 class="text-2xl font-serif font-semibold text-sage-800 mb-6 flex items-center">
+                        <span class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center mr-3">
+                            <svg class="w-4 h-4 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.998-.833-2.768 0L3.732 19c-.77.833.192 2.5 1.732 2.5z"/>
+                            </svg>
+                        </span>
+                        <span data-i18n="diseases_title">肥胖相关疾病 (72种)</span>
+                    </h2>
+                    <p class="text-sage-600 mb-6" data-i18n="diseases_description">
+                        古籍记载的与肥胖相关的疾病和症状，共445次提及
+                    </p>
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3" id="diseases-grid">
+                        <!-- 疾病内容将通过JavaScript动态生成 -->
+                    </div>
+                </section>
+
+                <!-- 证型分类 -->
+                <section id="syndromes-section" class="bg-white rounded-2xl p-8 shadow-sm">
+                    <h2 class="text-2xl font-serif font-semibold text-sage-800 mb-6 flex items-center">
+                        <span class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                            <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                            </svg>
+                        </span>
+                        <span data-i18n="syndromes_title">中医证型分类 (74种)</span>
+                    </h2>
+                    <p class="text-sage-600 mb-6" data-i18n="syndromes_description">
+                        根据古籍提取的不同证型组合，反映肥胖的内在机制
+                    </p>
+                    <div class="space-y-4" id="syndromes-list">
+                        <!-- 证型内容将通过JavaScript动态生成 -->
+                    </div>
+                </section>
+
+                <!-- 经典方剂 -->
+                <section id="prescriptions-section" class="bg-white rounded-2xl p-8 shadow-sm">
+                    <h2 class="text-2xl font-serif font-semibold text-sage-800 mb-6 flex items-center">
+                        <span class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-3">
+                            <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                            </svg>
+                        </span>
+                        <span data-i18n="prescriptions_title">经典方剂 (185首)</span>
+                    </h2>
+                    <p class="text-sage-600 mb-6" data-i18n="prescriptions_description">
+                        古籍中用于治疗肥胖的经典方剂，共391次提及
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="prescriptions-grid">
+                        <!-- 方剂内容将通过JavaScript动态生成 -->
+                    </div>
+                </section>
+
+                <!-- 药材大全 -->
+                <section id="herbs-section" class="bg-white rounded-2xl p-8 shadow-sm">
+                    <h2 class="text-2xl font-serif font-semibold text-sage-800 mb-6 flex items-center">
+                        <span class="w-8 h-8 bg-yellow-100 rounded-full flex items-center justify-center mr-3">
+                            <svg class="w-4 h-4 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M9 1L4 6l5 5m5.5-1.5L21 3"/>
+                            </svg>
+                        </span>
+                        <span data-i18n="herbs_title">中药材大全 (253种)</span>
+                    </h2>
+                    <p class="text-sage-600 mb-6" data-i18n="herbs_description">
+                        古籍中用于肥胖调理的中药材，共4328次提及
+                    </p>
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4" id="herbs-grid">
+                        <!-- 药材内容将通过JavaScript动态生成 -->
+                    </div>
+                </section>
+            </div>
+
+            <!-- 使用指南 -->
+            <div class="mt-16 bg-yellow-50 border border-yellow-200 rounded-2xl p-8">
+                <h3 class="text-xl font-semibold text-yellow-800 mb-4 flex items-center">
+                    <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.998-.833-2.768 0L3.732 19c-.77.833.192 2.5 1.732 2.5z"/>
+                    </svg>
+                    <span data-i18n="usage_guide_title">重要使用指南</span>
+                </h3>
+                <div class="prose prose-yellow max-w-none">
+                    <ul class="text-yellow-800 space-y-2">
+                        <li data-i18n="usage_guide_1">本数据库仅供学术研究和中医学习参考，不可作为自我诊断或治疗依据</li>
+                        <li data-i18n="usage_guide_2">所有方剂的使用必须在具有执业资格的中医师指导下进行</li>
+                        <li data-i18n="usage_guide_3">中药材的药性、用量、配伍都有严格要求，切勿自行配制</li>
+                        <li data-i18n="usage_guide_4">本数据来源于古籍文献，现代应用需结合个人体质和现代医学诊断</li>
+                        <li data-i18n="usage_guide_5">如有健康问题，请及时咨询专业医疗机构</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-sage-800 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h3 class="text-xl font-serif font-semibold mb-4" data-i18n="footer_site_name">古方新解</h3>
+                <p class="text-sage-300 mb-4" data-i18n="footer_recipes_description">
+                    完整的古方数据库，传承中医智慧，服务现代健康
+                </p>
+                <div class="border-t border-sage-700 mt-8 pt-8">
+                    <p class="text-sage-300" data-i18n="footer_copyright">
+                        2023 权威中医药研究机构. 保留所有权利.
+                    </p>
+                    <p class="text-sage-400 text-sm mt-2" data-i18n="footer_academic">
+                        本网站内容仅供学术研究和科普学习参考，不构成医疗建议。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./js/recipes-content.js"></script>
+    <script src="./js/i18n.js"></script>
+</body>
+</html>

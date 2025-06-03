@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="philosophy_page_title">中医体重智慧 | 古方新解</title>
+    <meta name="description" data-i18n="philosophy_page_description" content="探索中医千年智慧，了解体重管理的根本之道，实现持久健康。">
+    <meta name="keywords" data-i18n="philosophy_page_keywords" content="中医哲学, 体重管理, 健康智慧, 养生, 调理, 古方新解">
+
+    <!-- SEO优化 -->
+    <meta property="og:title" data-i18n="philosophy_og_title" content="中医体重智慧 | 古方新解">
+    <meta property="og:description" data-i18n="philosophy_og_description" content="探索中医千年智慧，了解体重管理的根本之道。">
+    <meta property="og:type" content="article">
+    <meta name="robots" content="index, follow">
+    <!-- <link rel="canonical" href="https://tcm-weight-wisdom.com/philosophy.html"> TODO: Update with actual domain -->
+
+    <!-- 引入字体和CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- 配置Tailwind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'serif': ['Noto Serif SC', 'serif'],
+              'sans': ['Inter', 'sans-serif']
+            },
+            colors: {
+              'sage': {
+                50: '#f6f7f6',
+                100: '#e3e7e3',
+                200: '#c6cfc6',
+                300: '#9db0a0',
+                400: '#6d8970',
+                500: '#526b55',
+                600: '#3f5442',
+                700: '#334437',
+                800: '#2b372e',
+                900: '#252f27'
+              },
+              'warm': {
+                50: '#fdf8f6',
+                100: '#f2e8e5',
+                200: '#eaddd7',
+                300: '#e0cec7',
+                400: '#d2bab0',
+                500: '#bfa094',
+                600: '#a18072',
+                700: '#977669',
+                800: '#846358',
+                900: '#43302b'
+              },
+              'accent-red': '#E63946'
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="font-sans text-gray-800 bg-warm-50 overflow-x-hidden">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50 border-b border-sage-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <a href="index.html" class="text-xl font-serif font-semibold text-sage-800" data-i18n="site_name">古方新解</a>
+                    </div>
+                </div>
+                
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="nav-link text-sage-700 hover:text-sage-900 px-3 py-2 text-sm font-medium transition-colors" data-i18n="nav_home">首页</a>
+                        <a href="shop.html" class="nav-link text-sage-700 hover:text-sage-900 px-3 py-2 text-sm font-medium transition-colors" data-i18n="nav_shop_products">选购产品</a>
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <select id="languageSelector" class="text-sm border border-sage-200 rounded-md px-2 py-1 bg-white text-sage-700 focus:outline-none focus:ring-2 focus:ring-sage-500">
+                        <option value="zh">中文</option>
+                        <option value="en">English</option>
+                    </select>
+                    
+                    <button id="mobile-menu-button" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-sage-700 hover:text-sage-900 hover:bg-sage-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sage-500">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-sage-100">
+                <a href="index.html" class="mobile-nav-link block px-3 py-2 text-base font-medium text-sage-700 hover:text-sage-900 hover:bg-sage-50" data-i18n="nav_home">首页</a>
+                <a href="shop.html" class="mobile-nav-link block px-3 py-2 text-base font-medium text-sage-700 hover:text-sage-900 hover:bg-sage-50" data-i18n="nav_shop_products">选购产品</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero-philosophy" class="relative bg-gradient-to-br from-sage-50 to-warm-100 py-20 md:py-32 overflow-hidden">
+            <div class="absolute inset-0 opacity-5">
+                <div class="absolute top-10 left-20 w-24 h-24 bg-sage-300 rounded-full mix-blend-multiply animate-float"></div>
+                <div class="absolute bottom-10 right-20 w-32 h-32 bg-warm-300 rounded-tl-full rounded-br-full mix-blend-multiply animate-float-delayed"></div>
+            </div>
+            <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-on-scroll">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-sage-900 mb-6 leading-tight" data-i18n="philosophy_hero_title">超越体重秤：揭秘中医千年智慧，实现持久体重健康</h1>
+                <p class="text-lg md:text-xl lg:text-2xl text-sage-700 mb-10 max-w-3xl mx-auto leading-relaxed" data-i18n="philosophy_hero_subtitle">想象一下，深入了解您身体的独特构造，实现自然、可持续的平衡，而不仅仅是暂时的体重减轻。</p>
+                <a href="#modern-dilemma" class="bg-sage-600 hover:bg-sage-700 text-white px-8 py-4 rounded-full text-lg font-medium transition-all transform hover:scale-105 shadow-lg hover:shadow-xl" data-i18n="philosophy_hero_cta">探索根本原因</a>
+            </div>
+        </section>
+
+        <!-- Section 2: The Modern Dilemma -->
+        <section id="modern-dilemma" class="py-16 md:py-24 bg-white">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 animate-on-scroll">
+                <div class="text-center mb-12 md:mb-16">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-sage-900 mb-4" data-i18n="philosophy_dilemma_title">您是否厌倦了永无休止的减肥循环？</h2>
+                    <p class="text-lg md:text-xl text-sage-700 max-w-3xl mx-auto" data-i18n="philosophy_dilemma_subtitle">现代方法往往只关注表面，忽视了身体的深层需求与自然节律。</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="space-y-6">
+                        <div class="p-6 bg-warm-50 rounded-xl shadow-md border border-warm-100">
+                            <h3 class="text-xl font-semibold text-sage-800 mb-3" data-i18n="philosophy_dilemma_point1_title">症状追逐的怪圈</h3>
+                            <p class="text-sage-600" data-i18n="philosophy_dilemma_point1_desc">流行的"速成"方案和限制性饮食通常会带来短期效果，但随之而来的是体重反弹和挫败感。研究表明，高达 <strong class="font-bold text-red-600">95%</strong> 的节食者在五年内会恢复所有减掉的体重，甚至更多。</p>
+                        </div>
+                        <div class="p-6 bg-warm-50 rounded-xl shadow-md border border-warm-100">
+                            <h3 class="text-xl font-semibold text-sage-800 mb-3" data-i18n="philosophy_dilemma_point2_title">"一刀切"的误区</h3>
+                            <p class="text-sage-600" data-i18n="philosophy_dilemma_point2_desc">许多现代方法未能认识到每个人的身体都是独一无二的。一个通用的计划可能对某些人有效，但对其他人则完全无效，因为它没有考虑到个体体质、生活方式和潜在的失衡。</p>
+                        </div>
+                    </div>
+                    <div class="mt-8 md:mt-0">
+                        <img src="./images/modern-dilemma-illustration.svg" alt="Frustrated person on a scale surrounded by fad diet books" class="w-full max-w-md mx-auto rounded-lg" loading="lazy" data-i18n="[alt]philosophy_dilemma_image_alt">
+                        <!-- TODO: Create ./images/modern-dilemma-illustration.svg or use a relevant stock image -->
+                    </div>
+                </div>
+                <div class="text-center mt-12 md:mt-16">
+                    <p class="text-xl text-sage-800 font-medium" data-i18n="philosophy_dilemma_closing">但如果有一种更深刻、更持久的方法呢？一种尊重您身体智慧的方法？</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Introducing TCM Wisdom -->
+        <section id="tcm-wisdom-intro" class="py-16 md:py-24 bg-warm-50">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 animate-on-scroll">
+                <div class="text-center mb-12 md:mb-16">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-sage-900 mb-4" data-i18n="philosophy_tcm_title">千年智慧的启迪：中医如何看待体重与健康</h2>
+                    <p class="text-lg md:text-xl text-sage-700 max-w-3xl mx-auto" data-i18n="philosophy_tcm_subtitle">中医不将体重视为孤立的数字，而是身体整体平衡状态的反映——一个由能量（气）、物质（血、津液）与和谐运作的复杂系统。</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div class="p-6 bg-white rounded-xl shadow-lg border border-sage-100 transform hover:scale-105 transition-transform">
+                        <img src="./images/tcm-balance-icon.svg" alt="Yin Yang symbol representing balance" class="w-16 h-16 mx-auto mb-4 text-sage-600" data-i18n="[alt]philosophy_tcm_icon1_alt">
+                        <!-- TODO: Create ./images/tcm-balance-icon.svg -->
+                        <h3 class="text-xl font-semibold text-sage-800 mb-3" data-i18n="philosophy_tcm_point1_title">整体和谐观</h3>
+                        <p class="text-sage-600 text-sm" data-i18n="philosophy_tcm_point1_desc">中医认为，体重问题源于身体内部系统（如脾、胃、肝）之间的失衡。目标是恢复和谐，而不仅仅是抑制症状。</p>
+                    </div>
+                    <div class="p-6 bg-white rounded-xl shadow-lg border border-sage-100 transform hover:scale-105 transition-transform">
+                        <img src="./images/tcm-constitution-icon.svg" alt="Diverse body types icon" class="w-16 h-16 mx-auto mb-4 text-sage-600" data-i18n="[alt]philosophy_tcm_icon2_alt">
+                        <!-- TODO: Create ./images/tcm-constitution-icon.svg -->
+                        <h3 class="text-xl font-semibold text-sage-800 mb-3" data-i18n="philosophy_tcm_point2_title">个体化体质</h3>
+                        <p class="text-sage-600 text-sm" data-i18n="philosophy_tcm_point2_desc">没有两个人是完全相同的。中医识别不同的身体"体质"（如痰湿、气虚），并根据个体独特的模式量身定制调理方法。</p>
+                    </div>
+                    <div class="p-6 bg-white rounded-xl shadow-lg border border-sage-100 transform hover:scale-105 transition-transform">
+                        <img src="./images/tcm-root-cause-icon.svg" alt="Plant with deep roots icon" class="w-16 h-16 mx-auto mb-4 text-sage-600" data-i18n="[alt]philosophy_tcm_icon3_alt">
+                        <!-- TODO: Create ./images/tcm-root-cause-icon.svg -->
+                        <h3 class="text-xl font-semibold text-sage-800 mb-3" data-i18n="philosophy_tcm_point3_title">探寻根本原因</h3>
+                        <p class="text-sage-600 text-sm" data-i18n="philosophy_tcm_point3_desc">中医不只是看体重数字，而是深入探究导致体重增加的根本原因——无论是消化不良、气滞还是情绪失衡。</p>
+                    </div>
+                </div>
+
+                <div class="mt-12 md:mt-16 text-center">
+                     <a href="#tcm-benefits" class="bg-sage-600 hover:bg-sage-700 text-white px-8 py-4 rounded-full text-lg font-medium transition-all transform hover:scale-105 shadow-lg hover:shadow-xl" data-i18n="philosophy_tcm_cta">了解中医如何助您一臂之力</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: The Benefits of TCM -->
+        <section id="tcm-benefits" class="py-16 md:py-24 bg-white">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 animate-on-scroll">
+                <div class="text-center mb-12 md:mb-16">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-sage-900 mb-4" data-i18n="philosophy_benefits_title">拥抱中医：收获的不仅仅是体重减轻</h2>
+                    <p class="text-lg md:text-xl text-sage-700 max-w-3xl mx-auto" data-i18n="philosophy_benefits_subtitle">采用中医方法进行体重管理，可以带来超越体重秤的深远益处，培养整体健康和活力。</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="p-6 bg-sage-50 rounded-xl shadow-lg border border-sage-100 flex flex-col items-center text-center">
+                        <img src="./images/benefit-sustainable-icon.svg" alt="Growing plant icon" class="w-16 h-16 mb-4 text-sage-600" data-i18n="[alt]philosophy_benefit1_icon_alt">
+                        <!-- TODO: Create ./images/benefit-sustainable-icon.svg -->
+                        <h3 class="text-xl font-semibold text-sage-800 mb-3" data-i18n="philosophy_benefit1_title">可持续的成果</h3>
+                        <p class="text-sage-600 text-sm" data-i18n="philosophy_benefit1_desc">通过解决根本原因并恢复身体平衡，中医旨在实现持久的体重管理，而不是短暂的修复。</p>
+                    </div>
+                    <div class="p-6 bg-sage-50 rounded-xl shadow-lg border border-sage-100 flex flex-col items-center text-center">
+                        <img src="./images/benefit-energy-icon.svg" alt="Glowing energy icon" class="w-16 h-16 mb-4 text-sage-600" data-i18n="[alt]philosophy_benefit2_icon_alt">
+                        <!-- TODO: Create ./images/benefit-energy-icon.svg -->
+                        <h3 class="text-xl font-semibold text-sage-800 mb-3" data-i18n="philosophy_benefit2_title">增强活力与精力</h3>
+                        <p class="text-sage-600 text-sm" data-i18n="philosophy_benefit2_desc">当您的身体达到和谐状态时，您通常会体验到能量水平提高、消化改善和整体幸福感增强。</p>
+                    </div>
+                    <div class="p-6 bg-sage-50 rounded-xl shadow-lg border border-sage-100 flex flex-col items-center text-center">
+                        <img src="./images/benefit-holistic-icon.svg" alt="Person with interconnected body systems icon" class="w-16 h-16 mb-4 text-sage-600" data-i18n="[alt]philosophy_benefit3_icon_alt">
+                        <!-- TODO: Create ./images/benefit-holistic-icon.svg -->
+                        <h3 class="text-xl font-semibold text-sage-800 mb-3" data-i18n="philosophy_benefit3_title">整体健康改善</h3>
+                        <p class="text-sage-600 text-sm" data-i18n="philosophy_benefit3_desc">中医不仅仅关注体重。它还考虑您的情绪健康、睡眠质量和生活方式因素，以促进全面的福祉。</p>
+                    </div>
+                    <div class="p-6 bg-sage-50 rounded-xl shadow-lg border border-sage-100 flex flex-col items-center text-center">
+                        <img src="./images/benefit-personalized-icon.svg" alt="Tailored plan icon" class="w-16 h-16 mb-4 text-sage-600" data-i18n="[alt]philosophy_benefit4_icon_alt">
+                        <!-- TODO: Create ./images/benefit-personalized-icon.svg -->
+                        <h3 class="text-xl font-semibold text-sage-800 mb-3" data-i18n="philosophy_benefit4_title">个性化关怀</h3>
+                        <p class="text-sage-600 text-sm" data-i18n="philosophy_benefit4_desc">告别"一刀切"的方法。中医提供根据您独特的体质和需求量身定制的个性化策略。</p>
+                    </div>
+                    <div class="p-6 bg-sage-50 rounded-xl shadow-lg border border-sage-100 flex flex-col items-center text-center">
+                        <img src="./images/benefit-empowerment-icon.svg" alt="Empowered person icon" class="w-16 h-16 mb-4 text-sage-600" data-i18n="[alt]philosophy_benefit5_icon_alt">
+                        <!-- TODO: Create ./images/benefit-empowerment-icon.svg -->
+                        <h3 class="text-xl font-semibold text-sage-800 mb-3" data-i18n="philosophy_benefit5_title">赋予身体认知</h3>
+                        <p class="text-sage-600 text-sm" data-i18n="philosophy_benefit5_desc">了解您身体的独特需求以及食物和生活方式选择如何影响您，使您能够为自己的健康做出明智的决定。</p>
+                    </div>
+                    <div class="p-6 bg-sage-50 rounded-xl shadow-lg border border-sage-100 flex flex-col items-center text-center">
+                        <img src="./images/benefit-natural-icon.svg" alt="Leaf and hand icon symbolizing nature" class="w-16 h-16 mb-4 text-sage-600" data-i18n="[alt]philosophy_benefit6_icon_alt">
+                        <!-- TODO: Create ./images/benefit-natural-icon.svg -->
+                        <h3 class="text-xl font-semibold text-sage-800 mb-3" data-i18n="philosophy_benefit6_title">自然与温和</h3>
+                        <p class="text-sage-600 text-sm" data-i18n="philosophy_benefit6_desc">中医通常采用天然草药、饮食调整和生活方式的改变，提供一种温和而强大的促进健康的方法。</p>
+                    </div>
+                </div>
+                 <div class="mt-12 md:mt-16 text-center">
+                    <a href="shop.html" class="bg-accent-red hover:bg-red-700 text-white px-10 py-5 rounded-full text-xl font-bold transition-all transform hover:scale-105 shadow-xl hover:shadow-2xl" data-i18n="philosophy_benefits_cta">开始您的健康之旅</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Our Approach - Ancient Wisdom Meets Modern Access -->
+        <section id="our-approach" class="py-16 md:py-24 bg-warm-50">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 animate-on-scroll">
+                <div class="text-center mb-12 md:mb-16">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-sage-900 mb-4" data-i18n="philosophy_approach_title">我们的方法：千年智慧与现代科技的融合</h2>
+                    <p class="text-lg md:text-xl text-sage-700 max-w-3xl mx-auto" data-i18n="philosophy_approach_subtitle">我们深信，古老的智慧拥有解决现代健康挑战的关键。我们的使命是让这些宝贵的知识变得易于获取和理解。</p>
+                    <p class="text-lg md:text-xl text-sage-700 max-w-3xl mx-auto mt-4" data-i18n="philosophy_approach_vision">我们正逐步构建一个全面的健康管理生态系统，从深厚的古方数据，到个性化调理方案，再到创新的数字化工具。</p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-xl border border-sage-100 p-8 md:p-12">
+                    <!-- Tab Buttons -->
+                    <div class="flex flex-wrap justify-center mb-8 border-b border-sage-200">
+                        <button class="tab-button active-tab px-4 py-3 text-lg font-medium text-sage-700 hover:text-sage-900 transition-colors border-b-2 border-transparent hover:border-sage-500 focus:outline-none" data-tab="ancient-formulas" data-i18n="philosophy_tab_ancient_formulas">古方数据库 (当前)</button>
+                        <button class="tab-button px-4 py-3 text-lg font-medium text-sage-700 hover:text-sage-900 transition-colors border-b-2 border-transparent hover:border-sage-500 focus:outline-none" data-tab="future-formulas" data-i18n="philosophy_tab_future_formulas">更多方剂 (未来)</button>
+                        <button class="tab-button px-4 py-3 text-lg font-medium text-sage-700 hover:text-sage-900 transition-colors border-b-2 border-transparent hover:border-sage-500 focus:outline-none" data-tab="personalized-tool" data-i18n="philosophy_tab_personalized_tool">个性化工具 (未来)</button>
+                        <button class="tab-button px-4 py-3 text-lg font-medium text-sage-700 hover:text-sage-900 transition-colors border-b-2 border-transparent hover:border-sage-500 focus:outline-none" data-tab="bigu-app" data-i18n="philosophy_tab_bigu_app">辟谷App (未来)</button>
+                    </div>
+
+                    <!-- Tab Content -->
+                    <div id="ancient-formulas" class="tab-content active-content">
+                        <div class="grid md:grid-cols-2 gap-8 items-center">
+                            <div>
+                                <h3 class="text-2xl font-semibold text-sage-800 mb-6" data-i18n="philosophy_approach_product_intro_title">《古方新解：185方剂完整数据库》</h3>
+                                <p class="text-sage-600 mb-4" data-i18n="philosophy_approach_product_intro_p1">我们的核心产品，是河南中医药大学研究团队历时数年，从浩瀚的《中华医典》中精心整理和数据挖掘的成果。这不仅仅是一个数据库，更是一座通往千年实践验证的健康智慧宝库。</p>
+                                <p class="text-sage-600 mb-6" data-i18n="philosophy_approach_product_intro_p2">通过这个数据库，您可以：</p>
+                                <ul class="space-y-3 text-sage-700 mb-8">
+                                    <li class="flex items-start">
+                                        <svg class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                        <span data-i18n="philosophy_approach_product_benefit1">探索经过时间考验的古方，了解其配伍原理。</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <svg class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                        <span data-i18n="philosophy_approach_product_benefit2">深入理解不同体质类型及其对应的调理思路。</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <svg class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                        <span data-i18n="philosophy_approach_product_benefit3">发现天然草本成分在体重管理中的应用智慧。</span>
+                                    </li>
+                                </ul>
+                                <a href="shop.html" class="inline-block bg-accent-red hover:bg-red-700 text-white px-8 py-3 rounded-full text-lg font-medium transition-all transform hover:scale-105 shadow-lg" data-i18n="philosophy_approach_cta">访问古方数据库</a>
+                            </div>
+                            <div class="mt-8 md:mt-0">
+                                <img src="./images/product-database-preview.jpg" alt="Preview of the Ancient Formula Database" class="rounded-lg shadow-md w-full" loading="lazy" data-i18n="[alt]philosophy_approach_product_image_alt">
+                                <!-- TODO: Create ./images/product-database-preview.jpg or use a relevant stock image -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="future-formulas" class="tab-content hidden">
+                        <h3 class="text-2xl font-semibold text-sage-800 mb-6" data-i18n="philosophy_future_formulas_title">即将推出：150+ 方剂与组方数据库 (基于3000+文献与1000+实证论文)</h3>
+                        <p class="text-sage-600 mb-4" data-i18n="philosophy_future_formulas_desc_p1">我们正在积极构建一个更庞大的方剂与组方数据库，它将汇集超过150种经过深入研究的方剂和组合，这些都源于3000多篇中医药文献和1000多篇具有经验数据的实证论文。这个数据库旨在提供更全面、更细致的调理方案。</p>
+                        <ul class="space-y-3 text-sage-700 mb-8">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span data-i18n="philosophy_future_formulas_benefit1">涵盖更广泛的体质类型和健康需求。</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span data-i18n="philosophy_future_formulas_benefit2">提供更精细的配伍理论和临床应用指导。</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span data-i18n="philosophy_future_formulas_benefit3">基于最新的实证研究，确保知识的准确性与前瞻性。</span>
+                            </li>
+                        </ul>
+                        <p class="text-sage-600" data-i18n="philosophy_future_formulas_desc_p2">敬请期待，这个升级版的数据库将为您提供更强大的健康管理支持。</p>
+                    </div>
+
+                    <div id="personalized-tool" class="tab-content hidden">
+                        <h3 class="text-2xl font-semibold text-sage-800 mb-6" data-i18n="philosophy_personalized_tool_title">即将推出：个性化解决方案工具 (分析药材、成分、肥胖基因靶点等)</h3>
+                        <p class="text-sage-600 mb-4" data-i18n="philosophy_personalized_tool_desc_p1">未来，我们将推出一款革命性的个性化解决方案工具。它将结合中医体质辨识与现代科学分析，深入解析药材成分、探索其与肥胖基因靶点及日常饮食来源的关联。此工具旨在为您量身定制最适合您的健康管理方案。</p>
+                        <ul class="space-y-3 text-sage-700 mb-8">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span data-i18n="philosophy_personalized_tool_benefit1">提供基于您独特体质的定制化饮食和生活建议。</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span data-i18n="philosophy_personalized_tool_benefit2">结合基因靶点分析，提升方案的精准性和有效性。</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span data-i18n="philosophy_personalized_tool_benefit3">帮助您理解不同食物和草本对您身体的具体影响。</span>
+                            </li>
+                        </ul>
+                        <p class="text-sage-600" data-i18n="philosophy_personalized_tool_desc_p2">我们致力于将尖端科技融入中医智慧，为您带来前所未有的个性化健康体验。</p>
+                    </div>
+
+                    <div id="bigu-app" class="tab-content hidden">
+                        <h3 class="text-2xl font-semibold text-sage-800 mb-6" data-i18n="philosophy_bigu_app_title">即将推出：道家辟谷断食管理App</h3>
+                        <p class="text-sage-600 mb-4" data-i18n="philosophy_bigu_app_desc_p1">未来，我们将开发一款独特的道家辟谷断食管理App，将古老的辟谷养生智慧与现代移动科技相结合。这款App将提供个性化的辟谷计划、专业指导和社区支持，帮助您安全、有效地实践辟谷，达到身心净化与体重管理的双重目标。</p>
+                        <ul class="space-y-3 text-sage-700 mb-8">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span data-i18n="philosophy_bigu_app_benefit1">提供科学的辟谷周期和阶段性指导。</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span data-i18n="philosophy_bigu_app_benefit2">整合监测功能，跟踪身体状态与进展。</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span data-i18n="philosophy_bigu_app_benefit3">引入互动社区，分享经验与获得支持。</span>
+                            </li>
+                        </ul>
+                        <p class="text-sage-600" data-i18n="philosophy_bigu_app_desc_p2">通过这款App，我们将辟谷这一古老的养生方式带入您的日常生活，助您实现身心平衡与健康转型。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Rooted in Research, Designed for You -->
+        <section id="authority-audience" class="py-16 md:py-24 bg-white">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 animate-on-scroll">
+                <div class="text-center mb-12 md:mb-16">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-sage-900 mb-4" data-i18n="philosophy_research_title">植根于研究，专为您设计</h2>
+                    <p class="text-lg md:text-xl text-sage-700 max-w-3xl mx-auto" data-i18n="philosophy_research_subtitle">我们致力于将严谨的学术研究与实用的健康解决方案相结合，帮助您自信地开启健康之旅。</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="p-8 bg-warm-50 rounded-xl shadow-lg border border-warm-100">
+                        <h3 class="text-2xl font-semibold text-sage-800 mb-4 text-center" data-i18n="philosophy_research_academic_title">植根于严谨的学术研究</h3>
+                        <p class="text-sage-600 mb-4 text-center" data-i18n="philosophy_research_academic_desc">我们的数据库源于权威中医药研究机构的科研成果，确保了其信息来源的权威性和科学性。每一条方剂信息都经过精心整理与验证，旨在为您提供可靠的参考。</p>
+                        <p class="text-sm text-sage-500 text-center" data-i18n="philosophy_research_academic_note">（注：我们与顶尖中医药研究机构合作，提供最前沿的知识。）</p>
+                    </div>
+
+                    <div class="p-8 bg-sage-50 rounded-xl shadow-lg border border-sage-100">
+                        <h3 class="text-2xl font-semibold text-sage-800 mb-6 text-center md:text-left" data-i18n="philosophy_research_audience_title">这适合哪些人群？</h3>
+                        <ul class="space-y-3 text-sage-700">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-600 mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span data-i18n="philosophy_research_audience_1"><strong>寻求可持续体重管理方案</strong>，厌倦了溜溜球式节食的人。</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-600 mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span data-i18n="philosophy_research_audience_2"><strong>希望改善整体健康状况</strong>，而不仅仅是减重的人。</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-600 mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span data-i18n="philosophy_research_audience_3"><strong>对中医智慧感兴趣</strong>，并希望了解其在现代健康管理中的应用的人。</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-600 mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span data-i18n="philosophy_research_audience_4"><strong>重视个性化和天然方法</strong>来促进健康的人。</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-600 mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span data-i18n="philosophy_research_audience_5"><strong>期待结合现代科技与中医智慧</strong>，探索前沿健康解决方案的人。</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-600 mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span data-i18n="philosophy_research_audience_6"><strong>寻求全面的、涵盖方剂、个性化指导及生活方式管理</strong>的健康生态系统的人。</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12 md:mt-16">
+                    <p class="text-lg text-sage-800 font-medium mb-6" data-i18n="philosophy_research_closing">准备好以全新的视角探索您的健康了吗？</p>
+                    <a href="#our-approach" class="bg-sage-600 hover:bg-sage-700 text-white px-10 py-4 rounded-full text-lg font-medium transition-all transform hover:scale-105 shadow-lg hover:shadow-xl" data-i18n="philosophy_research_cta">探索我们的方法</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: TCM\'s Understanding of Obesity Pathogenesis -->
+        <section id="obesity-pathogenesis" class="py-16 md:py-24 bg-warm-50">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 animate-on-scroll">
+                <div class="text-center mb-12 md:mb-16">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-sage-900 mb-4" data-i18n="philosophy_obesity_pathogenesis_title">中医怎么看"胖"这件事</h2>
+                    <p class="text-lg md:text-xl text-sage-700 max-w-3xl mx-auto" data-i18n="philosophy_obesity_pathogenesis_intro">在中医看来，长胖往往是因为身体里有些不平衡了。很多有名的老中医都研究过，他们发现，长胖主要是因为身体里 "痰湿" (过多的湿气) 太重、或者 "气" (身体的能量) 不够用 (也就是 "气虚")，还有可能是 "血瘀" (血液不太通畅)。所以，想要调理身体，得从这几个方面着手，这样才能找到用中药调理的好路子。</p>
+                </div>
+
+                <div class="space-y-12">
+                    <div class="p-6 md:p-8 bg-white rounded-xl shadow-lg border border-sage-100">
+                        <h3 class="text-2xl font-semibold text-sage-800 mb-4" data-i18n="philosophy_pathogenesis_phlegm_dampness_title">什么是"痰湿"？</h3>
+                        <p class="text-sage-600 leading-relaxed" data-i18n="philosophy_pathogenesis_phlegm_dampness_desc">中医常说，我们的 "脾" (一个重要的消化器官) 负责管理身体里的水液。如果 "脾" 的功能弱了 (也就是 "脾虚")，水液就容易积聚，慢慢变成黏稠的 "痰湿" 和多余的脂肪，导致肥胖。这种 "痰湿" 不仅是肥胖的结果，还可能让身体状况变差。很多古代名医都指出 "胖人多痰多湿"，认为 "痰湿" 是导致肥胖的核心问题。所以，调理的关键在于让 "脾" 强健起来，去掉湿气，化解痰浊。</p>
+                    </div>
+
+                    <div class="p-6 md:p-8 bg-white rounded-xl shadow-lg border border-sage-100">
+                        <h3 class="text-2xl font-semibold text-sage-800 mb-4" data-i18n="philosophy_pathogenesis_qi_deficiency_title">什么是"气虚"？</h3>
+                        <p class="text-sage-600 leading-relaxed" data-i18n="philosophy_pathogenesis_qi_deficiency_desc">"气" 是维持身体活动的根本动力，主要来源于脾胃消化吸收的营养和肾的精气。如果脾胃功能不好，产生的 "气" 就会不足 (也就是 "气虚")，身体运化水液的能力也会下降。这样，水湿就容易停滞，形成 "痰湿" 和脂肪堆积，导致肥胖。清代名医陈士铎说过："胖人多痰，是因为气虚了，气不足就无法推动身体物质的正常运行，痰湿就产生了。" 所以，调理肥胖也要考虑补充脾肾的 "气"，特别是补充 "命门之火" (生命活动的根本动力)，"气" 足了，"痰湿" 自然会减少。</p>
+                    </div>
+
+                    <div class="p-6 md:p-8 bg-white rounded-xl shadow-lg border border-sage-100">
+                        <h3 class="text-2xl font-semibold text-sage-800 mb-4" data-i18n="philosophy_pathogenesis_blood_stasis_title">什么是"血瘀"？</h3>
+                        <p class="text-sage-600 leading-relaxed" data-i18n="philosophy_pathogenesis_blood_stasis_desc">中医认为，"气" 和 "血" 是相互依存的。血液是 "气" 的载体，如果血液运行不畅 (也就是 "血瘀")，"气" 的运行也会受阻，形成 "气滞血瘀"。这种情况下，身体的气血津液输送都会出问题，代谢废物和多余脂肪就容易堆积，导致肥胖。古书《诸病源候论》里也提到，痰的形成与血脉不通畅、水液积聚有关。所以，血液循环不畅也是导致肥胖的一个重要原因。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Chinese Herbal Treatment for Obesity -->
+        <section id="herbal-treatment" class="py-16 md:py-24 bg-white">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 animate-on-scroll">
+                <div class="text-center mb-12 md:mb-16">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-sage-900 mb-4" data-i18n="philosophy_herbal_treatment_title">中药如何调理肥胖</h2>
+                </div>
+
+                <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div class="p-6 bg-sage-50 rounded-xl shadow-lg border border-sage-100 flex flex-col">
+                        <h3 class="text-xl font-semibold text-sage-800 mb-3" data-i18n="philosophy_herbal_treatment_expectorants_title">祛痰湿的方剂</h3>
+                        <p class="text-sage-600 text-sm flex-grow" data-i18n="philosophy_herbal_treatment_expectorants_desc">祛痰湿的方剂是治疗肥胖及其相关问题的主要中药。常用的有 "二陈汤"、"导痰汤"、"涤痰汤"、"温胆汤" 和 "滚痰丸" 等，特别是 "二陈汤" 和 "导痰汤" 用得最多。"导痰汤" 和 "涤痰汤" 都是在 "二陈汤" 的基础上调整而来的。比如，"二陈汤" 加上南星和枳实就成了 "导痰汤"；如果加上菖蒲、人参、甘草和竹茹，就成了 "涤痰汤"。在明清时期，如果肥胖还伴有妇科问题，"导痰汤" 就用得比较多。</p>
+                    </div>
+                    <div class="p-6 bg-sage-50 rounded-xl shadow-lg border border-sage-100 flex flex-col">
+                        <h3 class="text-xl font-semibold text-sage-800 mb-3" data-i18n="philosophy_herbal_treatment_tonics_title">补益类的方剂</h3>
+                        <p class="text-sage-600 text-sm flex-grow" data-i18n="philosophy_herbal_treatment_tonics_desc">补益类的方剂在治疗肥胖时也用得越来越多，是仅次于祛痰湿方剂的常用方法。常见的补益方有 "四君子汤"、"六君子汤"、"四物汤"、"补中益气汤"、"八味丸"、"八珍汤" 和 "参苓白术散" 等。这些方剂主要用于增强身体机能，改善因 "虚证" 导致的肥胖。</p>
+                    </div>
+                    <div class="p-6 bg-sage-50 rounded-xl shadow-lg border border-sage-100 flex flex-col">
+                        <h3 class="text-xl font-semibold text-sage-800 mb-3" data-i18n="philosophy_herbal_treatment_dampness_title">祛湿清热的方剂</h3>
+                        <p class="text-sage-600 text-sm flex-grow" data-i18n="philosophy_herbal_treatment_dampness_desc">中医常说 "胖人多湿"，所以祛除体内多余的湿气也是治疗肥胖及其相关问题的常用方法。常用的祛湿方剂有 "五苓散"、"平胃散" 和 "胃苓汤" 等。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content for philosophy.html will be added here -->
+        <div class="py-20 text-center" style="display: none;"> <!-- Hiding the placeholder -->
+            <h1 class="text-4xl font-bold" data-i18n="philosophy_main_title_placeholder">Philosophy Page Content Placeholder</h1>
+            <p data-i18n="philosophy_main_subtitle_placeholder">More sections will be added based on the plan.</p>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-sage-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-8">
+                <h3 class="text-2xl font-serif font-semibold mb-4" data-i18n="footer_title">古方新解</h3>
+                <p class="text-sage-300" data-i18n="footer_slogan">探索千年智慧，重塑健康人生</p>
+            </div>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 text-sage-300 mb-8">
+                <a href="./privacy.html" class="hover:text-white transition-colors" data-i18n="footer_privacy">隐私政策</a>
+                <a href="./terms.html" class="hover:text-white transition-colors" data-i18n="footer_terms">使用条款</a>
+                 <span data-i18n="footer_disclaimer_philosophy">本页内容仅供参考，不构成医疗建议。</span>
+            </div>
+            <p class="text-sage-400 text-sm" data-i18n="footer_copyright">&copy; 2024 古方新解. 版权所有。</p>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-sage-700 text-white p-3 rounded-full shadow-lg opacity-0 pointer-events-none transition-opacity duration-300 z-40">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+        </svg>
+    </button>
+
+    <script src="./js/i18n.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active classes
+                    tabButtons.forEach(btn => btn.classList.remove('active-tab', 'border-sage-500'));
+                    tabContents.forEach(content => content.classList.add('hidden'));
+
+                    // Add active classes to clicked button and its content
+                    const targetTab = button.dataset.tab;
+                    document.getElementById(targetTab).classList.remove('hidden');
+                    button.classList.add('active-tab', 'border-sage-500');
+
+                    // Re-apply translations for the new active tab
+                    if (typeof applyTranslations === 'function') {
+                        applyTranslations();
+                    }
+                });
+            });
+
+            // Set initial active tab style
+            const initialActiveButton = document.querySelector('.tab-button.active-tab');
+            if (initialActiveButton) {
+                initialActiveButton.classList.add('border-sage-500');
+            }
+        });
+    </script>
+</body>
+</html> 

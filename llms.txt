@@ -1,73 +1,65 @@
-# WebSim Vibe Coding Starter - Full Website Introduction
-> WebSim Vibe Coding Starter: Build a modern, SEO-optimized website in 5 minutes. AI-powered, highly automated, responsive, SEO best practices, creative and futuristic SaaS tool.
+# Ancient Formulas, New Interpretations: Exploring TCM Wisdom for Obesity Management - Full Website Introduction
+> Unveiling the secrets of millennia-old traditional Chinese medicine texts to provide new insights for your weight management journey.
 
 ## Website Background
-WebSim Vibe Coding Starter is designed for entrepreneurs, product managers, and innovators with limited coding experience. It allows users to validate business ideas and launch professional websites within 5 minutes without needing a coding background. It includes built-in SaaS tools, landing page and prototype design prompt templates for gaming apps, SEO optimization prompts, and common automation scripts to efficiently transform ideas into reality.
+"Ancient Formulas, New Interpretations: Exploring TCM Wisdom for Obesity Management" is a knowledge-sharing website based on master's thesis research from Henan University of Chinese Medicine. It utilizes data mining techniques on the "Zhong Hua Yi Dian" (中华医典), a vast collection of ancient Chinese medical texts, to systematically analyze and present TCM perspectives on obesity. The site aims to bridge ancient wisdom with modern understanding, offering insights into the causes, associated conditions, and traditional treatments of obesity as documented in historical medical literature.
 
-## Main URLs (from sitemap.xml)
-- https://websimstarter.borninsea.com/
-  - The main landing page for WebSim Vibe Coding Starter.
-- https://websimstarter.borninsea.com/#features
-  - Section detailing the features of the starter kit.
-- https://websimstarter.borninsea.com/#playground
-  - Interactive playground to experience the workflow.
-- https://websimstarter.borninsea.com/#showcase
-  - Showcase of projects built with WebSim Vibe.
-- https://websimstarter.borninsea.com/#future
-  - Vision for future development and advantages.
-- https://websimstarter.borninsea.com/about.html
-  - Information about the team and project.
-- https://websimstarter.borninsea.com/career.html
-  - Career opportunities.
-- https://websimstarter.borninsea.com/privacy.html
+## Main URLs (Based on PRD and Site Structure)
+- https://weightloss.heytcm.com/
+  - Homepage: Introduces the project, its core value, and key highlights.
+- https://weightloss.heytcm.com/#ancient-wisdom
+  - How Ancients Saw "Fatness": Explores historical TCM terminology and understanding of obesity.
+- https://weightloss.heytcm.com/#body-signals
+  - Your Body's Clues: Details the core TCM patterns (syndromes) and elemental imbalances associated with obesity.
+- https://weightloss.heytcm.com/#tcm-solutions
+  - TCM Solutions: Presents commonly used herbal formulas and individual herbs for obesity management based on ancient texts.
+- https://weightloss.heytcm.com/recipes-content.html
+  - Complete Ancient Prescriptions: A detailed database of 185 herbal formulas.
+- https://weightloss.heytcm.com/#data-insights
+  - Data Insights: Explains the data mining methodology used to analyze ancient texts.
+- https://weightloss.heytcm.com/#expert-insights
+  - Expert Insights: Discusses the modern relevance of TCM holistic views and lifestyle advice.
+- https://weightloss.heytcm.com/#about
+  - About Us: Information about the research team and Henan University of Chinese Medicine.
+- https://weightloss.heytcm.com/privacy.html (Assumed - standard practice)
   - Details the application's privacy policy.
-- https://websimstarter.borninsea.com/terms.html
+- https://weightloss.heytcm.com/terms.html (Assumed - standard practice)
   - Outlines the terms of service.
 
 ## Content Categories
-### [Homepage](https://websimstarter.borninsea.com/)
-Introduces WebSim Vibe Coding Starter, its purpose, and core value proposition. Highlights key benefits like no-code development and rapid deployment.
+### [Homepage](https://weightloss.heytcm.com/)
+Introduces the website's purpose: to explore TCM wisdom on obesity through data-mined ancient texts. Highlights include millennia of wisdom, scientific validation through data mining, personalized perspectives on obesity's internal causes, and practical lifestyle insights.
 
-### [Features](https://websimstarter.borninsea.com/#features)
-Lists key features including:
-- No-code full site generation
-- 5-minute product concept validation
-- Entrepreneur/Product Manager friendly
-- SaaS/Game App landing page & prototype design prompt templates
-- SEO optimization dedicated prompt templates
-- Common automation scripts (generation, deployment, SEO submission)
-- Multi-language support & auto-generated sitemaps
-- Automated SEO: IndexNow, Bing, Google, metadata, validation
-- AI-powered blog & image generation
-- PWA & mobile-first, blazing fast
-- Keyword research, analytics, clarity
-- Real user management (Cloudflare Workers)
-- AI Scraper friendly robots.txt & llms.txt auto-generation
+### [How Ancients Saw "Fatness"](https://weightloss.heytcm.com/#ancient-wisdom)
+Covers ancient TCM terminology for obesity (e.g., "肥人" - fat person) and the 72 obesity-related complications identified in texts, such as stroke and infertility, aligning with modern medical understanding.
 
-### [Interactive Playground](https://websimstarter.borninsea.com/#playground)
-A four-step guided experience:
-1.  **Research on Grok:** Research user complaints and pain points.
-2.  **Generate PRD.md with Google AI Studio:** Create a Product Requirements Document.
-3.  **Generate Site with WebSim:** Use PRD and prompts to generate the website.
-4.  **Deploy & Go Live:** Deploy the site to Cloudflare or a static host.
+### [Your Body's Clues](https://weightloss.heytcm.com/#body-signals)
+Explains the primary causes of obesity according to TCM (e.g., excessive consumption of rich foods, aging, lack of exercise) and details the 7 core elemental imbalances (证素) like Phlegm (痰), Dampness (湿), Heat (热), Qi Stagnation (气滞), Qi Deficiency (气虚), Grease Turbidity (膏浊), and Blood Stasis (瘀血). It also lists the most common TCM patterns (证型) like Phlegm-Dampness syndrome.
 
-### [Showcase](https://websimstarter.borninsea.com/#showcase)
-Displays examples of websites and applications built using WebSim Vibe Coding Starter, such as AI SaaS landing pages and multi-language blogs.
+### [TCM Solutions](https://weightloss.heytcm.com/#tcm-solutions)
+Focuses on the principle of "Bian Zheng Shi Zhi" (辨证施治) - individualized treatment based on pattern differentiation. Lists frequently used herbal formulas (e.g., Er Chen Tang 二陈汤, Dao Tan Tang 导痰汤) and high-frequency herbs (e.g., Ban Xia 半夏, Gan Cao 甘草, Chen Pi 陈皮). Discusses the properties (Four Qi 四气) and tastes (Five Flavors 五味) of herbs, and common herb combinations.
 
-### [Future Vision](https://websimstarter.borninsea.com/#future)
-Outlines future advantages and the project's vision, including:
-- Continuous AI integration for smarter site generation.
-- Always up-to-date SEO automation.
-- Bold, creative UI/UX with GSAP-powered micro-interactions.
-- Scalability from MVP to enterprise.
+### [Complete Ancient Prescriptions](https://weightloss.heytcm.com/recipes-content.html)
+Provides access to a comprehensive database of 185 ancient herbal formulas related to obesity management, with details on ingredients and traditional uses.
+
+### [Data Insights](https://weightloss.heytcm.com/#data-insights)
+Describes the data mining process applied to the "Zhong Hua Yi Dian" (中华医典), which contains 1156 ancient books and over 400 million characters. Explains how this research systematically extracts and analyzes information on disease names, patterns, formulas, and herbs.
+
+### [Expert Insights](https://weightloss.heytcm.com/#expert-insights)
+Discusses the modern significance of TCM's holistic approach to obesity, emphasizing balance, emotions, and lifestyle. Provides TCM-based advice on diet, exercise (e.g., Tai Chi), and emotional well-being. Highlights the potential of integrating TCM with modern medicine.
+
+### [About Us](https://weightloss.heytcm.com/#about)
+Introduces the research team from Henan University of Chinese Medicine and the project's aim to revitalize and apply ancient TCM knowledge through data mining.
 
 ## User Value
-- Enables rapid validation of business ideas without coding.
-- Provides a comprehensive toolkit for building and launching professional websites quickly.
-- Automates SEO, multi-language support, and other complex tasks.
-- Offers templates and AI-powered tools to streamline development.
-- Focuses on performance, accessibility, and mobile-responsiveness by default.
+- Provides a unique, evidence-based perspective on obesity rooted in millennia of TCM practice.
+- Helps users understand the potential internal imbalances contributing to weight gain according to TCM.
+- Offers insights into traditional herbal approaches and lifestyle adjustments for managing obesity.
+- Educates on the scientific methodology (data mining) used to analyze and validate ancient medical knowledge.
+- Serves as a reliable informational resource for individuals interested in TCM approaches to health and wellness, and for researchers in the field.
 
 ## Technical SEO Enhancements
-- Dynamic injection of SEO meta tags, alternate language links, and LD+JSON structured data for optimal search engine visibility and multilingual support.
-- AI Scraper-friendly configurations and a comprehensive sitemap ensure effective crawling and indexing.
+- Dynamic loading of multilingual LD+JSON structured data (e.g., MedicalWebPage, Article, FAQPage) based on page content and language.
+- Internationalization (i18n) support for English and Chinese, with language-specific content and meta tags.
+- SEO-friendly URLs and a comprehensive sitemap for effective crawling and indexing.
+- Adherence to robots.txt best practices to guide search engine crawlers.
