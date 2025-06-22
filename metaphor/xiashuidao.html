@@ -1,0 +1,444 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>中医与肥胖 - 下水道堵塞比喻</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lottie-web@5.12.2/build/player/lottie.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>身体如房屋，肥胖如排水系统堵塞</h1>
+      <p class="subtitle">中医看肥胖：不只是脂肪多，而是身体"下水道"不通畅</p>
+    </header>
+    
+    <div class="house-container">
+      <div id="house-animation"></div>
+      <div class="house-overlay">
+        <div class="info-tooltip" id="tooltipWet">
+          <h3>"湿"</h3>
+          <p>下水道里的积水/潮气弥漫</p>
+        </div>
+        <div class="info-tooltip" id="tooltipPhlegm">
+          <h3>"痰"</h3>
+          <p>管道里凝结的油垢、污泥</p>
+        </div>
+        <div class="info-tooltip" id="tooltipStasis">
+          <h3>"瘀"</h3>
+          <p>管道里卡住的硬块、异物</p>
+        </div>
+        <div class="info-tooltip" id="tooltipDeficiency">
+          <h3>"虚"</h3>
+          <p>水泵老化/水压不足</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- New Method Comparison Section -->
+    <div class="comparison-section">
+      <h2>减肥方法对比：哪种方法真正解决"管道堵塞"？</h2>
+      <div class="table-container">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>减肥方法</th>
+              <th>下水道比喻</th>
+              <th>机制</th>
+              <th>效果</th>
+              <th>常见问题</th>
+              <th>中医古方优势</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>饮食控制</strong><br>(CICO、断食、酮)</td>
+              <td>用塑料布包裹管道</td>
+              <td>限制热量摄入</td>
+              <td>快速减重<br>(1-2kg/周)<br>但易反弹</td>
+              <td>难以坚持<br>社交尴尬<br>心理挣扎</td>
+              <td>无需严格限制<br>融入日常饮食<br>减轻社交压力</td>
+            </tr>
+            <tr>
+              <td><strong>运动</strong><br>(有氧、太极)</td>
+              <td>用水桶接漏水</td>
+              <td>消耗热量</td>
+              <td>缓慢减重<br>(0.5-1kg/周)</td>
+              <td>时间不足<br>孤独感<br>效果有限</td>
+              <td>配合轻运动<br>如八段锦<br>整体调理</td>
+            </tr>
+            <tr>
+              <td><strong>减肥药</strong><br>(GLP-1、奥利司他)</td>
+              <td>用胶带粘住漏洞</td>
+              <td>抑制食欲<br>阻断脂肪吸收</td>
+              <td>明显减重<br>(1.6-4.3kg)<br>有副作用</td>
+              <td>胃肠不适<br>停药反弹<br>肝损伤风险</td>
+              <td>无副作用<br>天然药材<br>长期调理</td>
+            </tr>
+            <tr>
+              <td><strong>手术</strong><br>(胃旁路、胃束带)</td>
+              <td>拆除部分管道</td>
+              <td>限制胃容量</td>
+              <td>显著减重<br>(10-20kg)</td>
+              <td>手术风险<br>社交限制<br>不可逆</td>
+              <td>无创伤<br>药膳融入生活<br>社交友好</td>
+            </tr>
+            <tr class="highlighted">
+              <td><strong>中医古方</strong><br>(健脾祛湿)</td>
+              <td>疏通管道<br>修复水泵</td>
+              <td>调理脾胃<br>化痰祛湿</td>
+              <td>温和减重<br>(1-2kg/月)<br>可持续</td>
+              <td>效果较慢<br>需中医指导</td>
+              <td>个性化调理<br>融入饮食<br>无副作用</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- New Chart Section -->
+    <div class="chart-section">
+      <h2>疏通管道，哪种方法更胜一筹？</h2>
+      <div class="chart-container">
+        <canvas id="methodComparisonChart"></canvas>
+      </div>
+      <div class="chart-legend">
+        <p>中医古方在可持续性、舒适度、副作用少、不影响生活和个性化方面表现优异，提供全面的"管道疏通"解决方案。</p>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <div class="card" id="wet-card">
+        <div class="card-icon" id="wet-icon"></div>
+        <h2>"湿"——下水道里的积水</h2>
+        <div class="card-content">
+          <div class="concept">
+            <h3>体内沼泽化</h3>
+            <p>身体像个排水不畅的沼泽，湿气弥漫，让人感觉沉重、困倦、不清爽，就像卫生间长期潮湿长霉斑一样。</p>
+          </div>
+          <div class="concept">
+            <h3>水管工的噩梦——返潮</h3>
+            <p>湿气太重，不仅堵，还往上"返潮"，导致皮肤油腻、长湿疹，舌苔厚腻就像水管壁上的滑腻水垢。</p>
+          </div>
+          <div class="concept">
+            <h3>疏通剂——抽湿机</h3>
+            <p>健脾祛湿的药材和食物（如薏米、茯苓）就像给身体内置了一台高效抽湿机，或者用了强力疏通剂把积水排走。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="phlegm-card">
+        <div class="card-icon" id="phlegm-icon"></div>
+        <h2>"痰"——管道里凝结的油垢</h2>
+        <div class="card-content">
+          <div class="concept">
+            <h3>下水道油污怪</h3>
+            <p>痰湿就像常年累月倒入下水道的油脂和厨余垃圾，凝结成了又厚又黏的"油污怪"，紧紧扒在管道壁上，让水流变细。</p>
+          </div>
+          <div class="concept">
+            <h3>管道清道夫</h3>
+            <p>化痰的药材（如陈皮、半夏）就像是专业的"管道清道夫"，用特制工具刮掉这些油垢。</p>
+          </div>
+          <div class="concept">
+            <h3>脂肪的早期形态</h3>
+            <p>痰浊可以看作是脂肪的前身，就像冬天水槽里没及时冲走的猪油，慢慢凝固，越积越厚。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="stasis-card">
+        <div class="card-icon" id="stasis-icon"></div>
+        <h2>"瘀"——管道里卡住的硬块</h2>
+        <div class="card-content">
+          <div class="concept">
+            <h3>管道硬核堵塞物</h3>
+            <p>血瘀就像是头发、塑料片等硬物掉进下水道，卡在某个拐弯处，形成了坚固的堵塞点，水流完全不通或滴滴答答。</p>
+          </div>
+          <div class="concept">
+            <h3>高压水枪通淤</h3>
+            <p>活血化瘀的药材（如丹参、川芎）就像高压水枪，冲击这些硬块，或者像"管道疏通弹簧"，把堵塞物搅碎冲走。</p>
+          </div>
+          <div class="concept">
+            <h3>交通大瘫痪</h3>
+            <p>气血是身体的运输系统，血瘀导致"道路"不通，营养物质送不到，代谢废物运不出，造成局部"交通瘫痪"。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="deficiency-card">
+        <div class="card-icon" id="deficiency-icon"></div>
+        <h2>"虚"——水泵老化/水压不足</h2>
+        <div class="card-content">
+          <div class="concept">
+            <h3>动力不足的老旧水泵</h3>
+            <p>气虚（特别是脾气虚、肾气虚）就像是水泵老化，马力不足，水压上不去，污物自然冲不走，慢慢沉积下来。</p>
+          </div>
+          <div class="concept">
+            <h3>松垮的排水管</h3>
+            <p>脾虚"统摄"无力，就像排水管的卡扣松了或者管道本身材质老化变软，无法有效约束和推动水液运行。</p>
+          </div>
+          <div class="concept">
+            <h3>给水泵充电</h3>
+            <p>补气的药材（如黄芪、党参）就是给水泵充电，或者干脆换个强力新水泵，让水流重新强劲起来。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="maintenance-guide">
+      <h2>人体管道养护指南</h2>
+      <div class="guide-items">
+        <div class="guide-item" id="diet">
+          <div class="guide-icon"></div>
+          <h3>饮食</h3>
+          <p>别老往下水道里倒油（少吃肥甘厚味）</p>
+        </div>
+        <div class="guide-item" id="exercise">
+          <div class="guide-icon"></div>
+          <h3>运动</h3>
+          <p>定期"大水冲刷"管道（促进气血运行）</p>
+        </div>
+        <div class="guide-item" id="emotion">
+          <div class="guide-icon"></div>
+          <h3>情绪</h3>
+          <p>别让压力"压扁"管道（肝气郁结影响气机）</p>
+        </div>
+        <div class="guide-item" id="rest">
+          <div class="guide-icon"></div>
+          <h3>作息</h3>
+          <p>给"水泵"足够的休息和维护时间</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- New Self-Assessment Section -->
+    <div class="self-assessment">
+      <h2>你的"管道"堵在哪儿？测测你的体质</h2>
+      <div class="quiz-container">
+        <div id="quiz-start">
+          <p>通过简单的自测，了解你的体质类型，找到适合你的"管道疏通"方案。</p>
+          <button id="start-quiz-btn" class="primary-btn">开始测试</button>
+        </div>
+        <div id="quiz-questions" class="hidden">
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+          <div class="question-container">
+            <!-- Questions will be inserted by JavaScript -->
+          </div>
+          <div class="quiz-controls">
+            <button id="prev-question" class="secondary-btn">上一题</button>
+            <button id="next-question" class="primary-btn">下一题</button>
+          </div>
+        </div>
+        <div id="quiz-results" class="hidden">
+          <h3>测试结果</h3>
+          <div id="result-content"></div>
+          <div class="recommendation">
+            <h4>推荐药膳</h4>
+            <div id="recommended-recipe"></div>
+          </div>
+          <p class="disclaimer">注意：本测试仅供参考，建议咨询专业中医师获取个性化建议。</p>
+          <button id="view-recipes-btn" class="primary-btn">查看更多药膳方案</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- New Recipe Section -->
+    <div class="recipe-section">
+      <h2>尝试这些古方药膳，疏通你的"管道"</h2>
+      <div class="recipes-container">
+        <div class="recipe-card">
+          <div class="recipe-image" id="recipe-image-1"></div>
+          <h3>薏米粥</h3>
+          <p class="recipe-target">针对：下水道积水（湿气重）</p>
+          <p class="recipe-effect">功效：健脾祛湿，利水消肿</p>
+          <button class="recipe-details-btn">查看详情</button>
+          <div class="recipe-details hidden">
+            <h4>材料</h4>
+            <ul>
+              <li>薏米 30g</li>
+              <li>大米 50g</li>
+              <li>红枣 5颗</li>
+              <li>清水 适量</li>
+            </ul>
+            <h4>制作步骤</h4>
+            <ol>
+              <li>薏米提前浸泡1小时</li>
+              <li>所有材料放入锅中，加水煮沸</li>
+              <li>转小火熬至粥稠即可</li>
+            </ol>
+            <p>适合早餐食用，每周3-4次</p>
+          </div>
+        </div>
+        
+        <div class="recipe-card">
+          <div class="recipe-image" id="recipe-image-2"></div>
+          <h3>玫瑰花茶</h3>
+          <p class="recipe-target">针对：管道油垢+压力（气滞痰湿）</p>
+          <p class="recipe-effect">功效：舒肝理气，化痰消滞</p>
+          <button class="recipe-details-btn">查看详情</button>
+          <div class="recipe-details hidden">
+            <h4>材料</h4>
+            <ul>
+              <li>玫瑰花 5g</li>
+              <li>山楂 10g</li>
+              <li>陈皮 3g</li>
+              <li>热水 适量</li>
+            </ul>
+            <h4>制作步骤</h4>
+            <ol>
+              <li>所有材料洗净</li>
+              <li>放入杯中，冲入热水</li>
+              <li>盖盖焖5分钟即可饮用</li>
+            </ol>
+            <p>适合工作压力大时饮用，缓解情绪性饮食</p>
+          </div>
+        </div>
+        
+        <div class="recipe-card">
+          <div class="recipe-image" id="recipe-image-3"></div>
+          <h3>山药粥</h3>
+          <p class="recipe-target">针对：水泵老化（气虚痰湿）</p>
+          <p class="recipe-effect">功效：补气健脾，固本培元</p>
+          <button class="recipe-details-btn">查看详情</button>
+          <div class="recipe-details hidden">
+            <h4>材料</h4>
+            <ul>
+              <li>山药 50g</li>
+              <li>大米 50g</li>
+              <li>黄芪 10g</li>
+              <li>枸杞 5g</li>
+              <li>清水 适量</li>
+            </ul>
+            <h4>制作步骤</h4>
+            <ol>
+              <li>山药去皮切块</li>
+              <li>黄芪用纱布包好</li>
+              <li>所有材料放入锅中，加水煮沸</li>
+              <li>转小火熬40分钟，出锅前加入枸杞</li>
+            </ol>
+            <p>适合长期疲劳乏力者食用，补充"水泵动力"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="conclusion">
+      <h2>肥胖的四重奏——堵塞交响曲</h2>
+      <div class="sequence">
+        <div class="sequence-item">
+          <span class="number">1</span>
+          <div class="icon" id="icon1"></div>
+          <p>水泵动力不足（虚）</p>
+        </div>
+        <div class="arrow">→</div>
+        <div class="sequence-item">
+          <span class="number">2</span>
+          <div class="icon" id="icon2"></div>
+          <p>水流缓慢积水（湿）</p>
+        </div>
+        <div class="arrow">→</div>
+        <div class="sequence-item">
+          <span class="number">3</span>
+          <div class="icon" id="icon3"></div>
+          <p>水里的杂质凝结成油垢（痰）</p>
+        </div>
+        <div class="arrow">→</div>
+        <div class="sequence-item">
+          <span class="number">4</span>
+          <div class="icon" id="icon4"></div>
+          <p>硬物卡住彻底堵死（瘀）</p>
+        </div>
+      </div>
+      <div class="final-thoughts">
+        <p><strong>"减肥如通渠，非一日之功"</strong>：常年堵塞的下水道，不是一次就能彻底通干净的，需要耐心和正确的方法。</p>
+        <p><strong>"身体的'通渠师傅'"</strong>：中医大夫就是那个经验丰富的"通渠师傅"，望闻问切一番，就知道是哪个环节堵了，用什么"工具"最有效。</p>
+      </div>
+    </div>
+    
+    <div class="disclaimer-section">
+      <h2>重要提醒</h2>
+      <p>本页面内容仅供科普参考，不能替代专业医疗建议、诊断或治疗。中医古方应在专业中医师指导下使用。</p>
+      <div class="cta-buttons">
+        <button id="find-tcm-btn" class="primary-btn">寻找附近中医师</button>
+        <button id="contact-us-btn" class="secondary-btn">联系我们</button>
+      </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="bg-sage-800 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- 网站信息 -->
+                <div class="col-span-1 md:col-span-2">
+                    <h3 class="text-xl font-serif font-semibold mb-4" data-i18n="footer_site_name">heytcm 研究团队</h3>
+                    <p class="text-sage-300 mb-4" data-i18n="footer_description">
+                        传承千年中医智慧，以现代科技重塑古典医学价值，为您的健康管理提供新思路。
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-sage-300 hover:text-white transition-colors">
+                            <span class="sr-only">WeChat</span>
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8.691 2.188C3.891 2.188 0 5.477 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.295.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 4.882-1.908 7.848-1.908.486 0 .972.024 1.459.075A7.842 7.842 0 0 0 8.691 2.188z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-sage-300 hover:text-white transition-colors">
+                            <span class="sr-only">Weibo</span>
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 快速链接 -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4" data-i18n="footer_quick_links">快速链接</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../185-ancient-recipes-research.html#home" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_home">首页</a></li>
+                        <li><a href="../185-ancient-recipes-research.html#ancient-wisdom" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_ancient">古人说"胖"</a></li>
+                        <li><a href="../185-ancient-recipes-research.html#body-signals" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_signals">身体的信号</a></li>
+                        <li><a href="../185-ancient-recipes-research.html#tcm-solutions" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_solutions">中医好方</a></li>
+                        <li><a href="../185-ancient-recipes-research.html#recipes" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_recipes">完整古方方剂</a></li>
+                        <li><a href="../modern-recipe.html" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_modern_recipes">现代方剂</a></li>
+                        <li><a href="#personalized_tool" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_personal_tool">个性化方案工具 (敬请期待)</a></li>
+                        <li><a href="#app" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_app">断食管理App (敬请期待)</a></li>
+                        <li><a href="../185-ancient-recipes-research.html#expert-insights" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_expert">专家解读</a></li>
+                        <li><a href="../185-ancient-recipes-research.html#data-insights" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_data">数据揭秘</a></li>
+                        <li><a href="../daily-food-alternative.html" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_food_science">日常食疗科学</a></li>
+                        <li><a href="../glossary.html" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_glossary">基础术语</a></li>
+                        <li><a href="../river-metaphor/index.html" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_river_metaphor">河流隐喻</a></li>
+                    </ul>
+                </div>
+
+                <!-- 法律信息 -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4" data-i18n="footer_legal">法律信息</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../privacy.html" class="text-sage-300 hover:text-white transition-colors" data-i18n="footer_privacy">隐私政策</a></li>
+                        <li><a href="../terms.html" class="text-sage-300 hover:text-white transition-colors" data-i18n="footer_terms">使用条款</a></li>
+                        <li><a href="../contact.html" class="text-sage-300 hover:text-white transition-colors" data-i18n="footer_contact">联系我们</a></li>
+                        <li><a href="../disclaimer.html" class="text-sage-300 hover:text-white transition-colors" data-i18n="footer_disclaimer">免责声明</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 底部版权 -->
+            <div class="border-t border-sage-700 mt-12 pt-8 text-center">
+                <p class="text-sage-300" data-i18n="footer_copyright">
+                    &copy; 2024 heytcm 研究团队. 版权所有.
+                </p>
+                <p class="text-sage-400 text-sm mt-2" data-i18n="footer_academic">
+                    本站内容仅供学术研究和科普教育，不构成医疗建议。
+                </p>
+            </div>
+        </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

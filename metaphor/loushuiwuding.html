@@ -1,0 +1,813 @@
+<!DOCTYPE html><html lang="zh-CN" class="scroll-smooth"><head><meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://code.jquery.com https://unpkg.com https://d3js.org https://threejs.org https://cdn.plot.ly https://stackpath.bootstrapcdn.com https://maps.googleapis.com https://cdn.tailwindcss.com https://ajax.googleapis.com https://kit.fontawesome.com https://cdn.datatables.net https://maxcdn.bootstrapcdn.com https://code.highcharts.com https://tako-static-assets-production.s3.amazonaws.com https://www.youtube.com https://fonts.googleapis.com https://fonts.gstatic.com https://pfst.cf2.poecdn.net https://puc.poecdn.net https://i.imgur.com https://wikimedia.org https://*.icons8.com https://*.giphy.com https://picsum.photos https://images.unsplash.com; frame-src 'self' https://www.youtube.com https://trytako.com; child-src 'self'; manifest-src 'self'; worker-src 'self'; upgrade-insecure-requests; block-all-mixed-content;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>修复你的"漏雨房顶" - 中医古方减肥对比</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5D5CDE',
+                        tcm: {
+                            50: '#f0f9f0',
+                            100: '#dcf2dc',
+                            500: '#4a7c59',
+                            600: '#3d6b4a',
+                            700: '#2d5233'
+                        },
+                        warm: {
+                            50: '#fef7f0',
+                            100: '#feeddc',
+                            500: '#d97706',
+                            600: '#c2410c'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .leaky-roof {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .leaky-roof::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 10 L90 50 L75 50 L75 85 L25 85 L25 50 L10 50 Z' fill='%23ffffff20'/%3E%3C/svg%3E") center/contain no-repeat;
+        }
+        .raindrop {
+            animation: fall 1s infinite linear;
+        }
+        @keyframes fall {
+            0% { transform: translateY(-10px); opacity: 1; }
+            100% { transform: translateY(20px); opacity: 0; }
+        }
+        .hero-card {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.9);
+        }
+        .dark .hero-card {
+            background: rgba(30, 30, 30, 0.9);
+        }
+        .comparison-row:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .dark .comparison-row:hover {
+            box-shadow: 0 10px 25px rgba(255,255,255,0.1);
+        }
+        .method-icon {
+            transition: all 0.3s ease;
+        }
+        .method-icon:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="font-sans bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+
+<!-- 英雄区 -->
+<section class="leaky-roof min-h-screen flex items-center justify-center relative">
+    <!-- 雨滴动画 -->
+    <div class="absolute inset-0 pointer-events-none">
+        <div class="raindrop absolute top-10 left-1/4 w-1 h-8 bg-blue-300 rounded-full opacity-60"></div>
+        <div class="raindrop absolute top-16 left-1/2 w-1 h-6 bg-blue-300 rounded-full opacity-40" style="animation-delay: 0.3s;"></div>
+        <div class="raindrop absolute top-12 left-3/4 w-1 h-10 bg-blue-300 rounded-full opacity-50" style="animation-delay: 0.6s;"></div>
+    </div>
+    
+    <div class="container mx-auto px-4 text-center relative z-10">
+        <div class="hero-card rounded-3xl p-8 md:p-12 max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 text-gray-900 dark:text-white">
+                修复你的<span class="text-primary">"漏雨房顶"</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-700 dark:text-gray-300">
+                中医古方如何重新定义减肥：告别严格节食和副作用，用千年古方温和调理你的身体
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button onclick="scrollToSection('quiz')" class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:scale-105">
+                    🧐 测测你的体质
+                </button>
+                <button onclick="scrollToSection('recipes')" class="bg-warm-500 hover:bg-warm-600 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:scale-105">
+                    🍵 探索古方食谱
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 类比介绍 -->
+<section class="py-16 bg-gray-50 dark:bg-gray-800">
+    <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">肥胖就像漏雨的房顶 🏠💧</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="text-left">
+                    <p class="text-lg mb-4 text-gray-700 dark:text-gray-300">
+                        想象一下：肥胖就像房顶漏水，导致屋内潮湿发霉（疲倦、情绪低落）。不同的减肥方法就像修房顶的不同策略，但效果和代价大不相同。
+                    </p>
+                    <ul class="space-y-3 text-gray-600 dark:text-gray-400">
+                        <li class="flex items-center">
+                            <span class="text-red-500 mr-2">🛡️</span>
+                            <span>节食像盖防水布：暂时挡水但易反弹</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-blue-500 mr-2">🪣</span>
+                            <span>运动像接水桶：需要不停处理</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-primary mr-2">🔧</span>
+                            <span>古方像修复结构：温和且持久</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900 dark:to-blue-800 rounded-2xl p-6 shadow-lg">
+                        <div class="text-6xl text-center mb-4">🏠</div>
+                        <p class="text-center text-sm text-gray-600 dark:text-gray-400">修复后的房顶</p>
+                        <div class="text-center mt-2">☀️ 干燥舒适</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 对比表格 -->
+<section class="py-16">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">哪种方法最适合你？📊</h2>
+        <div class="overflow-x-auto">
+            <table class="w-full max-w-7xl mx-auto bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden">
+                <thead class="bg-gray-100 dark:bg-gray-700">
+                    <tr>
+                        <th class="px-6 py-4 text-left font-semibold">方法</th>
+                        <th class="px-6 py-4 text-left font-semibold">类比</th>
+                        <th class="px-6 py-4 text-left font-semibold">机制</th>
+                        <th class="px-6 py-4 text-left font-semibold">Reddit用户抱怨</th>
+                        <th class="px-6 py-4 text-left font-semibold">古方优势</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200 dark:divide-gray-600">
+                    <tr class="comparison-row transition-all duration-300">
+                        <td class="px-6 py-4">
+                            <div class="flex items-center">
+                                <span class="method-icon text-2xl mr-3">🥗</span>
+                                <span class="font-medium">饮食控制</span>
+                            </div>
+                        </td>
+                        <td class="px-6 py-4">🛡️ 盖防水布</td>
+                        <td class="px-6 py-4">限制热量摄入</td>
+                        <td class="px-6 py-4 text-red-600 dark:text-red-400">
+                            "计算热量太无聊"<br>
+                            "社交时很尴尬"
+                        </td>
+                        <td class="px-6 py-4 text-green-600 dark:text-green-400">无需严格限制，融入日常</td>
+                    </tr>
+                    <tr class="comparison-row transition-all duration-300">
+                        <td class="px-6 py-4">
+                            <div class="flex items-center">
+                                <span class="method-icon text-2xl mr-3">🏃</span>
+                                <span class="font-medium">运动</span>
+                            </div>
+                        </td>
+                        <td class="px-6 py-4">🪣 接水桶</td>
+                        <td class="px-6 py-4">消耗热量</td>
+                        <td class="px-6 py-4 text-red-600 dark:text-red-400">
+                            "没精力运动"<br>
+                            "感觉孤独"
+                        </td>
+                        <td class="px-6 py-4 text-green-600 dark:text-green-400">温和调理，配合轻运动</td>
+                    </tr>
+                    <tr class="comparison-row transition-all duration-300">
+                        <td class="px-6 py-4">
+                            <div class="flex items-center">
+                                <span class="method-icon text-2xl mr-3">💊</span>
+                                <span class="font-medium">药物</span>
+                            </div>
+                        </td>
+                        <td class="px-6 py-4">🩹 贴胶带</td>
+                        <td class="px-6 py-4">抑制食欲</td>
+                        <td class="px-6 py-4 text-red-600 dark:text-red-400">
+                            "胃痛严重"<br>
+                            "停药就反弹"
+                        </td>
+                        <td class="px-6 py-4 text-green-600 dark:text-green-400">天然药材，无副作用</td>
+                    </tr>
+                    <tr class="comparison-row transition-all duration-300">
+                        <td class="px-6 py-4">
+                            <div class="flex items-center">
+                                <span class="method-icon text-2xl mr-3">🔪</span>
+                                <span class="font-medium">手术</span>
+                            </div>
+                        </td>
+                        <td class="px-6 py-4">🏗️ 重建房顶</td>
+                        <td class="px-6 py-4">限制胃容量</td>
+                        <td class="px-6 py-4 text-red-600 dark:text-red-400">
+                            "高风险手术"<br>
+                            "无法一起吃饭"
+                        </td>
+                        <td class="px-6 py-4 text-green-600 dark:text-green-400">无需侵入性改变</td>
+                    </tr>
+                    <tr class="comparison-row transition-all duration-300 bg-gradient-to-r from-primary/5 to-warm-500/5 border-2 border-primary/20">
+                        <td class="px-6 py-4">
+                            <div class="flex items-center">
+                                <span class="method-icon text-2xl mr-3">🌿</span>
+                                <span class="font-medium text-primary">中医古方</span>
+                            </div>
+                        </td>
+                        <td class="px-6 py-4 font-semibold text-primary">🔧 修复房顶结构</td>
+                        <td class="px-6 py-4">调理脾胃、化痰祛湿</td>
+                        <td class="px-6 py-4 text-gray-500 dark:text-gray-400">
+                            "效果慢，需指导"
+                        </td>
+                        <td class="px-6 py-4 font-semibold text-primary">
+                            个性化调理，温和可持续<br>
+                            融入饮食，无副作用
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- 雷达图对比 -->
+<section class="py-16 bg-gray-50 dark:bg-gray-800">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">修复房顶，哪种方法更胜一筹？📈</h2>
+        <div class="max-w-4xl mx-auto bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-xl">
+            <canvas id="comparisonChart" width="400" height="300"></canvas>
+        </div>
+        <div class="max-w-3xl mx-auto mt-8 grid grid-cols-2 md:grid-cols-3 gap-4 text-sm text-gray-600 dark:text-gray-400">
+            <div class="text-center">
+                <div class="w-4 h-4 bg-green-500 rounded mx-auto mb-1"></div>
+                饮食控制（防水布）
+            </div>
+            <div class="text-center">
+                <div class="w-4 h-4 bg-blue-500 rounded mx-auto mb-1"></div>
+                运动（接水桶）
+            </div>
+            <div class="text-center">
+                <div class="w-4 h-4 bg-yellow-500 rounded mx-auto mb-1"></div>
+                药物（胶带）
+            </div>
+            <div class="text-center">
+                <div class="w-4 h-4 bg-purple-500 rounded mx-auto mb-1"></div>
+                手术（重建房顶）
+            </div>
+            <div class="text-center md:col-span-2">
+                <div class="w-4 h-4 bg-red-500 rounded mx-auto mb-1"></div>
+                中医古方（修复结构）
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 体质自测 -->
+<section id="quiz" class="py-16">
+    <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">你的"房顶"漏在哪儿？🔍</h2>
+            <p class="text-center text-gray-600 dark:text-gray-400 mb-8">通过简单测试了解你的体质类型，找到最适合的调理方案</p>
+            
+            <div id="quizContainer" class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl">
+                <div id="quizProgress" class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mb-8">
+                    <div id="progressBar" class="bg-primary h-2 rounded-full transition-all duration-500" style="width: 0%"></div>
+                </div>
+                
+                <div id="quizContent">
+                    <div class="quiz-question active">
+                        <h3 class="text-xl font-semibold mb-6">1. 你是否经常感到身体沉重、疲倦？</h3>
+                        <div class="space-y-3">
+                            <label class="flex items-center p-4 border border-gray-200 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 cursor-pointer transition-colors">
+                                <input type="radio" name="q1" value="yes" class="mr-3 text-primary">
+                                <span>是的，经常感觉身体像灌了铅一样重</span>
+                            </label>
+                            <label class="flex items-center p-4 border border-gray-200 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 cursor-pointer transition-colors">
+                                <input type="radio" name="q1" value="sometimes" class="mr-3 text-primary">
+                                <span>偶尔会有这种感觉</span>
+                            </label>
+                            <label class="flex items-center p-4 border border-gray-200 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 cursor-pointer transition-colors">
+                                <input type="radio" name="q1" value="no" class="mr-3 text-primary">
+                                <span>很少或从未有过</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-question" style="display: none;">
+                        <h3 class="text-xl font-semibold mb-6">2. 你是否容易情绪低落、腹胀？</h3>
+                        <div class="space-y-3">
+                            <label class="flex items-center p-4 border border-gray-200 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 cursor-pointer transition-colors">
+                                <input type="radio" name="q2" value="yes" class="mr-3 text-primary">
+                                <span>是的，经常感觉堵得慌</span>
+                            </label>
+                            <label class="flex items-center p-4 border border-gray-200 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 cursor-pointer transition-colors">
+                                <input type="radio" name="q2" value="sometimes" class="mr-3 text-primary">
+                                <span>有时会这样</span>
+                            </label>
+                            <label class="flex items-center p-4 border border-gray-200 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 cursor-pointer transition-colors">
+                                <input type="radio" name="q2" value="no" class="mr-3 text-primary">
+                                <span>很少有这种情况</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-question" style="display: none;">
+                        <h3 class="text-xl font-semibold mb-6">3. 你是否气短乏力、动则出汗？</h3>
+                        <div class="space-y-3">
+                            <label class="flex items-center p-4 border border-gray-200 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 cursor-pointer transition-colors">
+                                <input type="radio" name="q3" value="yes" class="mr-3 text-primary">
+                                <span>是的，稍微活动就喘气出汗</span>
+                            </label>
+                            <label class="flex items-center p-4 border border-gray-200 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 cursor-pointer transition-colors">
+                                <input type="radio" name="q3" value="sometimes" class="mr-3 text-primary">
+                                <span>偶尔会这样</span>
+                            </label>
+                            <label class="flex items-center p-4 border border-gray-200 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 cursor-pointer transition-colors">
+                                <input type="radio" name="q3" value="no" class="mr-3 text-primary">
+                                <span>体力还算不错</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 flex justify-between">
+                    <button id="prevBtn" onclick="changeQuestion(-1)" class="px-6 py-3 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors" style="display: none;">上一题</button>
+                    <button id="nextBtn" onclick="changeQuestion(1)" class="px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors ml-auto">下一题</button>
+                    <button id="submitBtn" onclick="submitQuiz()" class="px-6 py-3 bg-warm-500 text-white rounded-lg hover:bg-warm-600 transition-colors ml-auto" style="display: none;">查看结果</button>
+                </div>
+            </div>
+            
+            <div id="quizResult" class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl mt-8" style="display: none;">
+                <div class="text-center">
+                    <h3 class="text-2xl font-bold mb-4">你的体质测试结果</h3>
+                    <div id="resultContent"></div>
+                    <button onclick="scrollToSection('recipes')" class="mt-6 bg-primary text-white px-8 py-3 rounded-full hover:bg-primary/90 transition-colors">
+                        查看适合你的古方 🌿
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 古方亮点 -->
+<section class="py-16 bg-gradient-to-br from-tcm-50 to-warm-50 dark:from-gray-800 dark:to-gray-700">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">为何选择中医古方？✨</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                <div class="text-4xl mb-4">🎯</div>
+                <h3 class="text-xl font-semibold mb-3">个性化修复</h3>
+                <p class="text-gray-600 dark:text-gray-400">根据你的体质选择合适的古方，就像为不同房子选择不同的修复方案，而不是一刀切的防水布。</p>
+            </div>
+            <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                <div class="text-4xl mb-4">🍽️</div>
+                <h3 class="text-xl font-semibold mb-3">融入生活</h3>
+                <p class="text-gray-600 dark:text-gray-400">药膳融入日常饮食，无需改变习惯，解决聚会时的社交尴尬问题。</p>
+            </div>
+            <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                <div class="text-4xl mb-4">🌱</div>
+                <h3 class="text-xl font-semibold mb-3">温和无副作用</h3>
+                <p class="text-gray-600 dark:text-gray-400">天然药材安全可靠，不像化学药物会引起胃肠不适等副作用。</p>
+            </div>
+            <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                <div class="text-4xl mb-4">♻️</div>
+                <h3 class="text-xl font-semibold mb-3">长期可持续</h3>
+                <p class="text-gray-600 dark:text-gray-400">修复根本的代谢问题，避免反弹，实现真正的长期健康。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 用户故事 -->
+<section class="py-16">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">听听其他"房顶修复者"的故事 💬</h2>
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center text-primary font-bold mr-4">L</div>
+                    <div>
+                        <h4 class="font-semibold">Lisa (Reddit用户)</h4>
+                        <p class="text-sm text-gray-500">解决了"计算热量太无聊"</p>
+                    </div>
+                </div>
+                <p class="text-gray-600 dark:text-gray-400">"用薏米粥调理痰湿，3个月减重2kg，完全不用计算热量，感觉更轻松了！"</p>
+            </div>
+            <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-warm-500/20 rounded-full flex items-center justify-center text-warm-500 font-bold mr-4">M</div>
+                    <div>
+                        <h4 class="font-semibold">Mike (Reddit用户)</h4>
+                        <p class="text-sm text-gray-500">解决了"聚会时尴尬"</p>
+                    </div>
+                </div>
+                <p class="text-gray-600 dark:text-gray-400">"现在聚会时喝冬瓜汤，朋友们都觉得很健康，不再需要解释为什么不吃某些食物。"</p>
+            </div>
+            <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-tcm-500/20 rounded-full flex items-center justify-center text-tcm-500 font-bold mr-4">S</div>
+                    <div>
+                        <h4 class="font-semibold">Sarah (Reddit用户)</h4>
+                        <p class="text-sm text-gray-500">解决了"情绪饮食"</p>
+                    </div>
+                </div>
+                <p class="text-gray-600 dark:text-gray-400">"香附茶帮我舒肝理气，不再因为压力而暴饮暴食，心情也变好了。"</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 药膳示例 -->
+<section id="recipes" class="py-16 bg-gray-50 dark:bg-gray-800">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">尝试这些古方药膳，修复你的"房顶" 🍵</h2>
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div class="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                <div class="h-48 bg-gradient-to-br from-green-100 to-green-200 dark:from-green-900 dark:to-green-800 flex items-center justify-center">
+                    <span class="text-6xl">🍚</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-3">薏米粥</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">针对痰湿证，化湿健脾，制作仅需15分钟</p>
+                    <div class="text-sm text-gray-500 mb-4">
+                        <p><strong>功效：</strong>祛湿减重，改善身体沉重感</p>
+                        <p><strong>适用：</strong>身体疲倦、水肿明显</p>
+                    </div>
+                    <button class="w-full bg-tcm-500 text-white py-2 rounded-lg hover:bg-tcm-600 transition-colors">
+                        查看制作方法
+                    </button>
+                </div>
+            </div>
+            
+            <div class="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                <div class="h-48 bg-gradient-to-br from-pink-100 to-pink-200 dark:from-pink-900 dark:to-pink-800 flex items-center justify-center">
+                    <span class="text-6xl">🌹</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-3">玫瑰花茶</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">针对气滞痰湿证，舒肝理气，适合情绪低落</p>
+                    <div class="text-sm text-gray-500 mb-4">
+                        <p><strong>功效：</strong>疏肝解郁，缓解情绪饮食</p>
+                        <p><strong>适用：</strong>压力大、情绪波动</p>
+                    </div>
+                    <button class="w-full bg-pink-500 text-white py-2 rounded-lg hover:bg-pink-600 transition-colors">
+                        查看制作方法
+                    </button>
+                </div>
+            </div>
+            
+            <div class="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                <div class="h-48 bg-gradient-to-br from-orange-100 to-orange-200 dark:from-orange-900 dark:to-orange-800 flex items-center justify-center">
+                    <span class="text-6xl">🍠</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-3">山药粥</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">针对气虚痰湿证，补气健脾，适合乏力者</p>
+                    <div class="text-sm text-gray-500 mb-4">
+                        <p><strong>功效：</strong>补脾益气，增强体力</p>
+                        <p><strong>适用：</strong>体质虚弱、容易疲劳</p>
+                    </div>
+                    <button class="w-full bg-orange-500 text-white py-2 rounded-lg hover:bg-orange-600 transition-colors">
+                        查看制作方法
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-12">
+            <button class="bg-primary text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-primary/90 transition-colors">
+                探索更多古方 📚
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- 声明与引导 -->
+<section class="py-16">
+    <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto bg-amber-50 dark:bg-amber-900/20 rounded-2xl p-8 border border-amber-200 dark:border-amber-800">
+            <h2 class="text-2xl font-bold mb-6 text-amber-800 dark:text-amber-200">⚠️ 重要提醒</h2>
+            <div class="prose prose-amber dark:prose-invert max-w-none">
+                <ul class="space-y-3 text-amber-700 dark:text-amber-300">
+                    <li>本页面内容仅供科普教育，不能替代专业医疗诊断</li>
+                    <li>中医古方需要在合格中医师指导下使用</li>
+                    <li>不同体质需要不同调理方案，请勿自行用药</li>
+                    <li>如有疾病请及时就医，不要延误治疗</li>
+                </ul>
+            </div>
+            <div class="mt-6 flex flex-col sm:flex-row gap-4">
+                <button class="bg-amber-600 text-white px-6 py-3 rounded-lg hover:bg-amber-700 transition-colors">
+                    寻找附近中医师 🏥
+                </button>
+                <button class="border border-amber-600 text-amber-600 dark:text-amber-400 px-6 py-3 rounded-lg hover:bg-amber-50 dark:hover:bg-amber-900/30 transition-colors">
+                    联系我们了解更多 📞
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 页面底部 -->
+<footer class="bg-sage-800 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- 网站信息 -->
+            <div class="col-span-1 md:col-span-2">
+                <h3 class="text-xl font-serif font-semibold mb-4" data-i18n="footer_site_name">heytcm 研究团队</h3>
+                <p class="text-sage-300 mb-4" data-i18n="footer_description">
+                    传承千年中医智慧，以现代科技重塑古典医学价值，为您的健康管理提供新思路。
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-sage-300 hover:text-white transition-colors">
+                        <span class="sr-only">WeChat</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M8.691 2.188C3.891 2.188 0 5.477 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 4.882-1.908 7.848-1.908.486 0 .972.024 1.459.075A7.842 7.842 0 0 0 8.691 2.188z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-sage-300 hover:text-white transition-colors">
+                        <span class="sr-only">Weibo</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 快速链接 -->
+            <div>
+                <h4 class="text-lg font-semibold mb-4" data-i18n="footer_quick_links">快速链接</h4>
+                <ul class="space-y-2">
+                    <li><a href="../185-ancient-recipes-research.html#home" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_home">首页</a></li>
+                    <li><a href="../185-ancient-recipes-research.html#ancient-wisdom" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_ancient">古人说"胖"</a></li>
+                    <li><a href="../185-ancient-recipes-research.html#body-signals" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_signals">身体的信号</a></li>
+                    <li><a href="../185-ancient-recipes-research.html#tcm-solutions" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_solutions">中医好方</a></li>
+                    <li><a href="../185-ancient-recipes-research.html#recipes" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_recipes">完整古方方剂</a></li>
+                    <li><a href="../modern-recipe.html" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_modern_recipes">现代方剂</a></li>
+                    <li><a href="#personalized_tool" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_personal_tool">个性化方案工具 (敬请期待)</a></li>
+                    <li><a href="#app" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_app">断食管理App (敬请期待)</a></li>
+                    <li><a href="../185-ancient-recipes-research.html#expert-insights" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_expert">专家解读</a></li>
+                    <li><a href="../185-ancient-recipes-research.html#data-insights" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_data">数据揭秘</a></li>
+                    <li><a href="../daily-food-alternative.html" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_food_science">日常食疗科学</a></li>
+                    <li><a href="../glossary.html" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_glossary">基础术语</a></li>
+                    <li><a href="../river-metaphor/index.html" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_river_metaphor">河流隐喻</a></li>
+                </ul>
+            </div>
+
+            <!-- 法律信息 -->
+            <div>
+                <h4 class="text-lg font-semibold mb-4" data-i18n="footer_legal">法律信息</h4>
+                <ul class="space-y-2">
+                    <li><a href="../privacy.html" class="text-sage-300 hover:text-white transition-colors" data-i18n="footer_privacy">隐私政策</a></li>
+                    <li><a href="../terms.html" class="text-sage-300 hover:text-white transition-colors" data-i18n="footer_terms">使用条款</a></li>
+                    <li><a href="../contact.html" class="text-sage-300 hover:text-white transition-colors" data-i18n="footer_contact">联系我们</a></li>
+                    <li><a href="../disclaimer.html" class="text-sage-300 hover:text-white transition-colors" data-i18n="footer_disclaimer">免责声明</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 底部版权 -->
+        <div class="border-t border-sage-700 mt-12 pt-8 text-center">
+            <p class="text-sage-300" data-i18n="footer_copyright">
+                &copy; 2024 heytcm 研究团队. 版权所有.
+            </p>
+            <p class="text-sage-400 text-sm mt-2" data-i18n="footer_academic">
+                本站内容仅供学术研究和科普教育，不构成医疗建议。
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script>
+// 深色模式支持
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.documentElement.classList.add('dark');
+}
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+    if (event.matches) {
+        document.documentElement.classList.add('dark');
+    } else {
+        document.documentElement.classList.remove('dark');
+    }
+});
+
+// 滚动到指定区域
+function scrollToSection(sectionId) {
+    document.getElementById(sectionId).scrollIntoView({ 
+        behavior: 'smooth' 
+    });
+}
+
+// 雷达图初始化
+document.addEventListener('DOMContentLoaded', function() {
+    const ctx = document.getElementById('comparisonChart').getContext('2d');
+    new Chart(ctx, {
+        type: 'radar',
+        data: {
+            labels: ['修复效果', '可持续性', '舒适度', '副作用少', '不影响生活', '个性化'],
+            datasets: [
+                {
+                    label: '饮食控制（防水布）',
+                    data: [6, 3, 3, 6, 2, 4],
+                    backgroundColor: 'rgba(76, 175, 80, 0.2)',
+                    borderColor: '#4CAF50',
+                    borderWidth: 2
+                },
+                {
+                    label: '运动（接水桶）',
+                    data: [4, 5, 5, 8, 6, 3],
+                    backgroundColor: 'rgba(33, 150, 243, 0.2)',
+                    borderColor: '#2196F3',
+                    borderWidth: 2
+                },
+                {
+                    label: '药物（胶带）',
+                    data: [7, 4, 4, 3, 4, 5],
+                    backgroundColor: 'rgba(255, 193, 7, 0.2)',
+                    borderColor: '#FFC107',
+                    borderWidth: 2
+                },
+                {
+                    label: '手术（重建房顶）',
+                    data: [9, 6, 2, 4, 2, 6],
+                    backgroundColor: 'rgba(156, 39, 176, 0.2)',
+                    borderColor: '#9C27B0',
+                    borderWidth: 2
+                },
+                {
+                    label: '中医古方（修复结构）',
+                    data: [6, 8, 8, 9, 8, 9],
+                    backgroundColor: 'rgba(255, 87, 34, 0.2)',
+                    borderColor: '#FF5722',
+                    borderWidth: 3
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                r: {
+                    angleLines: { display: true },
+                    suggestedMin: 0,
+                    suggestedMax: 10,
+                    ticks: { stepSize: 2 }
+                }
+            },
+            plugins: {
+                legend: { position: 'bottom' },
+                title: {
+                    display: true,
+                    text: '减肥方法修复能力对比'
+                }
+            }
+        }
+    });
+});
+
+// 体质测试功能
+let currentQuestion = 0;
+const totalQuestions = 3;
+let answers = {};
+
+function changeQuestion(direction) {
+    const questions = document.querySelectorAll('.quiz-question');
+    questions[currentQuestion].style.display = 'none';
+    
+    currentQuestion += direction;
+    
+    if (currentQuestion >= 0 && currentQuestion < totalQuestions) {
+        questions[currentQuestion].style.display = 'block';
+        updateProgress();
+        updateButtons();
+    }
+}
+
+function updateProgress() {
+    const progress = ((currentQuestion + 1) / totalQuestions) * 100;
+    document.getElementById('progressBar').style.width = progress + '%';
+}
+
+function updateButtons() {
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const submitBtn = document.getElementById('submitBtn');
+    
+    prevBtn.style.display = currentQuestion > 0 ? 'block' : 'none';
+    
+    if (currentQuestion === totalQuestions - 1) {
+        nextBtn.style.display = 'none';
+        submitBtn.style.display = 'block';
+    } else {
+        nextBtn.style.display = 'block';
+        submitBtn.style.display = 'none';
+    }
+}
+
+function submitQuiz() {
+    // 收集答案
+    const q1 = document.querySelector('input[name="q1"]:checked');
+    const q2 = document.querySelector('input[name="q2"]:checked');
+    const q3 = document.querySelector('input[name="q3"]:checked');
+    
+    if (!q1 || !q2 || !q3) {
+        alert('请完成所有问题');
+        return;
+    }
+    
+    answers.q1 = q1.value;
+    answers.q2 = q2.value;
+    answers.q3 = q3.value;
+    
+    // 分析体质
+    let result = analyzeConstitution(answers);
+    
+    // 显示结果
+    showQuizResult(result);
+}
+
+function analyzeConstitution(answers) {
+    let score = {
+        tanshi: 0,     // 痰湿证
+        qizhi: 0,      // 气滞痰湿证
+        qixu: 0        // 气虚痰湿证
+    };
+    
+    // 问题1：身体沉重疲倦 -> 痰湿证
+    if (answers.q1 === 'yes') score.tanshi += 2;
+    else if (answers.q1 === 'sometimes') score.tanshi += 1;
+    
+    // 问题2：情绪低落腹胀 -> 气滞痰湿证
+    if (answers.q2 === 'yes') score.qizhi += 2;
+    else if (answers.q2 === 'sometimes') score.qizhi += 1;
+    
+    // 问题3：气短乏力 -> 气虚痰湿证
+    if (answers.q3 === 'yes') score.qixu += 2;
+    else if (answers.q3 === 'sometimes') score.qixu += 1;
+    
+    // 确定主要体质
+    let maxScore = Math.max(score.tanshi, score.qizhi, score.qixu);
+    
+    if (score.tanshi === maxScore) {
+        return {
+            type: '痰湿证',
+            description: '你的"房顶"主要问题是湿气堵塞，建议使用化湿健脾的古方调理。',
+            recommendation: '推荐：二陈汤、薏米粥',
+            icon: '💧',
+            color: 'blue'
+        };
+    } else if (score.qizhi === maxScore) {
+        return {
+            type: '气滞痰湿证',
+            description: '你的"房顶"问题在于气机不畅，建议疏肝理气，化痰祛湿。',
+            recommendation: '推荐：香附茶、玫瑰花茶',
+            icon: '🌪️',
+            color: 'purple'
+        };
+    } else {
+        return {
+            type: '气虚痰湿证',
+            description: '你的"房顶"需要补气健脾，增强修复能力。',
+            recommendation: '推荐：四君子汤、山药粥',
+            icon: '⚡',
+            color: 'orange'
+        };
+    }
+}
+
+function showQuizResult(result) {
+    document.getElementById('quizContainer').style.display = 'none';
+    document.getElementById('quizResult').style.display = 'block';
+    
+    const resultContent = document.getElementById('resultContent');
+    resultContent.innerHTML = `
+        <div class="text-6xl mb-4">${result.icon}</div>
+        <h4 class="text-xl font-semibold mb-3 text-${result.color}-600">${result.type}</h4>
+        <p class="text-gray-600 dark:text-gray-400 mb-4">${result.description}</p>
+        <div class="bg-${result.color}-50 dark:bg-${result.color}-900/20 rounded-lg p-4 text-${result.color}-700 dark:text-${result.color}-300">
+            <strong>${result.recommendation}</strong>
+        </div>
+        <p class="text-sm text-gray-500 mt-4">*此结果仅供参考，具体调理方案请咨询中医师</p>
+    `;
+}
+
+// 页面加载时初始化
+document.addEventListener('DOMContentLoaded', function() {
+    updateProgress();
+    updateButtons();
+});
+</script>
+
+</body></html>

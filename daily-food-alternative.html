@@ -1,0 +1,2259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="page_title">中医药治疗肥胖：数据挖掘与网络药理研究成果 | heytcm</title>
+    <meta name="description" data-i18n="page_description" content="深入探索中医药治疗肥胖的科学机制，通过数据挖掘和网络药理学揭示核心成分与靶点，为您提供前沿研究洞察。">
+    <meta name="keywords" content="中医减肥,肥胖研究,数据挖掘,网络药理学,中药成分,靶点,heytcm,科学研究">
+    
+    <!-- SEO优化 -->
+    <meta property="og:title" data-i18n="og_title" content="中医药治疗肥胖：数据挖掘与网络药理研究成果">
+    <meta property="og:description" data-i18n="og_description" content="基于科学数据的中医药肥胖治疗研究，揭示核心成分与分子机制。">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./img/hero-image.jpg"> <!-- Consider a more scientific image -->
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tcm-weight-wisdom.com/daily-food-alternative.html">
+    
+    <!-- Schema.org标记 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "中医药治疗肥胖研究成果",
+      "description": "基于数据挖掘与网络药理学的中医药肥胖治疗研究",
+      "publisher": {
+        "@type": "Organization",
+        "name": "heytcm 研究团队",
+        "url": "https://tcm-weight-wisdom.com"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "heytcm 研究团队",
+        "affiliation": "权威中医药研究机构"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "肥胖症"
+            }
+        }
+    </script>
+    
+    <!-- 引入字体和CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    
+</head>
+<body class="font-sans text-gray-800 bg-warm-50 overflow-x-hidden">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50 border-b border-sage-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-xl font-serif font-semibold text-sage-800" data-i18n="site_name">heytcm</h1>
+                    </div>
+                </div>
+                
+                <!-- 桌面导航 -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html#home" class="nav-link text-sage-700 hover:text-sage-900 px-3 py-2 text-sm font-medium transition-colors" data-i18n="nav_home">首页</a>
+                        <a href="index.html#recipes" class="nav-link text-sage-700 hover:text-sage-900 px-3 py-2 text-sm font-medium transition-colors" data-i18n="nav_recipes_ancient">古方</a>
+                        <a href="modern-recipe.html" class="nav-link text-sage-700 hover:text-sage-900 px-3 py-2 text-sm font-medium transition-colors" data-i18n="nav_recipes_modern">现代方剂</a>
+                        <a href="daily-food-alternative.html" class="nav-link text-sage-700 hover:text-sage-900 px-3 py-2 text-sm font-medium transition-colors active" data-i18n="nav_food_science">日常食疗科学</a>
+                        <a href="glossary.html" class="nav-link text-sage-700 hover:text-sage-900 px-3 py-2 text-sm font-medium transition-colors" data-i18n="nav_glossary">基础术语</a>
+                        <a href="river-metaphor.html" class="nav-link text-sage-700 hover:text-sage-900 px-3 py-2 text-sm font-medium transition-colors" data-i18n="nav_river_metaphor">河流隐喻</a>
+                        <a href="index.html#about" class="nav-link text-sage-700 hover:text-sage-900 px-3 py-2 text-sm font-medium transition-colors" data-i18n="nav_about">关于我们</a>
+                    </div>
+                </div>
+                
+                <!-- 语言切换 -->
+                <div class="flex items-center space-x-4">
+                    <select id="languageSelector" class="text-sm border border-sage-200 rounded-md px-2 py-1 bg-white text-sage-700 focus:outline-none focus:ring-2 focus:ring-sage-500">
+                        <option value="zh">中文</option>
+                        <option value="en">English</option>
+                    </select>
+                    
+                    <!-- 移动端菜单按钮 -->
+                    <button id="mobile-menu-button" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-sage-700 hover:text-sage-900 hover:bg-sage-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sage-500">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 移动端导航菜单 -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-sage-100">
+                <a href="index.html#home" class="mobile-nav-link block px-3 py-2 text-base font-medium text-sage-700 hover:text-sage-900 hover:bg-sage-50" data-i18n="nav_home">首页</a>
+                <a href="index.html#recipes" class="mobile-nav-link block px-3 py-2 text-base font-medium text-sage-700 hover:text-sage-900 hover:bg-sage-50" data-i18n="nav_recipes_ancient">古方</a>
+                <a href="modern-recipe.html" class="mobile-nav-link block px-3 py-2 text-base font-medium text-sage-700 hover:text-sage-900 hover:bg-sage-50" data-i18n="nav_recipes_modern">现代方剂</a>
+                <a href="daily-food-alternative.html" class="mobile-nav-link block px-3 py-2 text-base font-medium text-sage-700 hover:text-sage-900 hover:bg-sage-50 active" data-i18n="nav_food_science">日常食疗科学</a>
+                <a href="glossary.html" class="mobile-nav-link block px-3 py-2 text-base font-medium text-sage-700 hover:text-sage-900 hover:bg-sage-50" data-i18n="nav_glossary">基础术语</a>
+                <a href="river-metaphor.html" class="mobile-nav-link block px-3 py-2 text-base font-medium text-sage-700 hover:text-sage-900 hover:bg-sage-50" data-i18n="nav_river_metaphor">河流隐喻</a>
+                <a href="index.html#about" class="mobile-nav-link block px-3 py-2 text-base font-medium text-sage-700 hover:text-sage-900 hover:bg-sage-50" data-i18n="nav_about">关于我们</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区 -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-sage-50 to-warm-100 overflow-hidden">
+        <!-- Background decorations -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-20 left-10 w-32 h-32 bg-sage-300 rounded-full mix-blend-multiply animate-float"></div>
+            <div class="absolute top-40 right-20 w-24 h-24 bg-warm-300 rounded-full mix-blend-multiply animate-float-delayed"></div>
+            <div class="absolute bottom-20 left-1/4 w-40 h-40 bg-sage-200 rounded-full mix-blend-multiply animate-float"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-sage-900 mb-6 leading-tight">
+                    <span data-i18n="hero_title_main">精准食疗</span>
+                    <br>
+                    <span class="text-3xl md:text-5xl lg:text-6xl text-sage-700" data-i18n="hero_title_sub">重塑健康生活方式</span>
+                </h1>
+                
+                <p class="text-lg md:text-xl lg:text-2xl text-sage-600 mb-8 max-w-3xl mx-auto leading-relaxed" data-i18n="hero_subtitle">
+                    我们运用前沿大数据分析与网络药理学，深入解析日常食物和传统中药如何从分子层面助力体重管理，为您提供个性化、科学验证的饮食方案，轻松实现健康体重。
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-4xl mx-auto">
+                    <div class="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-sm border border-sage-100 hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-sage-200 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-6 h-6 text-sage-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                            </svg>
+            </div>
+                        <h3 class="text-lg font-semibold text-sage-800 mb-2" data-i18n="value_tcm_wisdom_title">中药智慧</h3>
+                        <p class="text-sage-600 text-sm" data-i18n="value_tcm_wisdom_desc">深度挖掘传统药材应用规律</p>
+        </div>
+                    
+                    <div class="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-sm border border-sage-100 hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-sage-200 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-6 h-6 text-sage-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-sage-800 mb-2" data-i18n="value_scientific_mining_title">科学挖掘</h3>
+                        <p class="text-sage-600 text-sm" data-i18n="value_scientific_mining_desc">运用数据分析揭示有效成分</p>
+                    </div>
+                    
+                    <div class="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-sm border border-sage-100 hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-sage-200 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-6 h-6 text-sage-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-sage-800 mb-2" data-i18n="value_modern_research_title">现代研究</h3>
+                        <p class="text-sage-600 text-sm" data-i18n="value_modern_research_desc">结合网络药理学探索分子机制</p>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button onclick="scrollToSection('core-components')" class="bg-sage-700 hover:bg-sage-800 text-sage px-8 py-4 rounded-full text-lg font-medium transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
+                        <span data-i18n="cta_explore_research">探索研究成果</span>
+                    </button>
+                    <button onclick="window.location.href='index.html#data-insights'" class="bg-white hover:bg-sage-50 text-sage-700 px-8 py-4 rounded-full text-lg font-medium border border-sage-300 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
+                        <span data-i18n="cta_data_insights">了解数据挖掘</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-sage-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+            </svg>
+        </div>
+    </section>
+
+        <!-- 核心信息卡片网格 -->
+    <section id="core-components" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-sage-900 mb-4">
+                    <span data-i18n="core_info_title">中医药科学洞察：精准体重管理的新篇章</span>
+                </h2>
+                <p class="text-lg text-sage-600 max-w-3xl mx-auto" data-i18n="core_info_subtitle">
+                    深入探索传统智慧与现代科技的融合，揭示中医药在体重管理中的分子奥秘
+                </p>
+            </div>
+        
+        <div class="grid grid-cols-1 gap-12 mb-12">
+            <!-- 网络药理学：揭示中药多靶点协同机制 -->
+            <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 animate-slide-up border border-gray-200">
+                <div class="flex items-center mb-6">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M12 20.005v-2.004m0 0a4 4 0 110-5.292m0 5.292V20.005M12 12v.01M12 12v.01M12 12v.01M12 12v.01M12 12v.01"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900">网络药理学：洞察中药多靶点协同作用</h3>
+                </div>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    中医药的独特之处在于其多成分、多靶点、多途径的协同作用。传统的单一靶点药物研究难以全面解析这种复杂性。我们的核心方法之一是运用网络药理学，这是一门新兴交叉学科，它通过构建"药物-成分-靶点-疾病"的复杂网络，从系统生物学层面全面揭示中药方剂的整体调控效应。这使我们能够突破传统思维，更宏观、更精准地理解中药如何通过影响体内多个生物通路和靶点，实现其独特的减肥功效，例如调节脂质代谢、抑制炎症反应、改善肠道菌群等。通过这种方法，我们能够为您提供更全面、更深入的科学依据，让您对中医药在体重管理中的作用有更清晰的认识。
+                </p>
+            </div>
+
+            <!-- 基因靶点：个性化精准干预的基石 -->
+            <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 animate-slide-up border border-gray-200">
+                <div class="flex items-center mb-6">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900">基因靶点：实现个性化精准体重管理</h3>
+                </div>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    随着基因组学技术的飞速发展，基因靶点已成为现代医学研究的核心。我们深知每个人的体质和代谢特点都有所不同，因此，通过深入研究中药活性成分如何精确调控与肥胖相关的基因表达，我们致力于提供更具针对性的解决方案。例如，某些中药成分可以直接或间接影响脂肪生成、能量消耗、食欲调节等关键基因通路。这意味着我们不仅能够从宏观上理解中药的整体效应，还能在微观层面揭示其作用于特定基因的分子机制，从而为您量身定制更有效的体重管理策略。我们的研究将传统中医药的智慧与现代基因科学相结合，旨在为您提供基于科学证据的、个性化的健康管理方案。
+                </p>
+            </div>
+
+            <!-- 大数据驱动：从古方到现代应用的智能转化 -->
+            <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 animate-slide-up border border-gray-200">
+                <div class="flex items-center mb-6">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-6a2 2 0 012-2h2a2 2 0 012 2v6m-4 0v-6a2 2 0 012-2h2a2 2 0 012 2v6m0 0a2 2 0 002 2h2a2 2 0 002-2m-2-2a2 2 0 00-2-2h-2a2 2 0 00-2 2"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900">大数据驱动：高效筛选与个性化满足</h3>
+                </div>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    为了将中医药的深厚积累转化为现代人可用的精准方案，我们构建并利用了先进的生物信息学数据库和计算平台。这些数据库整合了海量的中药化学成分、潜在靶点蛋白、疾病通路以及古今中药方剂的详细信息。通过运用复杂的数据挖掘算法，我们能够高效地从数千年积累的古方和现代研究中筛选出对体重管理有明确作用的有效成分及其对应的分子靶点。这意味着我们不依赖于经验判断，而是基于坚实的数据证据来推荐最适合您的食疗方案，确保每一个建议都能够最大程度地满足您对健康和个性化体重管理的需求。从古老智慧到现代科学，我们致力于为您提供最前沿、最可靠的健康选择。
+                </p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            <!-- 常用中药卡片 -->
+                <div class="bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 animate-slide-up border border-gray-200">
+                <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                        </svg>
+                    </div>
+                        <h3 class="text-xl font-bold text-gray-900" data-i18n="common_herbs_title">常用中药</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">茯苓</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">白术</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">泽泻</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">甘草</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">山楂</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">陈皮</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">半夏</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">大黄</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">黄芪</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">荷叶</span>
+                </div>
+            </div>
+
+            <!-- 核心成分卡片 -->
+                <div class="bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 animate-slide-up border border-gray-200">
+                <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                        <h3 class="text-xl font-bold text-gray-900" data-i18n="core_components_title">核心成分</h3>
+                </div>
+                <div class="space-y-2">
+                    <div class="flex justify-between items-center">
+                            <span class="text-gray-700">槲皮素</span>
+                            <span class="text-sm text-blue-600">Quercetin</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                            <span class="text-gray-700">山柰酚</span>
+                            <span class="text-sm text-blue-600">Kaempferol</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                            <span class="text-gray-700">异鼠李素</span>
+                            <span class="text-sm text-blue-600">Isorhamnetin</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                            <span class="text-gray-700">芒柄花黄素</span>
+                            <span class="text-sm text-blue-600">Formononetin</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                            <span class="text-gray-700">β-谷甾醇</span>
+                            <span class="text-sm text-blue-600">Beta-sitosterol</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                            <span class="text-gray-700">柚皮素</span>
+                            <span class="text-sm text-blue-600">Naringenin</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 关键靶点卡片 -->
+                <div class="bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 animate-slide-up border border-gray-200">
+                <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                        <h3 class="text-xl font-bold text-gray-900" data-i18n="key_targets_title">关键靶点</h3>
+                </div>
+                <div class="grid grid-cols-2 gap-3">
+                        <div class="text-center p-3 bg-purple-50 rounded-lg">
+                            <div class="font-bold text-purple-800">TP53</div>
+                    </div>
+                        <div class="text-center p-3 bg-purple-50 rounded-lg">
+                            <div class="font-bold text-purple-800">JUN</div>
+                    </div>
+                        <div class="text-center p-3 bg-purple-50 rounded-lg">
+                            <div class="font-bold text-purple-800">AKT1</div>
+                    </div>
+                        <div class="text-center p-3 bg-purple-50 rounded-lg">
+                            <div class="font-bold text-purple-800">STAT3</div>
+                    </div>
+                        <div class="text-center p-3 bg-purple-50 rounded-lg col-span-2">
+                            <div class="font-bold text-purple-800">IL6</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+        <!-- 核心成分详细表格卡片 -->
+    <section id="detailed-analysis" class="py-20 bg-sage-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl p-6 shadow-xl mb-8 border border-gray-200">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center" data-i18n="detailed_analysis_title">核心成分详细分析</h3>
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm">
+                    <thead>
+                            <tr class="border-b border-gray-200">
+                                <th class="text-left py-3 px-4 font-semibold text-gray-900">核心有效成分 (Core Active Component)</th>
+                                <th class="text-left py-3 px-4 font-semibold text-gray-900">预测关键靶点 (Predicted Key Targets)</th>
+                                <th class="text-left py-3 px-4 font-semibold text-gray-900">预测机制简述 (Brief Predicted Mechanism)</th>
+                                <th class="text-left py-3 px-4 font-semibold text-gray-900">来源类型 (Source Category)</th>
+                                <th class="text-left py-3 px-4 font-semibold text-gray-900">常见食物/物品来源 (Common Dietary/Other Sources)</th>
+                                <th class="text-left py-3 px-4 font-semibold text-gray-900">具体例证 (Specific Examples from provided texts)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                            <td class="py-4 px-4 font-semibold text-sage-700">槲皮素 (Quercetin)</td>
+                                <td class="py-4 px-4 text-gray-700">TP53, JUN, AKT1, STAT3, IL6</td>
+                                <td class="py-4 px-4 text-gray-700">调节脂质代谢，抑制脂肪细胞增殖分化，抗炎，降脂减肥。</td>
+                                <td class="py-4 px-4 text-gray-700">蔬菜</td>
+                                <td class="py-4 px-4 text-gray-700">洋葱、大葱、菠菜、甘蓝、西兰花、西红柿、鱼腥草、菊苣</td>
+                                <td class="py-4 px-4 text-gray-700">红皮洋葱、大葱、鱼腥草、菊苣</td>
+                        </tr>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                            <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4 text-gray-700">水果</td>
+                                <td class="py-4 px-4 text-gray-700">苹果（带皮）、浆果类（蓝莓、草莓）、葡萄、枣、沙枣、余甘子</td>
+                                <td class="py-4 px-4 text-gray-700">骏枣、沙枣、余甘子</td>
+                        </tr>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                            <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4 text-gray-700">谷物/豆类</td>
+                                <td class="py-4 px-4 text-gray-700">苦荞茶、荞麦、藜麦、各类豆类</td>
+                                <td class="py-4 px-4 text-gray-700">苦荞茶、藜麦</td>
+                        </tr>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                            <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4 text-gray-700">茶叶/花草茶</td>
+                                <td class="py-4 px-4 text-gray-700">绿茶、荷叶、槐花/槐米、番石榴叶、桑叶、罗布麻叶、青钱柳、柿叶、蜡梅叶、马鞭草</td>
+                                <td class="py-4 px-4 text-gray-700">绿茶、荷叶、槐花/槐米、番石榴叶、桑叶、罗布麻叶、青钱柳、柿叶、蜡梅叶、马鞭草</td>
+                        </tr>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                            <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4 text-gray-700">蜂产品</td>
+                                <td class="py-4 px-4 text-gray-700">荞麦蜂花粉、蜂胶</td>
+                                <td class="py-4 px-4 text-gray-700">荞麦蜂花粉、蜂胶</td>
+                        </tr>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                            <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4 text-gray-700">药用/特殊植物</td>
+                                <td class="py-4 px-4 text-gray-700">沙棘（茎、叶、花、果、籽、黄酮、膏、胶囊、颗粒）、银杏叶、金钱草、蒙药/藏药（沙蓬、五脉绿绒蒿、多叶棘豆、苏龙嘎-4、十七味寒水石丸、长毛风毛菊、独一味）、畲药（锦鸡儿、地稔）、赶黄草、石韦、蚊子草、蕨类、菝葜、火棘、透骨香、扯根菜、小花清风藤、核桃楸皮、黄蜀葵花、桑寄生、细叶景天、天胡荽、金花茶叶、菟丝子、南葶苈子、高良姜、田基黄、香青兰、唐古特白刺、吴茱萸、风柜斗草、芙蓉、绞股蓝、小叶黑柴胡、醋柳黄酮</td>
+                                <td class="py-4 px-4 text-gray-700">沙棘、银杏叶、金钱草、沙蓬、五脉绿绒蒿、多叶棘豆、蒙药苏龙嘎-4、十七味寒水石丸、长毛风毛菊、独一味、锦鸡儿、地稔、赶黄草、石韦、蚊子草、秦岭蕨类、菝葜、火棘、黔产透骨香、扯根菜、小花清风藤、核桃楸皮、黄蜀葵花、桑寄生、细叶景天、天胡荽、金花茶叶、菟丝子、南葶苈子、高良姜、田基黄、香青兰、唐古特白刺、吴茱萸、风柜斗草、芙蓉、绞股蓝、小叶黑柴胡、醋柳黄酮</td>
+                        </tr>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                            <td class="py-4 px-4 font-semibold text-sage-700">山柰酚 (Kaempferol)</td>
+                                <td class="py-4 px-4 text-gray-700">TP53, JUN, AKT1, STAT3, IL6</td>
+                                <td class="py-4 px-4 text-gray-700">调控脂肪分化，减少脂质积累，抗炎，抗氧化。</td>
+                                <td class="py-4 px-4 text-gray-700">蔬菜</td>
+                                <td class="py-4 px-4 text-gray-700">羽衣甘蓝、菠菜、西兰花、抱子甘蓝、洋葱、菊苣</td>
+                                <td class="py-4 px-4 text-gray-700">羽衣甘蓝、菠菜、西兰花、抱子甘蓝、洋葱、菊苣</td>
+                        </tr>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                            <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4 text-gray-700">水果</td>
+                                <td class="py-4 px-4 text-gray-700">葡萄、苹果、浆果类、柑橘类</td>
+                                <td class="py-4 px-4 text-gray-700">葡萄、苹果、浆果类、柑橘类</td>
+                        </tr>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                            <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4 text-gray-700">谷物/豆类</td>
+                                <td class="py-4 px-4 text-gray-700">豆类、藜麦、苦荞茶、荞麦</td>
+                                <td class="py-4 px-4 text-gray-700">豆类、藜麦、苦荞茶</td>
+                        </tr>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                            <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4 text-gray-700">茶叶/花草茶</td>
+                                <td class="py-4 px-4 text-gray-700">绿茶、红茶、桑叶、柿叶</td>
+                                <td class="py-4 px-4 text-gray-700">绿茶、红茶、桑叶、柿叶</td>
+                        </tr>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                            <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4 text-gray-700">药用/特殊植物</td>
+                                <td class="py-4 px-4 text-gray-700">沙棘（黄酮、叶、籽粕、果）、红花、《中国药典》2020年版红花山柰酚含量测定、龙船花提取物、百蕊草、银杏叶、金钱草、畲药锦鸡儿、雪松果、石韦、蚊子草、秦岭蕨类、菝葜、南葶苈子、垂盆草、枸骨叶、土荆芥、芙蓉、绞股蓝、壮药茉莉花、壮药柿叶</td>
+                                <td class="py-4 px-4 text-gray-700">沙棘、红花、龙船花提取物、百蕊草、银杏叶、金钱草、畲药锦鸡儿、雪松果、石韦、蚊子草、秦岭蕨类、菝葜、南葶苈子、垂盆草、枸骨叶、土荆芥、芙蓉、绞股蓝、壮药茉莉花、壮药柿叶</td>
+                        </tr>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                            <td class="py-4 px-4 font-semibold text-sage-700">异鼠李素 (Isorhamnetin)</td>
+                                <td class="py-4 px-4 text-gray-700">TP53, JUN, AKT1, STAT3, IL6</td>
+                                <td class="py-4 px-4 text-gray-700">抑制脂肪细胞形成，抗炎，抗氧化。</td>
+                                <td class="py-4 px-4 text-gray-700">蔬菜</td>
+                                <td class="py-4 px-4 text-gray-700">洋葱、梨、西兰花</td>
+                                <td class="py-4 px-4 text-gray-700">洋葱、梨、西兰花</td>
+                        </tr>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                            <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4 text-gray-700">水果</td>
+                                <td class="py-4 px-4 text-gray-700">柑橘类、沙枣、骏枣、余甘子</td>
+                                <td class="py-4 px-4 text-gray-700">沙枣、骏枣、余甘子</td>
+                        </tr>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                            <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4 text-gray-700">谷物/豆类</td>
+                                <td class="py-4 px-4 text-gray-700">豆类、苦荞茶</td>
+                                <td class="py-4 px-4 text-gray-700">苦荞茶</td>
+                        </tr>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                            <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4 text-gray-700">茶叶/花草茶</td>
+                                <td class="py-4 px-4 text-gray-700">罗布麻叶、复方绞股蓝袋泡茶、银杏叶、枸骨叶</td>
+                                <td class="py-4 px-4 text-gray-700">罗布麻叶、复方绞股蓝袋泡茶、银杏叶、枸骨叶</td>
+                        </tr>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                            <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4 text-gray-700">蜂产品</td>
+                                <td class="py-4 px-4 text-gray-700">荞麦蜂花粉</td>
+                                <td class="py-4 px-4 text-gray-700">荞麦蜂花粉</td>
+                        </tr>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                            <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4 text-gray-700">药用/特殊植物</td>
+                                <td class="py-4 px-4 text-gray-700">沙棘（茎、叶、花、黄酮、籽粕、胶囊、膏、颗粒、鲜果）、蒲黄、蒙药沙蓬、龙船花提取物、畲药锦鸡儿、滇柴胡、结肠宁（灌肠剂）、田七痛经胶囊、雪松果、凹叶景天、垂盆草、紫斑牡丹花粉、护肝颗粒、新疆白刺叶、土荆芥、高良姜、布渣叶、清肝化瘀合剂、田基黄、香青兰、唐古特白刺、五灵止痛胶囊、脉通颗粒、复方血平胶囊、红藤方中间体、川西高原沙棘、藏药长毛风毛菊、小叶黑柴胡、独一味、醋柳黄酮、吴茱萸、菟丝子</td>
+                                <td class="py-4 px-4 text-gray-700">沙棘、蒲黄、蒙药沙蓬、龙船花提取物、畲药锦鸡儿、滇柴胡、结肠宁、田七痛经胶囊、雪松果、凹叶景天、垂盆草、紫斑牡丹花粉、护肝颗粒、新疆白刺叶、土荆芥、高良姜、布渣叶、清肝化瘀合剂、田基黄、香青兰、唐古特白刺、五灵止痛胶囊、脉通颗粒、复方血平胶囊、红藤方中间体、川西高原沙棘、藏药长毛风毛菊、小叶黑柴胡、独一味、醋柳黄酮、吴茱萸、菟丝子</td>
+                        </tr>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                            <td class="py-4 px-4 font-semibold text-sage-700">芒柄花黄素 (Formononetin)</td>
+                                <td class="py-4 px-4 text-gray-700">TP53, JUN, AKT1, STAT3, IL6</td>
+                                <td class="py-4 px-4 text-gray-700">促进棕色脂肪细胞产热及细胞呼吸作用，减轻肥胖。</td>
+                                <td class="py-4 px-4 text-gray-700">豆类</td>
+                                <td class="py-4 px-4 text-gray-700">三叶草、大豆、鹰嘴豆</td>
+                                <td class="py-4 px-4 text-gray-700">三叶草、大豆、鹰嘴豆</td>
+                        </tr>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                            <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4 text-gray-700">药用植物</td>
+                                <td class="py-4 px-4 text-gray-700">甘草、红三叶草、枸骨叶提取物</td>
+                                <td class="py-4 px-4 text-gray-700">甘草、红三叶草、枸骨叶提取物</td>
+                        </tr>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                            <td class="py-4 px-4 font-semibold text-sage-700">β-谷甾醇 (Beta-sitosterol)</td>
+                                <td class="py-4 px-4 text-gray-700">TP53, JUN, AKT1, STAT3, IL6</td>
+                                <td class="py-4 px-4 text-gray-700">抑制前体脂肪细胞生成，降脂，抗炎，抗氧化。</td>
+                                <td class="py-4 px-4 text-gray-700">坚果/种子</td>
+                                <td class="py-4 px-4 text-gray-700">坚果、南瓜籽、葵花籽</td>
+                                <td class="py-4 px-4 text-gray-700">坚果、南瓜籽、葵花籽</td>
+                        </tr>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                            <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4 text-gray-700">植物油</td>
+                                <td class="py-4 px-4 text-gray-700">玉米油、豆油</td>
+                                <td class="py-4 px-4 text-gray-700">玉米油、豆油</td>
+                        </tr>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                            <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4 text-gray-700">其他食物</td>
+                                <td class="py-4 px-4 text-gray-700">鳄梨、豆类、全谷物、部分蔬菜和水果</td>
+                                <td class="py-4 px-4 text-gray-700">鳄梨、豆类、全谷物、部分蔬菜和水果</td>
+                        </tr>
+                            <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                            <td class="py-4 px-4 font-semibold text-sage-700">柚皮素 (Naringenin)</td>
+                                <td class="py-4 px-4 text-gray-700">TP53, JUN, AKT1, STAT3, IL6</td>
+                                <td class="py-4 px-4 text-gray-700">抗炎，抗氧化，调节脂质代谢。</td>
+                                <td class="py-4 px-4 text-gray-700">水果</td>
+                                <td class="py-4 px-4 text-gray-700">柑橘类水果（柚子、橙子、橘子，特别是果皮和果肉）</td>
+                                <td class="py-4 px-4 text-gray-700">柚子、橙子、橘子</td>
+                        </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                            <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4"></td>
+                                <td class="py-4 px-4 text-gray-700">药用植物</td>
+                                <td class="py-4 px-4 text-gray-700">降香</td>
+                                <td class="py-4 px-4 text-gray-700">降香</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        </div>
+    </section>
+
+        <!-- 天然来源研究发现卡片 -->
+    <section id="natural-sources" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-block p-4 bg-emerald-100 rounded-full mb-4">
+                    <svg class="w-12 h-12 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-3xl font-bold text-gray-900 mb-2" data-i18n="natural_sources_title">天然来源研究发现</h3>
+                <p class="text-gray-600" data-i18n="natural_sources_subtitle">科学文献中发现的富含核心成分的天然植物</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                <!-- 常见可食用植物 -->
+                <div class="bg-gradient-to-br from-green-50 to-emerald-100 rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center mr-3">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-900" data-i18n="daily_edible_plants_title">日常可食用</h4>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between p-3 bg-white rounded-lg">
+                            <span class="text-gray-800 font-medium" data-i18n="plant_sea_buckthorn_berry">沙棘果</span>
+                            <div class="flex space-x-1">
+                                <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                                <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                                <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-white rounded-lg">
+                            <span class="text-gray-800 font-medium" data-i18n="plant_goji_berry">枸杞</span>
+                            <div class="flex space-x-1">
+                                <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                                <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                                <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-white rounded-lg">
+                            <span class="text-gray-800 font-medium" data-i18n="plant_sea_buckthorn_leaf_tea">沙棘叶茶</span>
+                            <div class="flex space-x-1">
+                                <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                                <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                                <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 中药材来源 -->
+                <div class="bg-gradient-to-br from-orange-50 to-amber-100 rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center mr-3">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-900" data-i18n="traditional_herbs_title">传统中药材</h4>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between p-3 bg-white rounded-lg">
+                            <span class="text-gray-800 font-medium" data-i18n="herb_sophora_flower">槐花/槐米</span>
+                            <div class="flex space-x-1">
+                                <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                                <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                                <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-white rounded-lg">
+                            <span class="text-gray-800 font-medium" data-i18n="herb_taxillus">桑寄生</span>
+                            <div class="flex space-x-1">
+                                <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                                <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                                <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-white rounded-lg">
+                            <span class="text-gray-800 font-medium" data-i18n="herb_dodder_seed">菟丝子</span>
+                            <div class="flex space-x-1">
+                                <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                                <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                                <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 其他植物来源 -->
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center mr-3">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-900" data-i18n="other_plant_sources_title">其他植物源</h4>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between p-3 bg-white rounded-lg">
+                            <span class="text-gray-800 font-medium" data-i18n="plant_cedar_nut">雪松果</span>
+                            <div class="flex space-x-1">
+                                <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                                <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                                <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-white rounded-lg">
+                            <span class="text-gray-800 font-medium" data-i18n="plant_cedar_needle">雪松松针</span>
+                            <div class="flex space-x-1">
+                                <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                                <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                                <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-white rounded-lg">
+                            <span class="text-gray-800 font-medium" data-i18n="plant_sea_buckthorn_pomace">沙棘籽粕</span>
+                            <div class="flex space-x-1">
+                                <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                                <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                                <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 成分标识说明 -->
+                <div class="bg-gray-50 rounded-xl p-6">
+                <h4 class="text-lg font-bold text-gray-900 mb-4 text-center" data-i18n="component_legend_title">三种核心成分标识</h4>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <div class="flex items-center space-x-2">
+                        <span class="w-3 h-3 bg-green-500 rounded-full"></span>
+                        <span class="text-gray-700 font-medium" data-i18n="component_legend_quercetin">槲皮素 (Quercetin)</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span class="w-3 h-3 bg-blue-500 rounded-full"></span>
+                        <span class="text-gray-700 font-medium" data-i18n="component_legend_kaempferol">山柰酚 (Kaempferol)</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span class="w-3 h-3 bg-purple-500 rounded-full"></span>
+                        <span class="text-gray-700 font-medium" data-i18n="component_legend_isorhamnetin">异鼠李素 (Isorhamnetin)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 推荐提取物/制品 -->
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-gradient-to-r from-emerald-500 to-teal-600 rounded-xl p-6 text-white">
+                    <h4 class="text-xl font-bold mb-3" data-i18n="recommended_daily_intake_title">推荐日常摄入</h4>
+                    <ul class="space-y-2 text-emerald-100">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span data-i18n="recommended_daily_intake_1">沙棘果汁或沙棘制品</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span data-i18n="recommended_daily_intake_2">枸杞泡茶或直接食用</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span data-i18n="recommended_daily_intake_3">沙棘叶茶饮品</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gradient-to-r from-amber-500 to-orange-600 rounded-xl p-6 text-white">
+                    <h4 class="text-xl font-bold mb-3" data-i18n="recommended_professional_extracts_title">专业提取物</h4>
+                    <ul class="space-y-2 text-amber-100">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span data-i18n="recommended_professional_extracts_1">银杏叶标准化提取物</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span data-i18n="recommended_professional_extracts_2">沙棘黄酮浓缩制品</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span data-i18n="recommended_professional_extracts_3">参杞酒等复合制品</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- 槲皮素丰富来源指南卡片 -->
+    <section id="quercetin-sources" class="py-20 bg-sage-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl p-8 shadow-xl mb-8 border border-gray-200">
+            <div class="text-center mb-8">
+                    <div class="inline-block p-4 bg-green-100 rounded-full mb-4">
+                        <svg class="w-12 h-12 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                    </svg>
+                </div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-2" data-i18n="quercetin_guide_title">槲皮素丰富来源指南</h3>
+                    <p class="text-gray-600" data-i18n="quercetin_guide_subtitle">科学研究验证的槲皮素天然来源完整清单</p>
+            </div>
+
+            <!-- 日常食用分类 -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                <!-- 常见食物类 -->
+                    <div class="bg-gradient-to-br from-green-50 to-emerald-100 rounded-xl p-6">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m-2.4 0L5 3m2 10L5.4 5M7 13l-2.4 2.4M7 13l4.5 4.5m6-6.5l-4.5 4.5"></path>
+                            </svg>
+                        </div>
+                            <h4 class="text-2xl font-bold text-gray-900" data-i18n="common_food_title">日常食材类</h4>
+                    </div>
+                    
+                    <div class="space-y-4">
+                            <div class="bg-white rounded-lg p-4">
+                                <h5 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <span class="w-3 h-3 bg-green-500 rounded-full mr-2"></span>
+                                    <span data-i18n="category_vegetables">蔬菜类</span>
+                            </h5>
+                            <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full" data-i18n="food_onion">洋葱（各品种）</span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full" data-i18n="food_red_onion">红皮洋葱</span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full" data-i18n="food_scallion">大葱（各部位）</span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full" data-i18n="food_huttuynia">鱼腥草</span>
+                            </div>
+                        </div>
+
+                            <div class="bg-white rounded-lg p-4">
+                                <h5 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <span class="w-3 h-3 bg-green-500 rounded-full mr-2"></span>
+                                    <span data-i18n="category_teas">茶饮类</span>
+                            </h5>
+                            <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full" data-i18n="food_green_tea">绿茶（各品种）</span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full" data-i18n="food_buckwheat_tea">苦荞茶</span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full" data-i18n="food_lotus_leaf_tea">荷叶茶</span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full" data-i18n="food_camellia_chrysanthemoides">金花茶</span>
+                            </div>
+                        </div>
+
+                            <div class="bg-white rounded-lg p-4">
+                                <h5 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <span class="w-3 h-3 bg-green-500 rounded-full mr-2"></span>
+                                    <span data-i18n="category_fruits_flowers">果蔬花类</span>
+                            </h5>
+                            <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full" data-i18n="food_guava_leaf">番石榴叶</span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full" data-i18n="food_sea_buckthorn_fruit">沙棘果</span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full" data-i18n="food_saffron_petal">西红花花瓣</span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full" data-i18n="food_jasmine_flower">茉莉花</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 传统中药材类 -->
+                    <div class="bg-gradient-to-br from-amber-50 to-orange-100 rounded-xl p-6">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                            </svg>
+                        </div>
+                            <h4 class="text-2xl font-bold text-gray-900" data-i18n="tcm_herbs_category_title">中药材类</h4>
+                    </div>
+                    
+                    <div class="space-y-4">
+                            <div class="bg-white rounded-lg p-4">
+                                <h5 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <span class="w-3 h-3 bg-amber-500 rounded-full mr-2"></span>
+                                    <span data-i18n="category_common_herbs">常用中药</span>
+                            </h5>
+                            <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <span class="px-3 py-1 bg-amber-100 text-amber-800 rounded-full" data-i18n="herb_sophora_flower_alt">槐花/槐米</span>
+                                    <span class="px-3 py-1 bg-amber-100 text-amber-800 rounded-full" data-i18n="herb_sangjisheng">桑寄生</span>
+                                    <span class="px-3 py-1 bg-amber-100 text-amber-800 rounded-full" data-i18n="herb_tusizi">菟丝子</span>
+                                    <span class="px-3 py-1 bg-amber-100 text-amber-800 rounded-full" data-i18n="herb_xianhecao">仙鹤草</span>
+                                    <span class="px-3 py-1 bg-amber-100 text-amber-800 rounded-full" data-i18n="herb_luobumaye">罗布麻叶</span>
+                                    <span class="px-3 py-1 bg-amber-100 text-amber-800 rounded-full" data-i18n="herb_mabiancao">马鞭草</span>
+                            </div>
+                        </div>
+
+                            <div class="bg-white rounded-lg p-4">
+                                <h5 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <span class="w-3 h-3 bg-amber-500 rounded-full mr-2"></span>
+                                    <span data-i18n="category_ethnic_medicines">民族药材</span>
+                            </h5>
+                            <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <span class="px-3 py-1 bg-amber-100 text-amber-800 rounded-full" data-i18n="herb_sheyao_jinjier">畲药锦鸡儿</span>
+                                    <span class="px-3 py-1 bg-amber-100 text-amber-800 rounded-full" data-i18n="herb_sheyao_dinian">畲药地稔</span>
+                                    <span class="px-3 py-1 bg-amber-100 text-amber-800 rounded-full" data-i18n="herb_mengyao_duoyejidou">蒙药多叶棘豆</span>
+                                    <span class="px-3 py-1 bg-amber-100 text-amber-800 rounded-full" data-i18n="herb_zhuangyao_shiye">壮药柿叶</span>
+                            </div>
+                        </div>
+
+                            <div class="bg-white rounded-lg p-4">
+                                <h5 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <span class="w-3 h-3 bg-amber-500 rounded-full mr-2"></span>
+                                    <span data-i18n="category_local_specialties">地方特色</span>
+                            </h5>
+                            <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <span class="px-3 py-1 bg-amber-100 text-amber-800 rounded-full" data-i18n="herb_wumai_luronghao">五脉绿绒蒿</span>
+                                    <span class="px-3 py-1 bg-amber-100 text-amber-800 rounded-full" data-i18n="herb_tianshan_huaqiu">天山花楸</span>
+                                    <span class="px-3 py-1 bg-amber-100 text-amber-800 rounded-full" data-i18n="herb_qingqianliu">青钱柳</span>
+                                    <span class="px-3 py-1 bg-amber-100 text-amber-800 rounded-full" data-i18n="herb_touguxiang">透骨香</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 特殊来源分类 -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <!-- 野生植物 -->
+                    <div class="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center mr-3">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                            </svg>
+                        </div>
+                            <h4 class="text-lg font-bold text-gray-900" data-i18n="wild_plants_title">野生植物类</h4>
+                    </div>
+                    <div class="space-y-2 text-sm">
+                            <div class="px-3 py-2 bg-white rounded-lg" data-i18n="plant_yizhihuanghua">一枝黄花</div>
+                            <div class="px-3 py-2 bg-white rounded-lg" data-i18n="plant_gujingcao">谷精草</div>
+                            <div class="px-3 py-2 bg-white rounded-lg" data-i18n="plant_huoji">火棘</div>
+                            <div class="px-3 py-2 bg-white rounded-lg" data-i18n="plant_yexiazhu">叶下珠</div>
+                            <div class="px-3 py-2 bg-white rounded-lg" data-i18n="plant_chegencai">扯根菜</div>
+                            <div class="px-3 py-2 bg-white rounded-lg" data-i18n="plant_tianhusui">天胡荽</div>
+                    </div>
+                </div>
+
+                <!-- 木本植物 -->
+                    <div class="bg-gradient-to-br from-purple-50 to-violet-100 rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center mr-3">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                            </svg>
+                        </div>
+                            <h4 class="text-lg font-bold text-gray-900" data-i18n="woody_plants_title">木本植物类</h4>
+                    </div>
+                    <div class="space-y-2 text-sm">
+                            <div class="px-3 py-2 bg-white rounded-lg" data-i18n="plant_lameiye">蜡梅叶</div>
+                            <div class="px-3 py-2 bg-white rounded-lg" data-i18n="plant_menggu_biantao_ye">蒙古扁桃叶</div>
+                            <div class="px-3 py-2 bg-white rounded-lg" data-i18n="plant_hetaoqiu_pi">核桃楸皮</div>
+                            <div class="px-3 py-2 bg-white rounded-lg" data-i18n="plant_aiyangmei_ye">矮杨梅叶</div>
+                            <div class="px-3 py-2 bg-white rounded-lg" data-i18n="plant_luohua_zizhu">裸花紫珠</div>
+                            <div class="px-3 py-2 bg-white rounded-lg" data-i18n="plant_huangshukui_hua">黄蜀葵花</div>
+                    </div>
+                </div>
+
+                <!-- 其他特殊来源 -->
+                    <div class="bg-gradient-to-br from-pink-50 to-rose-100 rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center mr-3">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                            </svg>
+                        </div>
+                            <h4 class="text-lg font-bold text-gray-900" data-i18n="special_sources_title">特殊来源类</h4>
+                    </div>
+                    <div class="space-y-2 text-sm">
+                            <div class="px-3 py-2 bg-white rounded-lg" data-i18n="source_xinjiang_propolis">新疆蜂胶</div>
+                            <div class="px-3 py-2 bg-white rounded-lg" data-i18n="source_xiyetian">细叶景天</div>
+                            <div class="px-3 py-2 bg-white rounded-lg" data-i18n="source_dongbei_diandimei">东北点地梅</div>
+                            <div class="px-3 py-2 bg-white rounded-lg" data-i18n="source_gujingzhu">谷精珠</div>
+                            <div class="px-3 py-2 bg-white rounded-lg" data-i18n="source_baibaohao">白苞蒿</div>
+                            <div class="px-3 py-2 bg-white rounded-lg" data-i18n="source_xiaohua_qingfengteng">小花清风藤</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 实用摄取建议 -->
+            <div class="bg-gradient-to-r from-emerald-500 to-teal-600 rounded-2xl p-8 text-white">
+                    <h4 class="text-2xl font-bold mb-6 text-center" data-i18n="quercetin_intake_advice_title">槲皮素摄取实用建议</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                            <h5 class="font-bold mb-2" data-i18n="quercetin_advice_1_title">优选日常食材</h5>
+                            <p class="text-sm text-emerald-100" data-i18n="quercetin_advice_1_desc">洋葱、绿茶、苦荞茶等日常易得且含量丰富</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"></path>
+                            </svg>
+                        </div>
+                            <h5 class="font-bold mb-2" data-i18n="quercetin_advice_2_title">多样化选择</h5>
+                            <p class="text-sm text-emerald-100" data-i18n="quercetin_advice_2_desc">不同植物来源可提供协同效应和营养多样性</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                            <h5 class="font-bold mb-2" data-i18n="quercetin_advice_3_title">注意采收时机</h5>
+                            <p class="text-sm text-emerald-100" data-i18n="quercetin_advice_3_desc">不同采收期和部位含量差异显著，选择最佳时机</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                            <h5 class="font-bold mb-2" data-i18n="quercetin_advice_4_title">专业指导</h5>
+                            <p class="text-sm text-emerald-100" data-i18n="quercetin_advice_4_desc">中药材使用需专业指导，食材类可日常适量摄入</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 重点推荐表格 -->
+                <div class="mt-8 bg-gray-50 rounded-xl p-6">
+                    <h4 class="text-xl font-bold text-gray-900 mb-4 text-center" data-i18n="quercetin_recommended_list_title">高槲皮素含量推荐清单</h4>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm">
+                        <thead>
+                                <tr class="border-b border-gray-200">
+                                    <th class="text-left py-2 px-4 font-semibold text-gray-900" data-i18n="list_header_category">分类</th>
+                                    <th class="text-left py-2 px-4 font-semibold text-gray-900" data-i18n="list_header_source">推荐来源</th>
+                                    <th class="text-left py-2 px-4 font-semibold text-gray-900" data-i18n="list_header_availability">获取方式</th>
+                                    <th class="text-left py-2 px-4 font-semibold text-gray-900" data-i18n="list_header_usage">使用建议</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-3 px-4 font-medium text-green-600" data-i18n="list_category_vegetables">日常蔬菜</td>
+                                    <td class="py-3 px-4 text-gray-700" data-i18n="list_source_onions_scallions">红皮洋葱、大葱</td>
+                                    <td class="py-3 px-4 text-gray-700" data-i18n="list_availability_market">市场采购</td>
+                                    <td class="py-3 px-4 text-gray-700" data-i18n="list_usage_cooking">生食或轻度烹饪保留最多营养</td>
+                            </tr>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-3 px-4 font-medium text-green-600" data-i18n="list_category_teas">茶饮类</td>
+                                    <td class="py-3 px-4 text-gray-700" data-i18n="list_source_green_buckwheat_tea">绿茶、苦荞茶</td>
+                                    <td class="py-3 px-4 text-gray-700" data-i18n="list_availability_tea_shop">茶叶店/超市</td>
+                                    <td class="py-3 px-4 text-gray-700" data-i18n="list_usage_tea">温水冲泡，避免过热破坏成分</td>
+                            </tr>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-3 px-4 font-medium text-amber-600" data-i18n="list_category_tcm_herbs">中药材</td>
+                                    <td class="py-3 px-4 text-gray-700" data-i18n="list_source_sophora_taxillus">槐花、桑寄生</td>
+                                    <td class="py-3 px-4 text-gray-700" data-i18n="list_availability_tcm_store">中药店</td>
+                                    <td class="py-3 px-4 text-gray-700" data-i18n="list_usage_tcm">遵医嘱使用，不可自行大量服用</td>
+                            </tr>
+                            <tr>
+                                    <td class="py-3 px-4 font-medium text-blue-600" data-i18n="list_category_special_sources">特色来源</td>
+                                    <td class="py-3 px-4 text-gray-700" data-i18n="list_source_propolis_extract">蜂胶提取物</td>
+                                    <td class="py-3 px-4 text-gray-700" data-i18n="list_availability_health_store">保健品店</td>
+                                    <td class="py-3 px-4 text-gray-700" data-i18n="list_usage_supplements">选择信誉品牌，注意过敏体质</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+        <!-- 山柰酚优质来源指南卡片 -->
+    <section id="kaempferol-sources" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl p-8 shadow-xl mb-8 border border-gray-200">
+            <div class="text-center mb-8">
+                    <div class="inline-block p-4 bg-blue-100 rounded-full mb-4">
+                        <svg class="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                    </svg>
+                </div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-2" data-i18n="kaempferol_guide_title">山柰酚优质来源指南</h3>
+                    <p class="text-gray-600" data-i18n="kaempferol_guide_subtitle">科学验证的山柰酚天然来源完整清单</p>
+            </div>
+
+            <!-- 主要分类展示 -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                <!-- 日常食物类 -->
+                    <div class="bg-gradient-to-br from-blue-50 to-cyan-100 rounded-xl p-6">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4"></path>
+                            </svg>
+                        </div>
+                            <h4 class="text-2xl font-bold text-gray-900" data-i18n="daily_food_category_title">日常食材类</h4>
+                    </div>
+                    
+                    <div class="space-y-4">
+                            <div class="bg-white rounded-lg p-4">
+                                <h5 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <span class="w-3 h-3 bg-blue-500 rounded-full mr-2"></span>
+                                    <span data-i18n="category_grains_teas">谷物茶饮类</span>
+                            </h5>
+                            <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full" data-i18n="food_buckwheat_tea_alt">苦荞茶</span>
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full" data-i18n="food_quinoa">藜麦</span>
+                            </div>
+                        </div>
+
+                            <div class="bg-white rounded-lg p-4">
+                                <h5 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <span class="w-3 h-3 bg-blue-500 rounded-full mr-2"></span>
+                                    <span data-i18n="category_vegetable_leaves">蔬菜叶类</span>
+                            </h5>
+                            <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full" data-i18n="food_chicory">菊苣</span>
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full" data-i18n="food_mulberry_leaf">桑叶</span>
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full" data-i18n="food_persimmon_leaf">柿叶</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 中药材类 -->
+                    <div class="bg-gradient-to-br from-indigo-50 to-purple-100 rounded-xl p-6">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-indigo-500 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                            </svg>
+                        </div>
+                            <h4 class="text-2xl font-bold text-gray-900" data-i18n="tcm_herbs_category_title_alt">中药材类</h4>
+                    </div>
+                    
+                    <div class="space-y-4">
+                            <div class="bg-white rounded-lg p-4">
+                                <h5 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <span class="w-3 h-3 bg-indigo-500 rounded-full mr-2"></span>
+                                    <span data-i18n="category_traditional_medicines">传统药材</span>
+                            </h5>
+                            <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full" data-i18n="herb_saffron">红花</span>
+                                    <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full" data-i18n="herb_shifei">石韦</span>
+                                    <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full" data-i18n="herb_bachia">菝葜</span>
+                                    <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full" data-i18n="herb_ganhuangcao">赶黄草</span>
+                            </div>
+                        </div>
+
+                            <div class="bg-white rounded-lg p-4">
+                                <h5 class="font-bold text-gray-800 mb-3 flex items-center">
+                                <span class="w-3 h-3 bg-indigo-500 rounded-full mr-2"></span>
+                                    <span data-i18n="category_wild_medicines">野生药材</span>
+                            </h5>
+                            <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full" data-i18n="herb_bairuicao">百蕊草</span>
+                                    <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full" data-i18n="herb_wenzicao">蚊子草</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <!-- 蕨类植物专区 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-gradient-to-br from-emerald-50 to-teal-100 rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center mr-3">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                            <h4 class="text-lg font-bold text-gray-900" data-i18n="ferns_zone_title">蕨类植物专区</h4>
+                    </div>
+                            <div class="bg-white rounded-lg p-4">
+                            <h5 class="font-semibold text-gray-800 mb-2" data-i18n="qinling_ferns_title">秦岭蕨类植物（21种）</h5>
+                            <p class="text-sm text-gray-600 mb-3" data-i18n="qinling_ferns_desc">
+                            科学研究验证，秦岭地区多达21种蕨类植物均含有山柰酚成分
+                        </p>
+                            <div class="flex items-center text-xs text-emerald-700">
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                                <span data-i18n="qinling_ferns_disclaimer">需专业鉴别，不建议自行采集</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 复方制剂 -->
+                    <div class="bg-gradient-to-br from-violet-50 to-purple-100 rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-violet-500 rounded-full flex items-center justify-center mr-3">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                            </svg>
+                        </div>
+                            <h4 class="text-lg font-bold text-gray-900" data-i18n="formulations_source_title">制剂来源</h4>
+                    </div>
+                    <div class="space-y-3">
+                            <div class="bg-white rounded-lg p-3">
+                                <h5 class="font-medium text-gray-800" data-i18n="formulation_haizhu_chuanxiding">海珠喘息定片</h5>
+                                <p class="text-xs text-gray-600" data-i18n="formulation_haizhu_chuanxiding_desc">含槲皮素和山柰酚的复方制剂</p>
+                        </div>
+                            <div class="bg-white rounded-lg p-3">
+                                <h5 class="font-medium text-gray-800" data-i18n="formulation_extracts">各种浓缩提取物</h5>
+                                <p class="text-xs text-gray-600" data-i18n="formulation_extracts_desc">标准化山柰酚含量制品</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 含量特点分析 -->
+            <div class="bg-gradient-to-r from-blue-500 to-indigo-600 rounded-2xl p-8 text-white mb-8">
+                    <h4 class="text-2xl font-bold mb-6 text-center" data-i18n="kaempferol_content_analysis_title">山柰酚含量特点分析</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                            </svg>
+                        </div>
+                            <h5 class="font-bold mb-2" data-i18n="kaempferol_analysis_1_title">含量变异性</h5>
+                            <p class="text-sm text-blue-100" data-i18n="kaempferol_analysis_1_desc">不同产地和采收期含量差异显著，需科学选择</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a1 1 0 01-1-1V9a1 1 0 011-1h1a2 2 0 100-4H4a1 1 0 01-1-1V5a1 1 0 011-1h3a1 1 0 001-1V4z"></path>
+                            </svg>
+                        </div>
+                            <h5 class="font-bold mb-2" data-i18n="kaempferol_analysis_2_title">协同效应</h5>
+                            <p class="text-sm text-blue-100" data-i18n="kaempferol_analysis_2_desc">常与槲皮素共存，发挥协同抗氧化作用</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                            </svg>
+                        </div>
+                            <h5 class="font-bold mb-2" data-i18n="kaempferol_analysis_3_title">检测标准</h5>
+                            <p class="text-sm text-blue-100" data-i18n="kaempferol_analysis_3_desc">HPLC法精确测定，《中国药典》收录标准</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                            </svg>
+                        </div>
+                            <h5 class="font-bold mb-2" data-i18n="kaempferol_analysis_4_title">栽培差异</h5>
+                            <p class="text-sm text-blue-100" data-i18n="kaempferol_analysis_4_desc">野生与栽培品种含量存在差异，各有优势</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 优选推荐表格 -->
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <h4 class="text-xl font-bold text-gray-900 mb-4 text-center" data-i18n="kaempferol_recommended_list_title">山柰酚优选推荐清单</h4>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm">
+                        <thead>
+                                <tr class="border-b border-gray-200">
+                                    <th class="text-left py-2 px-4 font-semibold text-gray-900" data-i18n="list_header_category_level">分类等级</th>
+                                    <th class="text-left py-2 px-4 font-semibold text-gray-900" data-i18n="list_header_source">推荐来源</th>
+                                    <th class="text-left py-2 px-4 font-semibold text-gray-900" data-i18n="list_header_difficulty">获取难度</th>
+                                    <th class="text-left py-2 px-4 font-semibold text-gray-900" data-i18n="list_header_guidance">使用指导</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-3 px-4 font-medium text-green-600" data-i18n="list_category_daily_first_choice">★★★ 日常首选</td>
+                                    <td class="py-3 px-4 text-gray-700" data-i18n="list_source_buckwheat_quinoa">苦荞茶、藜麦</td>
+                                    <td class="py-3 px-4 text-green-600" data-i18n="list_difficulty_easy">容易</td>
+                                    <td class="py-3 px-4 text-gray-700" data-i18n="list_guidance_daily">日常饮食可长期摄入</td>
+                            </tr>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-3 px-4 font-medium text-blue-600" data-i18n="list_category_dietary_choice">★★☆ 食疗选择</td>
+                                    <td class="py-3 px-4 text-gray-700" data-i18n="list_source_chicory_mulberry_persimmon">菊苣、桑叶、柿叶</td>
+                                    <td class="py-3 px-4 text-blue-600" data-i18n="list_difficulty_medium">中等</td>
+                                    <td class="py-3 px-4 text-gray-700" data-i18n="list_guidance_tea">泡茶饮用，注意适量</td>
+                            </tr>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-3 px-4 font-medium text-amber-600" data-i18n="list_category_professional_use">★☆☆ 专业使用</td>
+                                    <td class="py-3 px-4 text-gray-700" data-i18n="list_source_saffron_shifei_bairuicao">红花、石韦、百蕊草</td>
+                                    <td class="py-3 px-4 text-amber-600" data-i18n="list_difficulty_professional">需专业</td>
+                                    <td class="py-3 px-4 text-gray-700" data-i18n="list_guidance_tcm_guidance">中医指导下使用</td>
+                            </tr>
+                            <tr>
+                                    <td class="py-3 px-4 font-medium text-purple-600" data-i18n="list_category_research_level">☆☆☆ 研究级别</td>
+                                    <td class="py-3 px-4 text-gray-700" data-i18n="list_source_ferns_formulations">蕨类植物、制剂</td>
+                                    <td class="py-3 px-4 text-red-600" data-i18n="list_difficulty_hard">很难</td>
+                                    <td class="py-3 px-4 text-gray-700" data-i18n="list_guidance_research_only">科研用途，不建议个人使用</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+            <!-- 实用摄取方案 -->
+    <section id="intake-plans" class="py-20 bg-sage-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-sage-900 mb-4" data-i18n="practical_intake_plans_title">
+                    核心成分实用摄取方案
+                </h2>
+                <p class="text-lg text-sage-600 max-w-3xl mx-auto" data-i18n="practical_intake_plans_subtitle">
+                    将中医药研究成果融入日常，实现个性化健康管理
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl p-6 text-white">
+                    <h4 class="text-xl font-bold mb-3" data-i18n="daily_intake_plan_title">日常摄入方案</h4>
+                    <ul class="space-y-2 text-green-100">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span data-i18n="daily_intake_plan_1">早餐添加藜麦</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span data-i18n="daily_intake_plan_2">下午茶选苦荞茶</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span data-i18n="daily_intake_plan_3">沙拉加入菊苣</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl p-6 text-white">
+                    <h4 class="text-xl font-bold mb-3" data-i18n="dietary_therapy_plan_title">食疗调理方案</h4>
+                    <ul class="space-y-2 text-blue-100">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span data-i18n="dietary_therapy_plan_1">桑叶茶清热降脂</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span data-i18n="dietary_therapy_plan_2">柿叶茶秋季养生</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span data-i18n="dietary_therapy_plan_3">菊苣根泡水饮用</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gradient-to-br from-purple-500 to-violet-600 rounded-xl p-6 text-white">
+                    <h4 class="text-xl font-bold mb-3" data-i18n="professional_guidance_plan_title">专业指导方案</h4>
+                    <ul class="space-y-2 text-purple-100">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span data-i18n="professional_guidance_plan_1">中医配伍使用</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span data-i18n="professional_guidance_plan_2">标准化提取物</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span data-i18n="professional_guidance_plan_3">个体化剂量调整</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- 综合健康解决方案卡片 -->
+    <section id="health-solutions" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl p-8 shadow-xl border border-gray-200">
+            <div class="text-center mb-8">
+                    <div class="inline-block p-4 bg-sage-100 rounded-full mb-4">
+                        <svg class="w-12 h-12 text-sage-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-2" data-i18n="integrated_solutions_title">综合健康解决方案</h3>
+                    <p class="text-gray-600" data-i18n="integrated_solutions_subtitle">基于中医药研究的科学生活指导</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-xl">
+                    <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                        <h4 class="text-lg font-bold text-gray-900 mb-2" data-i18n="solution_balanced_diet_title">均衡多样化饮食</h4>
+                        <p class="text-gray-700 text-sm" data-i18n="solution_balanced_diet_desc">强调摄入富含核心成分的天然食物，尤其是各种蔬菜、水果、全谷物、豆类和坚果</p>
+                </div>
+
+                    <div class="p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl">
+                    <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"></path>
+                        </svg>
+                    </div>
+                        <h4 class="text-lg font-bold text-gray-900 mb-2" data-i18n="solution_plant_foods_title">注重植物性食物</h4>
+                        <p class="text-gray-700 text-sm" data-i18n="solution_plant_foods_desc">增加植物性食物在日常饮食中的比例，是获取有益成分的有效途径</p>
+                </div>
+
+                    <div class="p-6 bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl">
+                    <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                        <h4 class="text-lg font-bold text-gray-900 mb-2" data-i18n="solution_cooking_methods_title">合理烹饪方式</h4>
+                        <p class="text-gray-700 text-sm" data-i18n="solution_cooking_methods_desc">采用蒸、煮、凉拌等保留营养成分的烹饪方式，减少油炸和过度加工</p>
+                </div>
+
+                    <div class="p-6 bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl">
+                    <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+                        </svg>
+                    </div>
+                        <h4 class="text-lg font-bold text-gray-900 mb-2" data-i18n="solution_alternative_choices_title">替代性选择</h4>
+                        <p class="text-gray-700 text-sm" data-i18n="solution_alternative_choices_desc">通过日常食物补充核心活性成分，实现中药智慧的现代化应用</p>
+                </div>
+
+                    <div class="p-6 bg-gradient-to-br from-red-50 to-red-100 rounded-xl">
+                    <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                        <h4 class="text-lg font-bold text-gray-900 mb-2" data-i18n="solution_lifestyle_adjustment_title">生活方式调整</h4>
+                        <p class="text-gray-700 text-sm" data-i18n="solution_lifestyle_adjustment_desc">结合规律运动、充足睡眠、压力管理等健康习惯，协同发挥作用</p>
+                </div>
+
+                    <div class="p-6 bg-gradient-to-br from-teal-50 to-teal-100 rounded-xl">
+                    <div class="w-12 h-12 bg-teal-500 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                        </svg>
+                    </div>
+                        <h4 class="text-lg font-bold text-gray-900 mb-2" data-i18n="solution_individualized_consideration_title">个体化考量</h4>
+                        <p class="text-gray-700 text-sm" data-i18n="solution_individualized_consideration_desc">在专业医生或营养师指导下进行饮食和生活方式调整，因人而异</p>
+                </div>
+            </div>
+
+            <!-- 重要提示 -->
+                <div class="mt-8 p-6 bg-yellow-50 border border-yellow-200 rounded-xl">
+                <div class="flex items-start">
+                        <div class="w-6 h-6 text-yellow-600 mr-3 mt-0.5">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                            <h5 class="font-bold text-yellow-800 mb-2" data-i18n="important_note_title">重要提示</h5>
+                            <p class="text-yellow-700 text-sm" data-i18n="important_note_desc">
+                            本研究成果为理论依据的预测，实际应用仍需进一步临床和实验验证。
+                            将传统中医药智慧与现代营养学相结合，为公众提供更易于理解和实践的健康生活建议。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- 异鼠李素优质来源指南卡片 -->
+    <section id="isorhamnetin-sources" class="py-20 bg-sage-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl p-8 shadow-xl mb-8 border border-gray-200">
+                <div class="text-center mb-8">
+                    <div class="inline-block p-4 bg-purple-100 rounded-full mb-4">
+                        <svg class="w-12 h-12 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-2">异鼠李素优质来源指南</h3>
+                    <p class="text-gray-600">科学验证的异鼠李素天然来源完整清单</p>
+                </div>
+
+                <!-- 主要分类展示 -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                    <!-- 日常食物类 -->
+                    <div class="bg-gradient-to-br from-purple-50 to-pink-100 rounded-xl p-6">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-2xl font-bold text-gray-900">日常食材类</h4>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="bg-white rounded-lg p-4">
+                                <h5 class="font-bold text-gray-800 mb-3 flex items-center">
+                                    <span class="w-3 h-3 bg-purple-500 rounded-full mr-2"></span>
+                                    <span>蔬菜类</span>
+                                </h5>
+                                <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full">洋葱</span>
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full">梨</span>
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full">西兰花</span>
+                                </div>
+                            </div>
+
+                            <div class="bg-white rounded-lg p-4">
+                                <h5 class="font-bold text-gray-800 mb-3 flex items-center">
+                                    <span class="w-3 h-3 bg-purple-500 rounded-full mr-2"></span>
+                                    <span>水果类</span>
+                                </h5>
+                                <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full">柑橘类</span>
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full">沙枣</span>
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full">骏枣</span>
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full">余甘子</span>
+                                </div>
+                            </div>
+
+                            <div class="bg-white rounded-lg p-4">
+                                <h5 class="font-bold text-gray-800 mb-3 flex items-center">
+                                    <span class="w-3 h-3 bg-purple-500 rounded-full mr-2"></span>
+                                    <span>谷物/豆类</span>
+                                </h5>
+                                <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full">豆类</span>
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full">苦荞茶</span>
+                                </div>
+                            </div>
+
+                            <div class="bg-white rounded-lg p-4">
+                                <h5 class="font-bold text-gray-800 mb-3 flex items-center">
+                                    <span class="w-3 h-3 bg-purple-500 rounded-full mr-2"></span>
+                                    <span>茶叶/花草茶</span>
+                                </h5>
+                                <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full">罗布麻叶</span>
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full">复方绞股蓝袋泡茶</span>
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full">银杏叶</span>
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full">枸骨叶</span>
+                                </div>
+                            </div>
+
+                            <div class="bg-white rounded-lg p-4">
+                                <h5 class="font-bold text-gray-800 mb-3 flex items-center">
+                                    <span class="w-3 h-3 bg-purple-500 rounded-full mr-2"></span>
+                                    <span>蜂产品</span>
+                                </h5>
+                                <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full">荞麦蜂花粉</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 药用/特殊植物类 -->
+                    <div class="bg-gradient-to-br from-pink-50 to-red-100 rounded-xl p-6">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-pink-500 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-2xl font-bold text-gray-900">药用/特殊植物类</h4>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="bg-white rounded-lg p-4">
+                                <h5 class="font-bold text-gray-800 mb-3 flex items-center">
+                                    <span class="w-3 h-3 bg-pink-500 rounded-full mr-2"></span>
+                                    <span>常用中药</span>
+                                </h5>
+                                <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full">沙棘（茎、叶、花、黄酮、籽粕、胶囊、膏、颗粒、鲜果）</span>
+                                    <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full">蒲黄</span>
+                                    <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full">银杏叶</span>
+                                    <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full">土荆芥</span>
+                                    <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full">高良姜</span>
+                                    <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full">布渣叶</span>
+                                    <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full">田基黄</span>
+                                    <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full">香青兰</span>
+                                    <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full">唐古特白刺</span>
+                                    <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full">吴茱萸</span>
+                                    <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full">菟丝子</span>
+                                </div>
+                            </div>
+
+                            <div class="bg-white rounded-lg p-4">
+                                <h5 class="font-bold text-gray-800 mb-3 flex items-center">
+                                    <span class="w-3 h-3 bg-pink-500 rounded-full mr-2"></span>
+                                    <span>民族药材/地方特色</span>
+                                </h5>
+                                <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full">蒙药沙蓬</span>
+                                    <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full">畲药锦鸡儿</span>
+                                    <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full">滇柴胡</span>
+                                    <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full">新疆白刺叶</span>
+                                    <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full">川西高原沙棘</span>
+                                    <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full">藏药长毛风毛菊</span>
+                                    <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full">小叶黑柴胡</span>
+                                    <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full">独一味</span>
+                                    <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full">醋柳黄酮</span>
+                                </div>
+                            </div>
+
+                            <div class="bg-white rounded-lg p-4">
+                                <h5 class="font-bold text-gray-800 mb-3 flex items-center">
+                                    <span class="w-3 h-3 bg-pink-500 rounded-full mr-2"></span>
+                                    <span>其他特殊来源</span>
+                                </h5>
+                                <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full">龙船花提取物</span>
+                                    <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full">雪松果</span>
+                                    <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full">凹叶景天</span>
+                                    <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full">垂盆草</span>
+                                    <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full">紫斑牡丹花粉</span>
+                                    <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full">复方制剂（结肠宁灌肠剂、田七痛经胶囊、护肝颗粒、清肝化瘀合剂、五灵止痛胶囊、脉通颗粒、复方血平胶囊、红藤方中间体）</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 含量特点分析 -->
+                <div class="bg-gradient-to-r from-purple-500 to-pink-600 rounded-2xl p-8 text-white mb-8">
+                    <h4 class="text-2xl font-bold mb-6 text-center">异鼠李素含量特点分析</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                                </svg>
+                            </div>
+                            <h5 class="font-bold mb-2">吸收利用率</h5>
+                            <p class="text-sm text-purple-100">与其他黄酮类物质协同，提高生物利用度</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a1 1 0 01-1-1V9a1 1 0 011-1h1a2 2 0 100-4H4a1 1 0 01-1-1V5a1 1 0 011-1h3a1 1 0 001-1V4z"></path>
+                                </svg>
+                            </div>
+                            <h5 class="font-bold mb-2">广泛存在</h5>
+                            <p class="text-sm text-purple-100">在多种植物中发现，易于通过日常饮食摄入</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                                </svg>
+                            </div>
+                            <h5 class="font-bold mb-2">提取方法</h5>
+                            <p class="text-sm text-purple-100">常与其他黄酮类一同提取，纯化技术成熟</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                                </svg>
+                            </div>
+                            <h5 class="font-bold mb-2">协同作用</h5>
+                            <p class="text-sm text-purple-100">与槲皮素、山柰酚等共同发挥健康效益</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 优选推荐表格 -->
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <h4 class="text-xl font-bold text-gray-900 mb-4 text-center">异鼠李素优选推荐清单</h4>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm">
+                            <thead>
+                                <tr class="border-b border-gray-200">
+                                    <th class="text-left py-2 px-4 font-semibold text-gray-900">分类等级</th>
+                                    <th class="text-left py-2 px-4 font-semibold text-gray-900">推荐来源</th>
+                                    <th class="text-left py-2 px-4 font-semibold text-gray-900">获取难度</th>
+                                    <th class="text-left py-2 px-4 font-semibold text-gray-900">使用指导</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-3 px-4 font-medium text-green-600">★★★ 日常首选</td>
+                                    <td class="py-3 px-4 text-gray-700">洋葱、梨、西兰花</td>
+                                    <td class="py-3 px-4 text-green-600">容易</td>
+                                    <td class="py-3 px-4 text-gray-700">日常饮食可长期摄入</td>
+                                </tr>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-3 px-4 font-medium text-blue-600">★★☆ 食疗选择</td>
+                                    <td class="py-3 px-4 text-gray-700">柑橘类、沙枣、骏枣、罗布麻叶茶</td>
+                                    <td class="py-3 px-4 text-blue-600">中等</td>
+                                    <td class="py-3 px-4 text-gray-700">泡茶饮用，注意适量</td>
+                                </tr>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-3 px-4 font-medium text-amber-600">★☆☆ 专业使用</td>
+                                    <td class="py-3 px-4 text-gray-700">沙棘提取物、银杏叶提取物、独一味</td>
+                                    <td class="py-3 px-4 text-amber-600">需专业</td>
+                                    <td class="py-3 px-4 text-gray-700">中医指导下使用</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4 font-medium text-purple-600">☆☆☆ 研究级别</td>
+                                    <td class="py-3 px-4 text-gray-700">蒙药沙蓬、藏药长毛风毛菊、复方制剂</td>
+                                    <td class="py-3 px-4 text-red-600">很难</td>
+                                    <td class="py-3 px-4 text-gray-700">科研用途，不建议个人使用</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 芒柄花黄素优质来源指南卡片 -->
+    <section id="formononetin-sources" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl p-8 shadow-xl mb-8 border border-gray-200">
+                <div class="text-center mb-8">
+                    <div class="inline-block p-4 bg-orange-100 rounded-full mb-4">
+                        <svg class="w-12 h-12 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-2">芒柄花黄素优质来源指南</h3>
+                    <p class="text-gray-600">科学验证的芒柄花黄素天然来源完整清单</p>
+                </div>
+
+                <!-- 主要分类展示 -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                    <!-- 日常食物类 -->
+                    <div class="bg-gradient-to-br from-orange-50 to-amber-100 rounded-xl p-6">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m-2.4 0L5 3m2 10L5.4 5M7 13l-2.4 2.4M7 13l4.5 4.5m6-6.5l-4.5 4.5"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-2xl font-bold text-gray-900">日常食材类</h4>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="bg-white rounded-lg p-4">
+                                <h5 class="font-bold text-gray-800 mb-3 flex items-center">
+                                    <span class="w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                                    <span>豆类</span>
+                                </h5>
+                                <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full">三叶草</span>
+                                    <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full">大豆</span>
+                                    <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full">鹰嘴豆</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 药用植物类 -->
+                    <div class="bg-gradient-to-br from-amber-50 to-yellow-100 rounded-xl p-6">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-2xl font-bold text-gray-900">药用植物类</h4>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="bg-white rounded-lg p-4">
+                                <h5 class="font-bold text-gray-800 mb-3 flex items-center">
+                                    <span class="w-3 h-3 bg-amber-500 rounded-full mr-2"></span>
+                                    <span>常用中药</span>
+                                </h5>
+                                <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <span class="px-3 py-1 bg-amber-100 text-amber-800 rounded-full">甘草</span>
+                                    <span class="px-3 py-1 bg-amber-100 text-amber-800 rounded-full">红三叶草</span>
+                                    <span class="px-3 py-1 bg-amber-100 text-amber-800 rounded-full">枸骨叶提取物</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 含量特点分析 -->
+                <div class="bg-gradient-to-r from-orange-500 to-amber-600 rounded-2xl p-8 text-white mb-8">
+                    <h4 class="text-2xl font-bold mb-6 text-center">芒柄花黄素含量特点分析</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                                </svg>
+                            </div>
+                            <h5 class="font-bold mb-2">主要来源</h5>
+                            <p class="text-sm text-orange-100">主要存在于豆科植物中，如三叶草和大豆</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a1 1 0 01-1-1V9a1 1 0 011-1h1a2 2 0 100-4H4a1 1 0 01-1-1V5a1 1 0 011-1h3a1 1 0 001-1V4z"></path>
+                                </svg>
+                            </div>
+                            <h5 class="font-bold mb-2">生物活性</h5>
+                            <p class="text-sm text-orange-100">作为植物雌激素，具有多种生物学功能</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                                </svg>
+                            </div>
+                            <h5 class="font-bold mb-2">研究进展</h5>
+                            <p class="text-sm text-orange-100">在抗肥胖、骨质疏松等方面有潜在应用</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                                </svg>
+                            </div>
+                            <h5 class="font-bold mb-2">吸收转化</h5>
+                            <p class="text-sm text-orange-100">可在体内转化为其他活性代谢产物</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 优选推荐表格 -->
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <h4 class="text-xl font-bold text-gray-900 mb-4 text-center">芒柄花黄素优选推荐清单</h4>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm">
+                            <thead>
+                                <tr class="border-b border-gray-200">
+                                    <th class="text-left py-2 px-4 font-semibold text-gray-900">分类等级</th>
+                                    <th class="text-left py-2 px-4 font-semibold text-gray-900">推荐来源</th>
+                                    <th class="text-left py-2 px-4 font-semibold text-gray-900">获取难度</th>
+                                    <th class="text-left py-2 px-4 font-semibold text-gray-900">使用指导</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-3 px-4 font-medium text-green-600">★★★ 日常首选</td>
+                                    <td class="py-3 px-4 text-gray-700">大豆、鹰嘴豆、三叶草</td>
+                                    <td class="py-3 px-4 text-green-600">容易</td>
+                                    <td class="py-3 px-4 text-gray-700">日常饮食可长期摄入</td>
+                                </tr>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-3 px-4 font-medium text-blue-600">★★☆ 食疗选择</td>
+                                    <td class="py-3 px-4 text-gray-700">甘草制品、红三叶草茶</td>
+                                    <td class="py-3 px-4 text-blue-600">中等</td>
+                                    <td class="py-3 px-4 text-gray-700">泡茶饮用，注意适量</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4 font-medium text-amber-600">★☆☆ 专业使用</td>
+                                    <td class="py-3 px-4 text-gray-700">枸骨叶提取物</td>
+                                    <td class="py-3 px-4 text-amber-600">需专业</td>
+                                    <td class="py-3 px-4 text-gray-700">中医指导下使用</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- β-谷甾醇优质来源指南卡片 -->
+    <section id="beta-sitosterol-sources" class="py-20 bg-sage-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl p-8 shadow-xl mb-8 border border-gray-200">
+                <div class="text-center mb-8">
+                    <div class="inline-block p-4 bg-green-100 rounded-full mb-4">
+                        <svg class="w-12 h-12 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-2">β-谷甾醇优质来源指南</h3>
+                    <p class="text-gray-600">科学验证的β-谷甾醇天然来源完整清单</p>
+                </div>
+
+                <!-- 主要分类展示 -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                    <!-- 日常食物类 -->
+                    <div class="bg-gradient-to-br from-green-50 to-emerald-100 rounded-xl p-6">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m-2.4 0L5 3m2 10L5.4 5M7 13l-2.4 2.4M7 13l4.5 4.5m6-6.5l-4.5 4.5"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-2xl font-bold text-gray-900">日常食材类</h4>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="bg-white rounded-lg p-4">
+                                <h5 class="font-bold text-gray-800 mb-3 flex items-center">
+                                    <span class="w-3 h-3 bg-green-500 rounded-full mr-2"></span>
+                                    <span>坚果/种子类</span>
+                                </h5>
+                                <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full">坚果（杏仁、核桃、腰果）</span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full">南瓜籽</span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full">葵花籽</span>
+                                </div>
+                            </div>
+
+                            <div class="bg-white rounded-lg p-4">
+                                <h5 class="font-bold text-gray-800 mb-3 flex items-center">
+                                    <span class="w-3 h-3 bg-green-500 rounded-full mr-2"></span>
+                                    <span>植物油类</span>
+                                </h5>
+                                <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full">玉米油</span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full">豆油</span>
+                                </div>
+                            </div>
+
+                            <div class="bg-white rounded-lg p-4">
+                                <h5 class="font-bold text-gray-800 mb-3 flex items-center">
+                                    <span class="w-3 h-3 bg-green-500 rounded-full mr-2"></span>
+                                    <span>其他食物</span>
+                                </h5>
+                                <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full">鳄梨</span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full">豆类</span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full">全谷物</span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full">部分蔬菜和水果</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 药用植物类 -->
+                    <div class="bg-gradient-to-br from-teal-50 to-cyan-100 rounded-xl p-6">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-teal-500 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-2xl font-bold text-gray-900">药用植物类</h4>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="bg-white rounded-lg p-4">
+                                <h5 class="font-bold text-gray-800 mb-3 flex items-center">
+                                    <span class="w-3 h-3 bg-teal-500 rounded-full mr-2"></span>
+                                    <span>常用中药/植物提取物</span>
+                                </h5>
+                                <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full">锯叶棕（提取物）</span>
+                                    <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full">非洲臀果木（提取物）</span>
+                                    <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full">油菜花粉</span>
+                                    <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full">蒲公英</span>
+                                    <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full">荨麻</span>
+                                    <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full">当归</span>
+                                    <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full">枸杞</span>
+                                    <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full">人参</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 含量特点分析 -->
+                <div class="bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl p-8 text-white mb-8">
+                    <h4 class="text-2xl font-bold mb-6 text-center">β-谷甾醇含量特点分析</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                                </svg>
+                            </div>
+                            <h5 class="font-bold mb-2">广泛存在</h5>
+                            <p class="text-sm text-green-100">普遍存在于植物中，尤其在坚果、种子和植物油中含量丰富</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a1 1 0 01-1-1V9a1 1 0 011-1h1a2 2 0 100-4H4a1 1 0 01-1-1V5a1 1 0 011-1h3a1 1 0 001-1V4z"></path>
+                                </svg>
+                            </div>
+                            <h5 class="font-bold mb-2">与胆固醇相似</h5>
+                            <p class="text-sm text-green-100">结构与胆固醇相似，有助于竞争性抑制胆固醇吸收</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                                </svg>
+                            </div>
+                            <h5 class="font-bold mb-2">保健品应用</h5>
+                            <p class="text-sm text-green-100">常作为膳食补充剂，用于调节血脂和前列腺健康</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                                </svg>
+                            </div>
+                            <h5 class="font-bold mb-2">植物源特性</h5>
+                            <p class="text-sm text-green-100">纯天然植物来源，安全性高，适合长期食用</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 优选推荐表格 -->
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <h4 class="text-xl font-bold text-gray-900 mb-4 text-center">β-谷甾醇优选推荐清单</h4>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm">
+                            <thead>
+                                <tr class="border-b border-gray-200">
+                                    <th class="text-left py-2 px-4 font-semibold text-gray-900">分类等级</th>
+                                    <th class="text-left py-2 px-4 font-semibold text-gray-900">推荐来源</th>
+                                    <th class="text-left py-2 px-4 font-semibold text-gray-900">获取难度</th>
+                                    <th class="text-left py-2 px-4 font-semibold text-gray-900">使用指导</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-3 px-4 font-medium text-green-600">★★★ 日常首选</td>
+                                    <td class="py-3 px-4 text-gray-700">坚果、种子、鳄梨、豆类</td>
+                                    <td class="py-3 px-4 text-green-600">容易</td>
+                                    <td class="py-3 px-4 text-gray-700">日常饮食可长期摄入</td>
+                                </tr>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-3 px-4 font-medium text-blue-600">★★☆ 食疗选择</td>
+                                    <td class="py-3 px-4 text-gray-700">植物油（玉米油、豆油）、全谷物</td>
+                                    <td class="py-3 px-4 text-blue-600">中等</td>
+                                    <td class="py-3 px-4 text-gray-700">烹饪时优选，适量摄入</td>
+                                </tr>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-3 px-4 font-medium text-amber-600">★☆☆ 专业使用</td>
+                                    <td class="py-3 px-4 text-gray-700">锯叶棕提取物、非洲臀果木提取物</td>
+                                    <td class="py-3 px-4 text-amber-600">需专业</td>
+                                    <td class="py-3 px-4 text-gray-700">遵医嘱或专业指导使用</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4 font-medium text-purple-600">☆☆☆ 研究级别</td>
+                                    <td class="py-3 px-4 text-gray-700">油菜花粉、蒲公英、荨麻等浓缩提取物</td>
+                                    <td class="py-3 px-4 text-red-600">很难</td>
+                                    <td class="py-3 px-4 text-gray-700">科研用途，不建议个人使用</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 柚皮素优质来源指南卡片 -->
+    <section id="naringenin-sources" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl p-8 shadow-xl mb-8 border border-gray-200">
+                <div class="text-center mb-8">
+                    <div class="inline-block p-4 bg-yellow-100 rounded-full mb-4">
+                        <svg class="w-12 h-12 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-2">柚皮素优质来源指南</h3>
+                    <p class="text-gray-600">科学验证的柚皮素天然来源完整清单</p>
+                </div>
+
+                <!-- 主要分类展示 -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                    <!-- 日常食物类 -->
+                    <div class="bg-gradient-to-br from-yellow-50 to-orange-100 rounded-xl p-6">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m-2.4 0L5 3m2 10L5.4 5M7 13l-2.4 2.4M7 13l4.5 4.5m6-6.5l-4.5 4.5"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-2xl font-bold text-gray-900">日常食材类</h4>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="bg-white rounded-lg p-4">
+                                <h5 class="font-bold text-gray-800 mb-3 flex items-center">
+                                    <span class="w-3 h-3 bg-yellow-500 rounded-full mr-2"></span>
+                                    <span>水果类</span>
+                                </h5>
+                                <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full">柑橘类水果（柚子、橙子、橘子）</span>
+                                    <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full">特别是果皮和果肉</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 药用植物类 -->
+                    <div class="bg-gradient-to-br from-amber-50 to-red-100 rounded-xl p-6">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-2xl font-bold text-gray-900">药用植物类</h4>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="bg-white rounded-lg p-4">
+                                <h5 class="font-bold text-gray-800 mb-3 flex items-center">
+                                    <span class="w-3 h-3 bg-amber-500 rounded-full mr-2"></span>
+                                    <span>常用中药</span>
+                                </h5>
+                                <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <span class="px-3 py-1 bg-amber-100 text-amber-800 rounded-full">降香</span>
+                                    <span class="px-3 py-1 bg-amber-100 text-amber-800 rounded-full">苦橙</span>
+                                    <span class="px-3 py-1 bg-amber-100 text-amber-800 rounded-full">枳实</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 含量特点分析 -->
+                <div class="bg-gradient-to-r from-yellow-500 to-orange-600 rounded-2xl p-8 text-white mb-8">
+                    <h4 class="text-2xl font-bold mb-6 text-center">柚皮素含量特点分析</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                                </svg>
+                            </div>
+                            <h5 class="font-bold mb-2">柑橘类特有</h5>
+                            <p class="text-sm text-yellow-100">主要存在于柑橘类水果中，尤其是果皮和果肉</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a1 1 0 01-1-1V9a1 1 0 011-1h1a2 2 0 100-4H4a1 1 0 01-1-1V5a1 1 0 011-1h3a1 1 0 001-1V4z"></path>
+                                </svg>
+                            </div>
+                            <h5 class="font-bold mb-2">抗炎抗氧化</h5>
+                            <p class="text-sm text-yellow-100">具有显著的抗炎、抗氧化和调节脂质代谢作用</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                                </svg>
+                            </div>
+                            <h5 class="font-bold mb-2">生物利用度</h5>
+                            <p class="text-sm text-yellow-100">易于被人体吸收利用，转化为活性代谢产物</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                                </svg>
+                            </div>
+                            <h5 class="font-bold mb-2">多效性</h5>
+                            <p class="text-sm text-yellow-100">可辅助改善代谢综合征和心血管健康</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 优选推荐表格 -->
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <h4 class="text-xl font-bold text-gray-900 mb-4 text-center">柚皮素优选推荐清单</h4>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm">
+                            <thead>
+                                <tr class="border-b border-gray-200">
+                                    <th class="text-left py-2 px-4 font-semibold text-gray-900">分类等级</th>
+                                    <th class="text-left py-2 px-4 font-semibold text-gray-900">推荐来源</th>
+                                    <th class="text-left py-2 px-4 font-semibold text-gray-900">获取难度</th>
+                                    <th class="text-left py-2 px-4 font-semibold text-gray-900">使用指导</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-3 px-4 font-medium text-green-600">★★★ 日常首选</td>
+                                    <td class="py-3 px-4 text-gray-700">柚子、橙子、橘子及其果皮</td>
+                                    <td class="py-3 px-4 text-green-600">容易</td>
+                                    <td class="py-3 px-4 text-gray-700">可直接食用，或用于烹饪、制作饮品</td>
+                                </tr>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-3 px-4 font-medium text-blue-600">★★☆ 食疗选择</td>
+                                    <td class="py-3 px-4 text-gray-700">柑橘类果酱、蜜饯、茶饮</td>
+                                    <td class="py-3 px-4 text-blue-600">中等</td>
+                                    <td class="py-3 px-4 text-gray-700">注意糖分摄入，适量食用</td>
+                                </tr>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-3 px-4 font-medium text-amber-600">★☆☆ 专业使用</td>
+                                    <td class="py-3 px-4 text-gray-700">降香、苦橙提取物</td>
+                                    <td class="py-3 px-4 text-amber-600">需专业</td>
+                                    <td class="py-3 px-4 text-gray-700">中医指导下使用，不建议自行服用</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4 font-medium text-purple-600">☆☆☆ 研究级别</td>
+                                    <td class="py-3 px-4 text-gray-700">枳实提取物、柚皮素标准化制剂</td>
+                                    <td class="py-3 px-4 text-red-600">很难</td>
+                                    <td class="py-3 px-4 text-gray-700">科研用途，不建议个人使用</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-sage-800 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- 网站信息 -->
+                <div class="col-span-1 md:col-span-2">
+                    <h3 class="text-xl font-serif font-semibold mb-4" data-i18n="footer_site_name">heytcm 研究团队</h3>
+                    <p class="text-sage-300 mb-4" data-i18n="footer_description">
+                        传承千年中医智慧，以现代科技重塑古典医学价值，为您的健康管理提供新思路。
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-sage-300 hover:text-white transition-colors">
+                            <span class="sr-only">WeChat</span>
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8.691 2.188C3.891 2.188 0 5.477 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 4.882-1.908 7.848-1.908.486 0 .972.024 1.459.075A7.842 7.842 0 0 0 8.691 2.188z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-sage-300 hover:text-white transition-colors">
+                            <span class="sr-only">Weibo</span>
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 快速链接 -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4" data-i18n="footer_quick_links">快速链接</h4>
+                    <ul class="space-y-2">
+                        <li><a href="185-ancient-recipes-research.html#home" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_home">首页</a></li>
+                        <li><a href="185-ancient-recipes-research.html#ancient-wisdom" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_ancient">古人说"胖"</a></li>
+                        <li><a href="185-ancient-recipes-research.html#body-signals" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_signals">身体的信号</a></li>
+                        <li><a href="185-ancient-recipes-research.html#tcm-solutions" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_solutions">中医好方</a></li>
+                        <li><a href="185-ancient-recipes-research.html#recipes" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_recipes">完整古方方剂</a></li>
+                        <li><a href="modern-recipe.html" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_modern_recipes">现代方剂</a></li>
+                        <li><a href="#personalized_tool" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_personal_tool">个性化方案工具 (敬请期待)</a></li>
+                        <li><a href="#app" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_app">断食管理App (敬请期待)</a></li>
+                        <li><a href="185-ancient-recipes-research.html#expert-insights" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_expert">专家解读</a></li>
+                        <li><a href="185-ancient-recipes-research.html#data-insights" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_data">数据揭秘</a></li>
+                        <li><a href="daily-food-alternative.html" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_food_science">日常食疗科学</a></li>
+                        <li><a href="glossary.html" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_glossary">基础术语</a></li>
+                        <li><a href="river-metaphor.html" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_river_metaphor">河流隐喻</a></li>
+                    </ul>
+                </div>
+                
+                <!-- 法律信息 -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4" data-i18n="footer_legal">法律信息</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-sage-300 hover:text-white transition-colors" data-i18n="footer_privacy">隐私政策</a></li>
+                        <li><a href="#" class="text-sage-300 hover:text-white transition-colors" data-i18n="footer_terms">使用条款</a></li>
+                        <li><a href="#" class="text-sage-300 hover:text-white transition-colors" data-i18n="footer_contact">联系我们</a></li>
+                        <li><a href="#" class="text-sage-300 hover:text-white transition-colors" data-i18n="footer_disclaimer">免责声明</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- 底部版权 -->
+            <div class="border-t border-sage-700 mt-12 pt-8 text-center">
+                <p class="text-sage-300" data-i18n="footer_copyright">
+                    2023 权威中医药研究机构. 保留所有权利.
+                </p>
+                <p class="text-sage-400 text-sm mt-2" data-i18n="footer_academic">
+                    本站内容仅供学术研究和科普教育，不构成医疗建议
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-sage-700 text-white p-3 rounded-full shadow-lg opacity-0 pointer-events-none transition-opacity duration-300 z-40">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+        </svg>
+    </button>
+
+    <!-- 主要JavaScript文件 -->
+    <script src="./js/i18n.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

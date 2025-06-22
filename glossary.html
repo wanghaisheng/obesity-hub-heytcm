@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="glossary_page_title">中医基础术语词汇表 | heytcm</title>
+    <meta name="description" data-i18n="glossary_page_description" content="深入理解中医核心概念，包括气、血、津液、脏腑、病因病机等基础术语的详细解释。">
+    <meta name="keywords" content="中医词汇,中医术语,中医基础,气血,津液,脏腑,病因,病机,heytcm,glossary">
+    
+    <!-- SEO优化 -->
+    <meta property="og:title" data-i18n="glossary_og_title" content="中医基础术语词汇表">
+    <meta property="og:description" data-i18n="glossary_og_description" content="一个详尽的中医基础术语词汇表，帮助您深入理解中医理论。">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./img/glossary-hero.jpg"> <!-- Placeholder for a glossary-specific image -->
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tcm-weight-wisdom.com/glossary.html">
+    
+    <!-- Schema.org标记 (Simplified for Glossary Page) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "中医基础术语词汇表",
+      "description": "一个详尽的中医基础术语词汇表，帮助您深入理解中医理论。",
+      "publisher": {
+        "@type": "Organization",
+        "name": "heytcm 研究团队",
+        "url": "https://tcm-weight-wisdom.com"
+      }
+    }
+    </script>
+    
+    <!-- 引入字体和CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="font-sans text-gray-800 bg-warm-50 overflow-x-hidden">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50 border-b border-sage-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-xl font-serif font-semibold text-sage-800" data-i18n="site_name">heytcm</h1>
+                    </div>
+                </div>
+                
+                <!-- 桌面导航 -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html#home" class="nav-link text-sage-700 hover:text-sage-900 px-3 py-2 text-sm font-medium transition-colors" data-i18n="nav_home">首页</a>
+                        <a href="index.html#recipes" class="nav-link text-sage-700 hover:text-sage-900 px-3 py-2 text-sm font-medium transition-colors" data-i18n="nav_recipes_ancient">古方</a>
+                        <a href="modern-recipe.html" class="nav-link text-sage-700 hover:text-sage-900 px-3 py-2 text-sm font-medium transition-colors" data-i18n="nav_recipes_modern">现代方剂</a>
+                        <a href="daily-food-alternative.html" class="nav-link text-sage-700 hover:text-sage-900 px-3 py-2 text-sm font-medium transition-colors" data-i18n="nav_food_science">日常食疗科学</a>
+                        <a href="glossary.html" class="nav-link text-sage-700 hover:text-sage-900 px-3 py-2 text-sm font-medium transition-colors active" data-i18n="nav_glossary">基础术语</a>
+                        <a href="river-metaphor.html" class="nav-link text-sage-700 hover:text-sage-900 px-3 py-2 text-sm font-medium transition-colors" data-i18n="nav_river_metaphor">河流隐喻</a>
+                        <a href="index.html#about" class="nav-link text-sage-700 hover:text-sage-900 px-3 py-2 text-sm font-medium transition-colors" data-i18n="nav_about">关于我们</a>
+                    </div>
+                </div>
+                
+                <!-- 语言切换 -->
+                <div class="flex items-center space-x-4">
+                    <select id="languageSelector" class="text-sm border border-sage-200 rounded-md px-2 py-1 bg-white text-sage-700 focus:outline-none focus:ring-2 focus:ring-sage-500">
+                        <option value="zh">中文</option>
+                        <option value="en">English</option>
+                    </select>
+                    
+                    <!-- 移动端菜单按钮 -->
+                    <button id="mobile-menu-button" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-sage-700 hover:text-sage-900 hover:bg-sage-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sage-500">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 移动端导航菜单 -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-sage-100">
+                <a href="index.html#home" class="mobile-nav-link block px-3 py-2 text-base font-medium text-sage-700 hover:text-sage-900 hover:bg-sage-50" data-i18n="nav_home">首页</a>
+                <a href="index.html#recipes" class="mobile-nav-link block px-3 py-2 text-base font-medium text-sage-700 hover:text-sage-900 hover:bg-sage-50" data-i18n="nav_recipes_ancient">古方</a>
+                <a href="modern-recipe.html" class="mobile-nav-link block px-3 py-2 text-base font-medium text-sage-700 hover:text-sage-900 hover:bg-sage-50" data-i18n="nav_recipes_modern">现代方剂</a>
+                <a href="daily-food-alternative.html" class="mobile-nav-link block px-3 py-2 text-base font-medium text-sage-700 hover:text-sage-900 hover:bg-sage-50" data-i18n="nav_food_science">日常食疗科学</a>
+                <a href="glossary.html" class="mobile-nav-link block px-3 py-2 text-base font-medium text-sage-700 hover:text-sage-900 hover:bg-sage-50 active" data-i18n="nav_glossary">基础术语</a>
+                <a href="river-metaphor.html" class="mobile-nav-link block px-3 py-2 text-base font-medium text-sage-700 hover:text-sage-900 hover:bg-sage-50" data-i18n="nav_river_metaphor">河流隐喻</a>
+                <a href="index.html#about" class="mobile-nav-link block px-3 py-2 text-base font-medium text-sage-700 hover:text-sage-900 hover:bg-sage-50" data-i18n="nav_about">关于我们</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 词汇表内容区 -->
+    <main class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-serif font-bold text-sage-900 text-center mb-12" data-i18n="glossary_main_title">中医基础术语精解</h2>
+            
+            <div id="glossary-content-container" class="space-y-12">
+                <!-- Content will be rendered here by JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-sage-800 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- 网站信息 -->
+                <div class="col-span-1 md:col-span-2">
+                    <h3 class="text-xl font-serif font-semibold mb-4" data-i18n="footer_site_name">heytcm 研究团队</h3>
+                    <p class="text-sage-300 mb-4" data-i18n="footer_description">
+                        传承千年中医智慧，以现代科技重塑古典医学价值，为您的健康管理提供新思路。
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-sage-300 hover:text-white transition-colors">
+                            <span class="sr-only">WeChat</span>
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8.691 2.188C3.891 2.188 0 5.477 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 4.882-1.908 7.848-1.908.486 0 .972.024 1.459.075A7.842 7.842 0 0 0 8.691 2.188z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-sage-300 hover:text-white transition-colors">
+                            <span class="sr-only">Weibo</span>
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 快速链接 -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4" data-i18n="footer_quick_links">快速链接</h4>
+                    <ul class="space-y-2">
+                        <li><a href="185-ancient-recipes-research.html#home" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_home">首页</a></li>
+                        <li><a href="185-ancient-recipes-research.html#ancient-wisdom" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_ancient">古人说"胖"</a></li>
+                        <li><a href="185-ancient-recipes-research.html#body-signals" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_signals">身体的信号</a></li>
+                        <li><a href="185-ancient-recipes-research.html#tcm-solutions" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_solutions">中医好方</a></li>
+                        <li><a href="185-ancient-recipes-research.html#recipes" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_recipes">完整古方方剂</a></li>
+                        <li><a href="modern-recipe.html" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_modern_recipes">现代方剂</a></li>
+                        <li><a href="#personalized_tool" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_personal_tool">个性化方案工具 (敬请期待)</a></li>
+                        <li><a href="#app" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_app">断食管理App (敬请期待)</a></li>
+                        <li><a href="185-ancient-recipes-research.html#expert-insights" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_expert">专家解读</a></li>
+                        <li><a href="185-ancient-recipes-research.html#data-insights" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_data">数据揭秘</a></li>
+                        <li><a href="daily-food-alternative.html" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_food_science">日常食疗科学</a></li>
+                        <li><a href="glossary.html" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_glossary">基础术语</a></li>
+                        <li><a href="river-metaphor.html" class="text-sage-300 hover:text-white transition-colors" data-i18n="nav_river_metaphor">河流隐喻</a></li>
+                    </ul>
+                </div>
+
+                <!-- 法律信息 -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4" data-i18n="footer_legal">法律信息</h4>
+                    <ul class="space-y-2">
+                        <li><a href="privacy.html" class="text-sage-300 hover:text-white transition-colors" data-i18n="footer_privacy">隐私政策</a></li>
+                        <li><a href="terms.html" class="text-sage-300 hover:text-white transition-colors" data-i18n="footer_terms">使用条款</a></li>
+                        <li><a href="contact.html" class="text-sage-300 hover:text-white transition-colors" data-i18n="footer_contact">联系我们</a></li>
+                        <li><a href="disclaimer.html" class="text-sage-300 hover:text-white transition-colors" data-i18n="footer_disclaimer">免责声明</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 底部版权 -->
+            <div class="border-t border-sage-700 mt-12 pt-8 text-center">
+                <p class="text-sage-300" data-i18n="footer_copyright">
+                    &copy; 2024 heytcm 研究团队. 版权所有.
+                </p>
+                <p class="text-sage-400 text-sm mt-2" data-i18n="footer_academic">
+                    本站内容仅供学术研究和科普教育，不构成医疗建议。
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-sage-700 text-white p-3 rounded-full shadow-lg opacity-0 pointer-events-none transition-opacity duration-300 z-40">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+        </svg>
+    </button>
+
+    <!-- 主要JavaScript文件 -->
+    <script src="./js/i18n.js"></script>
+    <script src="./js/glossary-data.js"></script>
+    <script src="./js/glossary-renderer.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html> 

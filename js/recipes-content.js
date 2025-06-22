@@ -135,6 +135,26 @@ function setupSearchAndFilter() {
     const searchInput = document.getElementById('searchInput');
     const categoryFilter = document.getElementById('categoryFilter');
     const sortBy = document.getElementById('sortBy');
+
+    // Check for URL parameters for initial filtering
+    const urlParams = new URLSearchParams(window.location.search);
+    const initialCategory = urlParams.get('category');
+
+    if (initialCategory) {
+        // Set the dropdown value if it's a valid option
+        const categoryOptionExists = Array.from(categoryFilter.options).some(option => option.value === initialCategory);
+        if (categoryOptionExists) {
+            categoryFilter.value = initialCategory;
+            filterContent(searchInput.value.toLowerCase(), initialCategory);
+        } else {
+            // If the category is not valid, default to 'all'
+            categoryFilter.value = 'all';
+            filterContent(searchInput.value.toLowerCase(), 'all');
+        }
+    } else {
+        // If no category in URL, apply initial filter for 'all'
+        filterContent(searchInput.value.toLowerCase(), categoryFilter.value);
+    }
     
     // 搜索功能
     searchInput.addEventListener('input', function() {
@@ -186,9 +206,46 @@ function filterContent(keyword, category) {
 
 // 排序内容
 function sortContent(sortType) {
-    // 这里可以根据排序类型重新渲染内容
-    // 为简化示例，暂时不实现具体排序逻辑
-    console.log('Sorting by:', sortType);
+    // Helper function to sort arrays of objects
+    const sortArray = (arr, key, isNumeric = false) => {
+        return arr.sort((a, b) => {
+            if (isNumeric) {
+                return sortType === 'frequency' ? b[key] - a[key] : a[key] - b[key];
+            } else {
+                const nameA = a[key].toLowerCase();
+                const nameB = b[key].toLowerCase();
+                if (nameA < nameB) return -1;
+                if (nameA > nameB) return 1;
+                return 0;
+            }
+        });
+    };
+
+    switch (sortType) {
+        case 'frequency':
+            // Sort by frequency (descending) for relevant categories
+            recipesData.syndromes = sortArray(recipesData.syndromes, 'frequency', true);
+            recipesData.prescriptions = sortArray(recipesData.prescriptions, 'frequency', true);
+            recipesData.herbs = sortArray(recipesData.herbs, 'frequency', true);
+            break;
+        case 'alphabetical':
+            // Sort alphabetically by name for all categories
+            recipesData.diseases.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
+            recipesData.syndromes = sortArray(recipesData.syndromes, 'name');
+            recipesData.prescriptions = sortArray(recipesData.prescriptions, 'name');
+            recipesData.herbs = sortArray(recipesData.herbs, 'name');
+            break;
+        case 'category':
+            // For category sort, we just re-render, as content is already grouped by category
+            // No specific internal sorting needed for this view
+            break;
+    }
+
+    // Re-render all sections after sorting
+    renderDiseases();
+    renderSyndromes();
+    renderPrescriptions();
+    renderHerbs();
 }
 
 // 显示详细信息的模态框函数
